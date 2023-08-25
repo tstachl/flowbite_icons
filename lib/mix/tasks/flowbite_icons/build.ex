@@ -16,7 +16,7 @@ defmodule Mix.Tasks.FlowbiteIcons.Build do
     Mix.Generator.copy_template(
       "assets/flowbite_icons.exs",
       @target_file,
-      %{icons: icons, vsn: vsn},
+      [icons: icons, vsn: vsn],
       force: true
     )
 
