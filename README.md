@@ -6,7 +6,7 @@ This library provides optimized svgs for each Flowbite Icon packaged as a Phoeni
 
 Flowbite Icons are designed by [Evelyne Krall](https://twitter.com/EvelyneKrall) & [Robert Tanislav](https://twitter.com/roberttanislav) and interface coded by [Zoltán Szőgyényi](https://twitter.com/zoltanszogyenyi).
 
-Current Heroicons Version: **1.0.0**.
+Current Flowbite Icons Version: **1.1.0**.
 
 ## Installation
 
@@ -19,6 +19,18 @@ def deps do
     {:flowbite_icons, "~> 0.1.0"}
   ]
 end
+```
+
+## Usage
+
+The icons are provided by the `Flowbite.Icons` module. Each icon is a Phoenix Component you can use in your HEEx templates.
+
+Here are some examples:
+
+```eex
+<Flowbite.Icons.outline_file_copy />
+<Flowbite.Icons.solid_users_group />
+<Flowbite.Icons.solid_flowbite class="w-4 h-4" />
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
