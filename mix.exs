@@ -4,7 +4,7 @@ defmodule FlowbiteIcons.MixProject do
   def project do
     [
       app: :flowbite_icons,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -30,14 +30,15 @@ defmodule FlowbiteIcons.MixProject do
       {:phoenix_live_view, ">= 0.18.2"},
       {:ex_doc, "~> 0.23", only: :dev, runtime: false},
       {:castore, ">= 0.0.0"},
-      {:floki, "~> 0.34.0", only: [:dev, :test]}
+      {:floki, "~> 0.34.0", only: [:dev, :test], runtime: false}
     ]
   end
 
   defp package do
     [
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/tstachl/flowbite_icons"}
+      links: %{"GitHub" => "https://github.com/tstachl/flowbite_icons"},
+      files: ["lib/flowbite_icons.ex", "README*", "LICENSE*", "CHANGELOG*"]
     ]
   end
 
