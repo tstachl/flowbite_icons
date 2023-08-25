@@ -22,6 +22,24 @@
 
           languages.elixir.enable = true;
 
+          pre-commit.hooks = {
+            my-mix-format = {
+              enable = true;
+              name = "mix-format";
+              description = "Runs the built-in Elixir syntax formatter";
+              entry = "${pkgs.elixir}/bin/mix format";
+              files = "\\.(ex|exs)";
+            };
+
+            my-mix-test = {
+              enable = true;
+              name = "mix-test";
+              description = "Runs the built-in Elixir test framework";
+              entry = "${pkgs.elixir}/bin/mix test";
+              files = "\\.(ex|exs)";
+            };
+          };
+
           packages = let
             inherit (pkgs.lib) optional optionals;
           in with pkgs; [ git gnumake clang ]
