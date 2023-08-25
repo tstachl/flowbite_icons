@@ -1,26 +1,33 @@
-name: "Test Flowbite Icons"
+name: "Test and Publish Flowbite Icons"
 
 on:
-  pull_request:
   push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
 
 jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Elixir
+    - name: set up elixir
       uses: erlef/setup-beam@v1
       with:
         elixir-version: '1.14.5' # Define the elixir version [required]
         otp-version: '24.2' # Define the OTP version [required]
-    - name: Restore dependencies cache
+    - name: restore dependencies cache
       uses: actions/cache@v2
       with:
         path: deps
         key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
         restore-keys: ${{ runner.os }}-mix-
-    - name: Install dependencies
+    - name: install dependencies
       run: mix deps.get
-    - name: Run tests
+    - name: run tests
       run: mix test
+    - name: publish package
+      run: mix hex.publish --yes
