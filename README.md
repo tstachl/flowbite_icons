@@ -1,4 +1,4 @@
-# FlowbiteIcons
+# Flowbite Icons
 
 [Flowbite Icons](https://flowbite.com/icons) "is a free and open-source collection of SVG icons that you can use in personal and commercial projects by giving attribution." This package gives you Elixir functions to drop Flowbite Icons into your HTML, styled with arbitrary classes.
 
@@ -36,4 +36,8 @@ Here are some examples:
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/flowbite_icons>.
+
+## Thank you and Credits
+
+This package is mostly based on the work of @mveytsman and his repository [heroicons_elixir](https://github.com/mveytsman/heroicons_elixir).
 
