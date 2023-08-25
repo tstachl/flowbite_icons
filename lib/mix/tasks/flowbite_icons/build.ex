@@ -25,7 +25,12 @@ defmodule Mix.Tasks.FlowbiteIcons.Build do
 
   defp parse(file) do
     {:ok, document} = file |> File.read!() |> Floki.parse_document()
-    {"#{file |> at(2)}_#{file |> file_name}", document}
+    {"#{at(file, 2)}_#{file_name(file)}", strip_colors(document)}
+  end
+
+  defp strip_colors(document) do
+    document
+    |> Floki.attr("[fill^=\"#\"]", "fill", fn _ -> "currentColor" end)
   end
 
   defp at(file, index) do
