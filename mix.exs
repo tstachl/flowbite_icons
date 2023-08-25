@@ -38,7 +38,7 @@ defmodule FlowbiteIcons.MixProject do
     [
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/tstachl/flowbite_icons"},
-      files: ["lib/flowbite_icons.ex", "mix.ex", ".formatter.exs", "README*", "LICENSE*", "CHANGELOG*"]
+      files: ["lib/flowbite_icons.ex", "mix.exs", ".formatter.exs", "README*", "LICENSE*", "CHANGELOG*"]
     ]
   end
 
