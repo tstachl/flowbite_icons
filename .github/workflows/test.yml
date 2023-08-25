@@ -30,4 +30,6 @@ jobs:
     - name: run tests
       run: mix test
     - name: publish package
+      env:
+        credentials: ${{ secrets.HEX_API_KEY }}
       run: mix hex.publish --yes
