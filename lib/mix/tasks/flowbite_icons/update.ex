@@ -3,7 +3,7 @@ defmodule Mix.Tasks.FlowbiteIcons.Update do
   @moduledoc false
   @shortdoc false
 
-  @vsn "1.1.0"
+  @vsn "main"
   @tmp_dir_name "flowbite_icons"
 
   # Updates the icons in the assets/icons directory
@@ -24,7 +24,7 @@ defmodule Mix.Tasks.FlowbiteIcons.Update do
     File.rm_rf!(tmp_dir)
     File.mkdir_p!(tmp_dir)
 
-    url = "https://github.com/themesberg/flowbite-icons/archive/refs/tags/v#{version}.zip"
+    url = "https://github.com/themesberg/flowbite-icons/archive/refs/heads/#{version}.zip"
     archive = fetch_body!(url)
 
     case unpack_archive(".zip", archive, tmp_dir) do

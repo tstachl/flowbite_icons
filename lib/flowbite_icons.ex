@@ -1,6 +1,6 @@
 defmodule Flowbite.Icons do
   @moduledoc """
-  Provides precompiled icon compiles from [flowbite.com/icons v1.1.0](https://flowbite.com/icons/).
+  Provides precompiled icon compiles from [github.com/themesberg/flowbite-icons main](https://github.com/themesberg/flowbite-icons).
 
   Flowbite Icons are designed by [Evelyne Krall](https://twitter.com/EvelyneKrall) & [Robert Tanislav](https://twitter.com/roberttanislav) and interface coded by [Zoltán Szőgyényi](https://twitter.com/zoltanszogyenyi).
 
@@ -328,6 +328,37 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_arrow_right_big` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_arrow_right_big />
+  <Flowbite.Icons.outline_arrow_right_big class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_arrow_right_big(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "fill" => "none", "height" => "16", "viewbox" => "0 0 21 16", "width" => "21", "xmlns" => "http://www.w3.org/2000/svg" }, @rest)}>
+      <path
+        d="m14.364 15 4.847-7-4.847-7h-13.154l4.848 7-4.848 7h13.153z"
+        stroke="#2f2f38"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_arrow_right_to_bracket` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -476,6 +507,37 @@ defmodule Flowbite.Icons do
         stroke-linejoin="round"
         stroke-width="2"
         d="M8 12V1m0 0L4 5m4-4 4 4m3 5v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `outline_arrow_up_right_down_left` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_arrow_up_right_down_left />
+  <Flowbite.Icons.outline_arrow_up_right_down_left class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_arrow_up_right_down_left(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "16", "fill" => "none", "viewbox" => "0 0 16 16" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M11 1h4m0 0v4m0-4-5 5.243M5 15H1m0 0v-4m0 4 5.243-5"
       >
       </path>
     </svg>
@@ -1134,6 +1196,37 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_redo` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_redo />
+  <Flowbite.Icons.outline_redo class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_redo(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "14", "fill" => "none", "viewbox" => "0 0 16 14" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 7 1 4l3-3m0 12h6.5a4.5 4.5 0 1 0 0-9H2"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_reply_all` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -1282,6 +1375,37 @@ defmodule Flowbite.Icons do
         stroke-linejoin="round"
         stroke-width="2"
         d="M4 8.693v9.477m0 0 3-2.843M4 18.17l-3-2.843m9-4.739V1.111m0 0L7 3.954m3-2.843 3 2.843"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `outline_undo` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_undo />
+  <Flowbite.Icons.outline_undo class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_undo(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "14", "fill" => "none", "viewbox" => "0 0 16 14" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="m12 7 3-3-3-3m0 12H5.5a4.5 4.5 0 1 1 0-9H14"
       >
       </path>
     </svg>
@@ -1929,6 +2053,37 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_archive_download` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_archive_download />
+  <Flowbite.Icons.outline_archive_download class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_archive_download(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "16", "fill" => "none", "viewbox" => "0 0 20 16" }, @rest)}>
+      <path
+        stroke="#2F2F38"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 8v4m0 0-2-2m2 2 2-2M3 5v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5H3ZM2 1h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_clipboard_check` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -2335,6 +2490,37 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_file_invoice` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_file_invoice />
+  <Flowbite.Icons.outline_file_invoice class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_file_invoice(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "20", "fill" => "none", "viewbox" => "0 0 16 20" }, @rest)}>
+      <path
+        stroke="#2F2F38"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 1v4a1 1 0 0 1-1 1H1m8-2h3M9 7h3m-4 3v6m-4-3h8m3-11v16a.969.969 0 0 1-.933 1H1.933A.97.97 0 0 1 1 18V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 5.828 1h8.239A.969.969 0 0 1 15 2ZM4 10h8v6H4v-6Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_file_lines` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -2696,6 +2882,37 @@ defmodule Flowbite.Icons do
         stroke-linejoin="round"
         stroke-width="2"
         d="M6 1v4a1 1 0 0 1-1 1H1m14-4v16a.969.969 0 0 1-.932 1H1.934A.97.97 0 0 1 1 18V5.828a2 2 0 0 1 .586-1.414l2.828-2.828A2 2 0 0 1 5.829 1h8.239A.969.969 0 0 1 15 2Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `outline_folder_arrow_right` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_folder_arrow_right />
+  <Flowbite.Icons.outline_folder_arrow_right class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_folder_arrow_right(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "fill" => "none", "height" => "18", "viewbox" => "0 0 18 18", "width" => "18", "xmlns" => "http://www.w3.org/2000/svg" }, @rest)}>
+      <path
+        d="m1 5v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-10a1 1 0 0 0 -1-1zm0 0v-3a1 1 0 0 1 1-1h5.443a1 1 0 0 1 .8.4l2.7 3.6zm10 4 2 2-2 2m1.5-2h-7.719"
+        stroke="#2f2f38"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
       >
       </path>
     </svg>
@@ -3776,6 +3993,37 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_check_plus_circle` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_check_plus_circle />
+  <Flowbite.Icons.outline_check_plus_circle class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_check_plus_circle(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
+      <path
+        stroke="#2F2F38"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 19a8.999 8.999 0 1 1 3.53-17.281M6 9l4 4 7-8m-1 8v5m-2.5-2.5h5"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_check` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -4137,6 +4385,37 @@ defmodule Flowbite.Icons do
         stroke-linejoin="round"
         stroke-width="2"
         d="M13 1v14M7 1v14M2 1h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `outline_command` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_command />
+  <Flowbite.Icons.outline_command class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_command(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 6h8M6 6v8m0-8V3.5A2.5 2.5 0 1 0 3.5 6H6Zm8 0v8m0-8h2.5A2.5 2.5 0 1 0 14 3.5V6Zm0 8H6m8 0h2.5a2.5 2.5 0 1 1-2.5 2.5V14Zm-8 0H3.5A2.5 2.5 0 1 0 6 16.5V14Z"
       >
       </path>
     </svg>
@@ -4634,6 +4913,37 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_flag` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_flag />
+  <Flowbite.Icons.outline_flag class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_flag(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "20", "fill" => "none", "viewbox" => "0 0 16 20" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M1 1v18M1 3.652v9c5.6-5.223 8.4 2.49 14-.08v-9c-5.6 2.57-8.4-5.143-14 .08Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_gift_box` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -5016,6 +5326,37 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_label` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_label />
+  <Flowbite.Icons.outline_label class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_label(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "14", "fill" => "none", "viewbox" => "0 0 20 14" }, @rest)}>
+      <path
+        stroke="#2F2F38"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M12.705 13H1.969a.985.985 0 0 1-.97-1V2a.985.985 0 0 1 .97-1h10.815a2 2 0 0 1 1.388.56L18 5.251a2.02 2.02 0 0 1 .093 2.785l-3.911 4.308a2 2 0 0 1-1.477.656Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_landmark` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -5195,6 +5536,37 @@ defmodule Flowbite.Icons do
         stroke-linejoin="round"
         stroke-width="2"
         d="M18.5 8V4.5a3.5 3.5 0 1 0-7 0V8M8 12.167v3M2 8h12a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `outline_lock_time` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_lock_time />
+  <Flowbite.Icons.outline_lock_time class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_lock_time(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
+      <path
+        stroke="#2F2F38"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M11 8H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h7m2.5-11V4.5a3.5 3.5 0 0 0-7 0V8m10 5.217V14.5l.9.9m3.6-.9a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"
       >
       </path>
     </svg>
@@ -7073,6 +7445,37 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_indent` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_indent />
+  <Flowbite.Icons.outline_indent class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_indent(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "14", "height" => "15", "fill" => "none", "viewbox" => "0 0 14 15" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M1 1.323h12m-5 4h5m-5 4h5m-12 4h12m-12-8v4l3-2-3-2Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_letter_bold` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -7227,6 +7630,68 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `outline_outdent` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_outdent />
+  <Flowbite.Icons.outline_outdent class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_outdent(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "14", "height" => "14", "fill" => "none", "viewbox" => "0 0 14 14" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M1 1h12M8 5h5M8 9h5M1 13h12M4 5v4L1 7l3-2Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `outline_paragraph` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_paragraph />
+  <Flowbite.Icons.outline_paragraph class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_paragraph(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M10 1v18m5.143-18v18M19 1H5.5a4.5 4.5 0 0 0 0 9H10"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `outline_quote` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -7251,6 +7716,68 @@ defmodule Flowbite.Icons do
         stroke-linejoin="round"
         stroke-width="2"
         d="M7 6V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1Zm0 0v3a4 4 0 0 1-4 4H2m15-7V2a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1Zm0 0v3a4 4 0 0 1-4 4h-1"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `outline_text_size` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_text_size />
+  <Flowbite.Icons.outline_text_size class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_text_size(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "18", "height" => "15", "fill" => "none", "viewbox" => "0 0 18 15" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M1 2.323v-1h10v1m-5-1v12m-2 0h4m3-6v-1h6v1m-3-1v7m-1 0h2"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `outline_text_slash` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.outline_text_slash />
+  <Flowbite.Icons.outline_text_slash class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def outline_text_slash(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "16", "fill" => "none", "viewbox" => "0 0 16 16" }, @rest)}>
+      <path
+        stroke="#2F3039"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 3V2h10v1M4 14h4m-1.245-3.018L6 14M9 2 7.579 7.579m0 0L1 1m6.579 6.579L15 15"
       >
       </path>
     </svg>
@@ -7744,6 +8271,34 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `solid_arrow_big` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_arrow_big />
+  <Flowbite.Icons.solid_arrow_big class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_arrow_big(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "21", "height" => "16", "fill" => "none", "viewbox" => "0 0 21 16" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="m20.033 7.431-4.846-7A1 1 0 0 0 14.364 0H1.211a1 1 0 0 0-.822 1.569L4.842 8 .389 14.431A1 1 0 0 0 1.211 16h13.153a1.001 1.001 0 0 0 .823-.431l4.846-7a1 1 0 0 0 0-1.138Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `solid_arrow_down_to_braket` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -8227,22 +8782,22 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
-  Renders the `solid_chevron_double_down` icon.
+  Renders the `solid_chervon_double_down` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
 
   ## Examples
 
   ```heex
-  <Flowbite.Icons.solid_chevron_double_down />
-  <Flowbite.Icons.solid_chevron_double_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_chervon_double_down />
+  <Flowbite.Icons.solid_chervon_double_down class="w-4 h-4" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
 
-  def solid_chevron_double_down(assigns) do
+  def solid_chervon_double_down(assigns) do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 10 12" }, @rest)}>
       <g fill="currentColor">
@@ -8256,22 +8811,22 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
-  Renders the `solid_chevron_double_left` icon.
+  Renders the `solid_chervon_double_left` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
 
   ## Examples
 
   ```heex
-  <Flowbite.Icons.solid_chevron_double_left />
-  <Flowbite.Icons.solid_chevron_double_left class="w-4 h-4" />
+  <Flowbite.Icons.solid_chervon_double_left />
+  <Flowbite.Icons.solid_chervon_double_left class="w-4 h-4" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
 
-  def solid_chevron_double_left(assigns) do
+  def solid_chervon_double_left(assigns) do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 12 10" }, @rest)}>
       <g fill="currentColor">
@@ -8285,22 +8840,22 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
-  Renders the `solid_chevron_double_right` icon.
+  Renders the `solid_chervon_double_right` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
 
   ## Examples
 
   ```heex
-  <Flowbite.Icons.solid_chevron_double_right />
-  <Flowbite.Icons.solid_chevron_double_right class="w-4 h-4" />
+  <Flowbite.Icons.solid_chervon_double_right />
+  <Flowbite.Icons.solid_chervon_double_right class="w-4 h-4" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
 
-  def solid_chevron_double_right(assigns) do
+  def solid_chervon_double_right(assigns) do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 12 10" }, @rest)}>
       <g fill="currentColor">
@@ -8314,22 +8869,22 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
-  Renders the `solid_chevron_double_up` icon.
+  Renders the `solid_chervon_double_up` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
 
   ## Examples
 
   ```heex
-  <Flowbite.Icons.solid_chevron_double_up />
-  <Flowbite.Icons.solid_chevron_double_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_chervon_double_up />
+  <Flowbite.Icons.solid_chervon_double_up class="w-4 h-4" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
 
-  def solid_chevron_double_up(assigns) do
+  def solid_chervon_double_up(assigns) do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 10 12" }, @rest)}>
       <g fill="currentColor">
@@ -9280,6 +9835,34 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `solid_x_company` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_x_company />
+  <Flowbite.Icons.solid_x_company class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_x_company(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `solid_youtube` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -9911,6 +10494,34 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `solid_archive_download` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_archive_download />
+  <Flowbite.Icons.solid_archive_download class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_archive_download(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "18", "height" => "15", "fill" => "none", "viewbox" => "0 0 18 15" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M1 13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6H1v7Zm5.293-3.707a1 1 0 0 1 1.414 0L8 9.586V8a1 1 0 0 1 2 0v1.586l.293-.293a1 1 0 0 1 1.414 1.414l-2 2a1 1 0 0 1-1.416 0l-2-2a1 1 0 0 1 .002-1.414ZM17 0H1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `solid_clipboard_check` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -9990,6 +10601,35 @@ defmodule Flowbite.Icons do
         d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"
       >
       </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_clone` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_clone />
+  <Flowbite.Icons.solid_clone class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_clone(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
+      <g fill="currentColor">
+        <path d="M6 5a3 3 0 0 1 .183-1H5a1 1 0 0 0-.707.293l-4 4A1 1 0 0 0 0 9h6V5Zm0 9v-3H0v7a1.97 1.97 0 0 0 1.934 2h7.132A1.97 1.97 0 0 0 11 18H9.933A3.97 3.97 0 0 1 6 14Zm7-14a1 1 0 0 0-.707.293l-4 4A1 1 0 0 0 8 5h5V0Z">
+        </path>
+        <path d="M18.066 0H15v6a1 1 0 0 1-1 1H8v7a1.97 1.97 0 0 0 1.934 2h8.132A1.97 1.97 0 0 0 20 14V2a1.97 1.97 0 0 0-1.934-2Z">
+        </path>
+      </g>
     </svg>
     """
   end
@@ -10108,35 +10748,6 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
-  Renders the `solid_file_clone` icon.
-
-  You may also pass arbitrary HTML attributes to be applied to the svg tag.
-
-  ## Examples
-
-  ```heex
-  <Flowbite.Icons.solid_file_clone />
-  <Flowbite.Icons.solid_file_clone class="w-4 h-4" />
-  ```
-  """
-  attr :rest, :global,
-    doc: "the arbitrary HTML attributes for the svg container",
-    include: ~w(fill stroke stroke-width)
-
-  def solid_file_clone(assigns) do
-    ~H"""
-    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
-      <g fill="currentColor">
-        <path d="M6 5a3 3 0 0 1 .183-1H5a1 1 0 0 0-.707.293l-4 4A1 1 0 0 0 0 9h6V5Zm0 9v-3H0v7a1.97 1.97 0 0 0 1.934 2h7.132A1.97 1.97 0 0 0 11 18H9.933A3.97 3.97 0 0 1 6 14Zm7-14a1 1 0 0 0-.707.293l-4 4A1 1 0 0 0 8 5h5V0Z">
-        </path>
-        <path d="M18.066 0H15v6a1 1 0 0 1-1 1H8v7a1.97 1.97 0 0 0 1.934 2h8.132A1.97 1.97 0 0 0 20 14V2a1.97 1.97 0 0 0-1.934-2Z">
-        </path>
-      </g>
-    </svg>
-    """
-  end
-
-  @doc """
   Renders the `solid_file_code` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -10215,6 +10826,36 @@ defmodule Flowbite.Icons do
       <g fill="currentColor">
         <path d="M7 5V.13a2.96 2.96 0 0 0-1.293.749L2.879 3.707A2.96 2.96 0 0 0 2.13 5H7Z"></path>
         <path d="M19 7h-1.072A.989.989 0 0 0 18 6.639V2a1.97 1.97 0 0 0-1.933-2H9v5a2 2 0 0 1-2 2H1a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h1a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 18 18h1a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1Zm-9 1.828.961.02a1 1 0 0 1-.042 2l-.946-.02a.337.337 0 0 0-.339.3.317.317 0 0 0 .283.344l.537.059a2.543 2.543 0 0 1 1.887 1.1 2.207 2.207 0 0 1 .174 1.941A2.151 2.151 0 0 1 10.235 16H9.108a1 1 0 0 1 0-2h1.127a.936.936 0 0 0 .389-.047.439.439 0 0 0 .027-.251.62.62 0 0 0-.413-.18l-.537-.059a2.306 2.306 0 0 1-2.059-2.5A2.374 2.374 0 0 1 10 8.828Zm-8 4.525v-1.706A2.65 2.65 0 0 1 4.647 9h1.018a1 1 0 0 1 0 2H4.647a.647.647 0 0 0-.647.647v1.706a.647.647 0 0 0 .647.647h1.018a1 1 0 0 1 0 2H4.647A2.65 2.65 0 0 1 2 13.353Zm15.951-3.043-1.557 4.773a1 1 0 0 1-.951.689h-.011a1 1 0 0 1-.946-.71l-1.443-4.772a1 1 0 0 1 1.914-.58l.522 1.727.57-1.747a1 1 0 1 1 1.9.62h.002Z">
+        </path>
+      </g>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_file_edit` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_file_edit />
+  <Flowbite.Icons.solid_file_edit class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_file_edit(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
+      <g fill="currentColor">
+        <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"></path>
+        <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z">
+        </path>
+        <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z">
         </path>
       </g>
     </svg>
@@ -10301,6 +10942,40 @@ defmodule Flowbite.Icons do
         <path d="M14.067 0H7v5a2 2 0 0 1-2 2H0v4h7.414l-1.06-1.061a1 1 0 1 1 1.414-1.414l2.768 2.768a1 1 0 0 1 0 1.414l-2.768 2.768a1 1 0 0 1-1.414-1.414L7.414 13H0v5a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.933-2Z">
         </path>
       </g>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_file_invoice` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_file_invoice />
+  <Flowbite.Icons.solid_file_invoice class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_file_invoice(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "20", "fill" => "none", "viewbox" => "0 0 16 20" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M7 11H5v1h2v-1Zm4 3H9v1h2v-1Zm-4 0H5v1h2v-1ZM5 5V.13a2.98 2.98 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"
+      >
+      </path>
+      <path
+        fill="currentColor"
+        d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM13 16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v6Zm-1-8H9a1 1 0 0 1 0-2h3a1 1 0 1 1 0 2Zm0-3H9a1 1 0 0 1 0-2h3a1 1 0 1 1 0 2Z"
+      >
+      </path>
+      <path fill="currentColor" d="M11 11H9v1h2v-1Z"></path>
     </svg>
     """
   end
@@ -10415,36 +11090,6 @@ defmodule Flowbite.Icons do
         <path d="M4.5 11H4v1h.5a.5.5 0 0 0 0-1ZM7 5V.13a2.96 2.96 0 0 0-1.293.749L2.879 3.707A2.96 2.96 0 0 0 2.13 5H7Zm3.375 6H10v3h.375a.624.624 0 0 0 .625-.625v-1.75a.624.624 0 0 0-.625-.625Z">
         </path>
         <path d="M19 7h-1V2a1.97 1.97 0 0 0-1.933-2H9v5a2 2 0 0 1-2 2H1a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h1a1.969 1.969 0 0 0 1.933 2h12.134c1.1 0 1.7-1.236 1.856-1.614a.988.988 0 0 0 .07-.386H19a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1ZM4.5 14H4v1a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1h1.5a2.5 2.5 0 1 1 0 5Zm8.5-.625A2.63 2.63 0 0 1 10.375 16H9a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1h1.375A2.63 2.63 0 0 1 13 11.625v1.75ZM17 12a1 1 0 0 1 0 2h-1v1a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-1v1h1Z">
-        </path>
-      </g>
-    </svg>
-    """
-  end
-
-  @doc """
-  Renders the `solid_file_pen` icon.
-
-  You may also pass arbitrary HTML attributes to be applied to the svg tag.
-
-  ## Examples
-
-  ```heex
-  <Flowbite.Icons.solid_file_pen />
-  <Flowbite.Icons.solid_file_pen class="w-4 h-4" />
-  ```
-  """
-  attr :rest, :global,
-    doc: "the arbitrary HTML attributes for the svg container",
-    include: ~w(fill stroke stroke-width)
-
-  def solid_file_pen(assigns) do
-    ~H"""
-    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
-      <g fill="currentColor">
-        <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"></path>
-        <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z">
-        </path>
-        <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z">
         </path>
       </g>
     </svg>
@@ -10652,6 +11297,34 @@ defmodule Flowbite.Icons do
         <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2Z">
         </path>
       </g>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_folder_arrow_right` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_folder_arrow_right />
+  <Flowbite.Icons.solid_folder_arrow_right class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_folder_arrow_right(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "18", "height" => "18", "fill" => "none", "viewbox" => "0 0 18 18" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M0 6v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6H0Zm13.457 6.707-2.5 2.5a1 1 0 0 1-1.414-1.414l.793-.793H5a1 1 0 0 1 0-2h5.336l-.793-.793a1 1 0 0 1 1.414-1.414l2.5 2.5a1 1 0 0 1 0 1.414ZM9.043.8a2.009 2.009 0 0 0-1.6-.8H2a2 2 0 0 0-2 2v2h11.443L9.043.8Z"
+      >
+      </path>
     </svg>
     """
   end
@@ -11395,6 +12068,34 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `solid_calendar_plus` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_calendar_plus />
+  <Flowbite.Icons.solid_calendar_plus class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_calendar_plus(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "21", "height" => "21", "fill" => "none", "viewbox" => "0 0 21 21" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M20.922 4.034a2 2 0 0 0-2-2h-2v-1a1 1 0 0 0-2 0v1h-3v-1a1 1 0 0 0-2 0v1h-3v-1a1 1 0 0 0-2 0v1h-2a2 2 0 0 0-2 2v2h20v-2Zm-20 4v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-10h-20Zm12 7h-1v1a1 1 0 0 1-2 0v-1h-1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `solid_calendar_week` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -11645,6 +12346,39 @@ defmodule Flowbite.Icons do
       <path
         fill="currentColor"
         d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_check_plus_circle` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_check_plus_circle />
+  <Flowbite.Icons.solid_check_plus_circle class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_check_plus_circle(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M18.5 15.5H17V14a1 1 0 0 0-2 0v1.5h-1.5a1 1 0 0 0 0 2H15V19a1 1 0 0 0 2 0v-1.5h1.5a1 1 0 0 0 0-2Z"
+      >
+      </path>
+      <path
+        fill="currentColor"
+        d="m18.222 5.255-7.475 8.409a1 1 0 0 1-.718.336H10a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414l3.25 3.25 7.055-7.936a9.5 9.5 0 1 0-3.885 15.355A2.495 2.495 0 0 1 13.5 14a2.5 2.5 0 0 1 5 0c.035 0 .068.009.1.01a9.43 9.43 0 0 0-.381-8.755h.003Z"
       >
       </path>
     </svg>
@@ -12072,62 +12806,6 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
-  Renders the `solid_dots_horizontal` icon.
-
-  You may also pass arbitrary HTML attributes to be applied to the svg tag.
-
-  ## Examples
-
-  ```heex
-  <Flowbite.Icons.solid_dots_horizontal />
-  <Flowbite.Icons.solid_dots_horizontal class="w-4 h-4" />
-  ```
-  """
-  attr :rest, :global,
-    doc: "the arbitrary HTML attributes for the svg container",
-    include: ~w(fill stroke stroke-width)
-
-  def solid_dots_horizontal(assigns) do
-    ~H"""
-    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 16 3" }, @rest)}>
-      <path
-        fill="currentColor"
-        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
-      >
-      </path>
-    </svg>
-    """
-  end
-
-  @doc """
-  Renders the `solid_dots_vertical` icon.
-
-  You may also pass arbitrary HTML attributes to be applied to the svg tag.
-
-  ## Examples
-
-  ```heex
-  <Flowbite.Icons.solid_dots_vertical />
-  <Flowbite.Icons.solid_dots_vertical class="w-4 h-4" />
-  ```
-  """
-  attr :rest, :global,
-    doc: "the arbitrary HTML attributes for the svg container",
-    include: ~w(fill stroke stroke-width)
-
-  def solid_dots_vertical(assigns) do
-    ~H"""
-    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 4 15" }, @rest)}>
-      <path
-        fill="currentColor"
-        d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
-      >
-      </path>
-    </svg>
-    """
-  end
-
-  @doc """
   Renders the `solid_download` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -12178,6 +12856,62 @@ defmodule Flowbite.Icons do
       <path
         fill="currentColor"
         d="M5 0H1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1Zm14 0h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1ZM5 14H1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1Zm14 0h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1ZM12 2H8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2Zm0 14H8a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Zm-8-4V8a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0Zm14 0V8a1 1 0 0 0-2 0v4a1 1 0 0 0 2 0Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_ellipse_horizontal` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_ellipse_horizontal />
+  <Flowbite.Icons.solid_ellipse_horizontal class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_ellipse_horizontal(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 16 3" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_ellipse_vertical` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_ellipse_vertical />
+  <Flowbite.Icons.solid_ellipse_vertical class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_ellipse_vertical(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 4 15" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
       >
       </path>
     </svg>
@@ -12785,6 +13519,34 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
+  Renders the `solid_label` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_label />
+  <Flowbite.Icons.solid_label class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_label(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "14", "fill" => "none", "viewbox" => "0 0 20 14" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M18.7 4.531 14.866.84A2.985 2.985 0 0 0 12.784 0H1.969A1.987 1.987 0 0 0 0 2v10a1.987 1.987 0 0 0 1.969 2h10.736a3.005 3.005 0 0 0 2.221-.983l3.912-4.309a3.023 3.023 0 0 0-.138-4.177Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
   Renders the `solid_landmark` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
@@ -12950,6 +13712,39 @@ defmodule Flowbite.Icons do
       <path
         fill="currentColor"
         d="M15.077.019a4.658 4.658 0 0 0-4.083 4.714V7H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1.006V4.68a2.624 2.624 0 0 1 2.271-2.67 2.5 2.5 0 0 1 2.729 2.49V8a1 1 0 0 0 2 0V4.5A4.505 4.505 0 0 0 15.077.019ZM9 15.167a1 1 0 1 1-2 0v-3a1 1 0 1 1 2 0v3Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_lock_time` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_lock_time />
+  <Flowbite.Icons.solid_lock_time class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_lock_time(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "19", "height" => "20", "fill" => "none", "viewbox" => "0 0 19 20" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="M8 14.5a6.474 6.474 0 0 1 8-6.318V8a1 1 0 0 0-1-1h-2.5V4.5a4.5 4.5 0 1 0-9 0V7H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9.052A6.494 6.494 0 0 1 8 14.5Zm-2.5-10a2.5 2.5 0 1 1 5 0V7h-5V4.5Z"
+      >
+      </path>
+      <path
+        fill="currentColor"
+        d="M14.5 10a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Zm2.06 6.561a1 1 0 0 1-1.414 0l-1.353-1.354a1 1 0 0 1-.293-.707v-1.858a1 1 0 0 1 2 0v1.444l1.06 1.06a1.001 1.001 0 0 1 0 1.415Z"
       >
       </path>
     </svg>
@@ -13185,6 +13980,34 @@ defmodule Flowbite.Icons do
       <path
         fill="currentColor"
         d="M12 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM7.5 17.5h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2ZM12 13H2V4h10v9Z"
+      >
+      </path>
+    </svg>
+    """
+  end
+
+  @doc """
+  Renders the `solid_mountain_sun` icon.
+
+  You may also pass arbitrary HTML attributes to be applied to the svg tag.
+
+  ## Examples
+
+  ```heex
+  <Flowbite.Icons.solid_mountain_sun />
+  <Flowbite.Icons.solid_mountain_sun class="w-4 h-4" />
+  ```
+  """
+  attr :rest, :global,
+    doc: "the arbitrary HTML attributes for the svg container",
+    include: ~w(fill stroke stroke-width)
+
+  def solid_mountain_sun(assigns) do
+    ~H"""
+    <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "18", "fill" => "none", "viewbox" => "0 0 20 18" }, @rest)}>
+      <path
+        fill="currentColor"
+        d="m19.847 16.343-4.4-7a1 1 0 0 0-1.6-.131l-2.164 2.448-3.812-6.775a1.028 1.028 0 0 0-.887-.51 1 1 0 0 0-.871.537l-6 11.5A1 1 0 0 0 1 17.875h18a1 1 0 0 0 .847-1.532ZM12.5 6.375a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
       >
       </path>
     </svg>
@@ -13473,22 +14296,22 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
-  Renders the `solid_printer` icon.
+  Renders the `solid_print` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
 
   ## Examples
 
   ```heex
-  <Flowbite.Icons.solid_printer />
-  <Flowbite.Icons.solid_printer class="w-4 h-4" />
+  <Flowbite.Icons.solid_print />
+  <Flowbite.Icons.solid_print class="w-4 h-4" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
 
-  def solid_printer(assigns) do
+  def solid_print(assigns) do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
       <g fill="currentColor">
@@ -14622,22 +15445,22 @@ defmodule Flowbite.Icons do
   end
 
   @doc """
-  Renders the `solid_video_camera` icon.
+  Renders the `solid_video` icon.
 
   You may also pass arbitrary HTML attributes to be applied to the svg tag.
 
   ## Examples
 
   ```heex
-  <Flowbite.Icons.solid_video_camera />
-  <Flowbite.Icons.solid_video_camera class="w-4 h-4" />
+  <Flowbite.Icons.solid_video />
+  <Flowbite.Icons.solid_video class="w-4 h-4" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
 
-  def solid_video_camera(assigns) do
+  def solid_video(assigns) do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 20 14" }, @rest)}>
       <path
