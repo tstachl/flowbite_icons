@@ -1,6 +1,6 @@
 defmodule Flowbite.Icons do
   @moduledoc """
-  Provides precompiled icon compiles from [github.com/themesberg/flowbite-icons main](https://github.com/themesberg/flowbite-icons).
+  Provides precompiled icon compiles from [flowbite.com/icons vmain](https://flowbite.com/icons/).
 
   Flowbite Icons are designed by [Evelyne Krall](https://twitter.com/EvelyneKrall) & [Robert Tanislav](https://twitter.com/roberttanislav) and interface coded by [Zoltán Szőgyényi](https://twitter.com/zoltanszogyenyi).
 
@@ -57,12 +57,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_angle_down />
-  <Flowbite.Icons.outline_angle_down class="w-4 h-4" />
+  <Flowbite.Icons.outline_angle_down class="w-4 h-4" sr="Icon of outline_angle_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Angle Down icon"
 
   def outline_angle_down(assigns) do
     ~H"""
@@ -76,6 +80,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -88,12 +93,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_angle_left />
-  <Flowbite.Icons.outline_angle_left class="w-4 h-4" />
+  <Flowbite.Icons.outline_angle_left class="w-4 h-4" sr="Icon of outline_angle_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Angle Left icon"
 
   def outline_angle_left(assigns) do
     ~H"""
@@ -107,6 +116,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -119,12 +129,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_angle_right />
-  <Flowbite.Icons.outline_angle_right class="w-4 h-4" />
+  <Flowbite.Icons.outline_angle_right class="w-4 h-4" sr="Icon of outline_angle_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Angle Right icon"
 
   def outline_angle_right(assigns) do
     ~H"""
@@ -138,6 +152,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -150,12 +165,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_angle_top />
-  <Flowbite.Icons.outline_angle_top class="w-4 h-4" />
+  <Flowbite.Icons.outline_angle_top class="w-4 h-4" sr="Icon of outline_angle_top" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Angle Top icon"
 
   def outline_angle_top(assigns) do
     ~H"""
@@ -169,6 +188,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -181,12 +201,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_down_to_bracket />
-  <Flowbite.Icons.outline_arrow_down_to_bracket class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_down_to_bracket class="w-4 h-4" sr="Icon of outline_arrow_down_to_bracket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Down To Bracket icon"
 
   def outline_arrow_down_to_bracket(assigns) do
     ~H"""
@@ -200,6 +224,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -212,12 +237,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_down />
-  <Flowbite.Icons.outline_arrow_down class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_down class="w-4 h-4" sr="Icon of outline_arrow_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Down icon"
 
   def outline_arrow_down(assigns) do
     ~H"""
@@ -231,6 +260,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -243,12 +273,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_left_to_bracket />
-  <Flowbite.Icons.outline_arrow_left_to_bracket class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_left_to_bracket class="w-4 h-4" sr="Icon of outline_arrow_left_to_bracket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Left To Bracket icon"
 
   def outline_arrow_left_to_bracket(assigns) do
     ~H"""
@@ -262,6 +296,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -274,12 +309,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_left />
-  <Flowbite.Icons.outline_arrow_left class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_left class="w-4 h-4" sr="Icon of outline_arrow_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Left icon"
 
   def outline_arrow_left(assigns) do
     ~H"""
@@ -293,6 +332,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -305,12 +345,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_right_arrow_left />
-  <Flowbite.Icons.outline_arrow_right_arrow_left class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_right_arrow_left class="w-4 h-4" sr="Icon of outline_arrow_right_arrow_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Right Arrow Left icon"
 
   def outline_arrow_right_arrow_left(assigns) do
     ~H"""
@@ -324,6 +368,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -336,12 +381,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_right_big />
-  <Flowbite.Icons.outline_arrow_right_big class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_right_big class="w-4 h-4" sr="Icon of outline_arrow_right_big" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Right Big icon"
 
   def outline_arrow_right_big(assigns) do
     ~H"""
@@ -355,6 +404,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -367,12 +417,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_right_to_bracket />
-  <Flowbite.Icons.outline_arrow_right_to_bracket class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_right_to_bracket class="w-4 h-4" sr="Icon of outline_arrow_right_to_bracket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Right To Bracket icon"
 
   def outline_arrow_right_to_bracket(assigns) do
     ~H"""
@@ -386,6 +440,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -398,12 +453,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_right />
-  <Flowbite.Icons.outline_arrow_right class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_right class="w-4 h-4" sr="Icon of outline_arrow_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Right icon"
 
   def outline_arrow_right(assigns) do
     ~H"""
@@ -417,6 +476,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -429,12 +489,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_sort_letters />
-  <Flowbite.Icons.outline_arrow_sort_letters class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_sort_letters class="w-4 h-4" sr="Icon of outline_arrow_sort_letters" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Sort Letters icon"
 
   def outline_arrow_sort_letters(assigns) do
     ~H"""
@@ -448,6 +512,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -460,12 +525,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_up_down />
-  <Flowbite.Icons.outline_arrow_up_down class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_up_down class="w-4 h-4" sr="Icon of outline_arrow_up_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Up Down icon"
 
   def outline_arrow_up_down(assigns) do
     ~H"""
@@ -479,6 +548,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -491,12 +561,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_up_from_bracket />
-  <Flowbite.Icons.outline_arrow_up_from_bracket class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_up_from_bracket class="w-4 h-4" sr="Icon of outline_arrow_up_from_bracket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Up From Bracket icon"
 
   def outline_arrow_up_from_bracket(assigns) do
     ~H"""
@@ -510,6 +584,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -522,12 +597,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_up_right_down_left />
-  <Flowbite.Icons.outline_arrow_up_right_down_left class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_up_right_down_left class="w-4 h-4" sr="Icon of outline_arrow_up_right_down_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Up Right Down Left icon"
 
   def outline_arrow_up_right_down_left(assigns) do
     ~H"""
@@ -541,6 +620,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -553,12 +633,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_up />
-  <Flowbite.Icons.outline_arrow_up class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_up class="w-4 h-4" sr="Icon of outline_arrow_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Up icon"
 
   def outline_arrow_up(assigns) do
     ~H"""
@@ -572,6 +656,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -584,12 +669,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrows_repeat_1 />
-  <Flowbite.Icons.outline_arrows_repeat_1 class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrows_repeat_1 class="w-4 h-4" sr="Icon of outline_arrows_repeat_1" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrows Repeat 1 icon"
 
   def outline_arrows_repeat_1(assigns) do
     ~H"""
@@ -603,6 +692,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -615,12 +705,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrows_repeat />
-  <Flowbite.Icons.outline_arrows_repeat class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrows_repeat class="w-4 h-4" sr="Icon of outline_arrows_repeat" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrows Repeat icon"
 
   def outline_arrows_repeat(assigns) do
     ~H"""
@@ -634,6 +728,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -646,12 +741,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_caret_down />
-  <Flowbite.Icons.outline_caret_down class="w-4 h-4" />
+  <Flowbite.Icons.outline_caret_down class="w-4 h-4" sr="Icon of outline_caret_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Caret Down icon"
 
   def outline_caret_down(assigns) do
     ~H"""
@@ -665,6 +764,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -677,12 +777,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_caret_left />
-  <Flowbite.Icons.outline_caret_left class="w-4 h-4" />
+  <Flowbite.Icons.outline_caret_left class="w-4 h-4" sr="Icon of outline_caret_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Caret Left icon"
 
   def outline_caret_left(assigns) do
     ~H"""
@@ -696,6 +800,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -708,12 +813,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_caret_right />
-  <Flowbite.Icons.outline_caret_right class="w-4 h-4" />
+  <Flowbite.Icons.outline_caret_right class="w-4 h-4" sr="Icon of outline_caret_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Caret Right icon"
 
   def outline_caret_right(assigns) do
     ~H"""
@@ -727,6 +836,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -739,12 +849,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_caret_sort />
-  <Flowbite.Icons.outline_caret_sort class="w-4 h-4" />
+  <Flowbite.Icons.outline_caret_sort class="w-4 h-4" sr="Icon of outline_caret_sort" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Caret Sort icon"
 
   def outline_caret_sort(assigns) do
     ~H"""
@@ -758,6 +872,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -770,12 +885,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_caret_up />
-  <Flowbite.Icons.outline_caret_up class="w-4 h-4" />
+  <Flowbite.Icons.outline_caret_up class="w-4 h-4" sr="Icon of outline_caret_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Caret Up icon"
 
   def outline_caret_up(assigns) do
     ~H"""
@@ -789,6 +908,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -801,12 +921,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_double_down />
-  <Flowbite.Icons.outline_chevron_double_down class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_double_down class="w-4 h-4" sr="Icon of outline_chevron_double_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Double Down icon"
 
   def outline_chevron_double_down(assigns) do
     ~H"""
@@ -820,6 +944,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -832,12 +957,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_double_left />
-  <Flowbite.Icons.outline_chevron_double_left class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_double_left class="w-4 h-4" sr="Icon of outline_chevron_double_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Double Left icon"
 
   def outline_chevron_double_left(assigns) do
     ~H"""
@@ -851,6 +980,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -863,12 +993,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_double_right />
-  <Flowbite.Icons.outline_chevron_double_right class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_double_right class="w-4 h-4" sr="Icon of outline_chevron_double_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Double Right icon"
 
   def outline_chevron_double_right(assigns) do
     ~H"""
@@ -882,6 +1016,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -894,12 +1029,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_double_up />
-  <Flowbite.Icons.outline_chevron_double_up class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_double_up class="w-4 h-4" sr="Icon of outline_chevron_double_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Double Up icon"
 
   def outline_chevron_double_up(assigns) do
     ~H"""
@@ -913,6 +1052,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -925,12 +1065,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_down />
-  <Flowbite.Icons.outline_chevron_down class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_down class="w-4 h-4" sr="Icon of outline_chevron_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Down icon"
 
   def outline_chevron_down(assigns) do
     ~H"""
@@ -944,6 +1088,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -956,12 +1101,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_left />
-  <Flowbite.Icons.outline_chevron_left class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_left class="w-4 h-4" sr="Icon of outline_chevron_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Left icon"
 
   def outline_chevron_left(assigns) do
     ~H"""
@@ -975,6 +1124,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -987,12 +1137,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_right />
-  <Flowbite.Icons.outline_chevron_right class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_right class="w-4 h-4" sr="Icon of outline_chevron_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Right icon"
 
   def outline_chevron_right(assigns) do
     ~H"""
@@ -1006,6 +1160,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1018,12 +1173,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_sort />
-  <Flowbite.Icons.outline_chevron_sort class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_sort class="w-4 h-4" sr="Icon of outline_chevron_sort" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Sort icon"
 
   def outline_chevron_sort(assigns) do
     ~H"""
@@ -1037,6 +1196,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1049,12 +1209,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chevron_up />
-  <Flowbite.Icons.outline_chevron_up class="w-4 h-4" />
+  <Flowbite.Icons.outline_chevron_up class="w-4 h-4" sr="Icon of outline_chevron_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chevron Up icon"
 
   def outline_chevron_up(assigns) do
     ~H"""
@@ -1068,6 +1232,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1080,12 +1245,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_compress />
-  <Flowbite.Icons.outline_compress class="w-4 h-4" />
+  <Flowbite.Icons.outline_compress class="w-4 h-4" sr="Icon of outline_compress" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Compress icon"
 
   def outline_compress(assigns) do
     ~H"""
@@ -1099,6 +1268,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1111,12 +1281,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_expand />
-  <Flowbite.Icons.outline_expand class="w-4 h-4" />
+  <Flowbite.Icons.outline_expand class="w-4 h-4" sr="Icon of outline_expand" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Expand icon"
 
   def outline_expand(assigns) do
     ~H"""
@@ -1130,6 +1304,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1142,12 +1317,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_forward />
-  <Flowbite.Icons.outline_forward class="w-4 h-4" />
+  <Flowbite.Icons.outline_forward class="w-4 h-4" sr="Icon of outline_forward" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Forward icon"
 
   def outline_forward(assigns) do
     ~H"""
@@ -1161,6 +1340,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1173,12 +1353,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_minimize />
-  <Flowbite.Icons.outline_minimize class="w-4 h-4" />
+  <Flowbite.Icons.outline_minimize class="w-4 h-4" sr="Icon of outline_minimize" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Minimize icon"
 
   def outline_minimize(assigns) do
     ~H"""
@@ -1192,6 +1376,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1204,12 +1389,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_redo />
-  <Flowbite.Icons.outline_redo class="w-4 h-4" />
+  <Flowbite.Icons.outline_redo class="w-4 h-4" sr="Icon of outline_redo" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Redo icon"
 
   def outline_redo(assigns) do
     ~H"""
@@ -1223,6 +1412,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1235,12 +1425,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_reply_all />
-  <Flowbite.Icons.outline_reply_all class="w-4 h-4" />
+  <Flowbite.Icons.outline_reply_all class="w-4 h-4" sr="Icon of outline_reply_all" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Reply All icon"
 
   def outline_reply_all(assigns) do
     ~H"""
@@ -1254,6 +1448,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1266,12 +1461,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_reply />
-  <Flowbite.Icons.outline_reply class="w-4 h-4" />
+  <Flowbite.Icons.outline_reply class="w-4 h-4" sr="Icon of outline_reply" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Reply icon"
 
   def outline_reply(assigns) do
     ~H"""
@@ -1285,6 +1484,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1297,12 +1497,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_rotate />
-  <Flowbite.Icons.outline_rotate class="w-4 h-4" />
+  <Flowbite.Icons.outline_rotate class="w-4 h-4" sr="Icon of outline_rotate" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Rotate icon"
 
   def outline_rotate(assigns) do
     ~H"""
@@ -1316,6 +1520,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1328,12 +1533,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_share_all />
-  <Flowbite.Icons.outline_share_all class="w-4 h-4" />
+  <Flowbite.Icons.outline_share_all class="w-4 h-4" sr="Icon of outline_share_all" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Share All icon"
 
   def outline_share_all(assigns) do
     ~H"""
@@ -1347,6 +1556,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1359,12 +1569,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_sort />
-  <Flowbite.Icons.outline_sort class="w-4 h-4" />
+  <Flowbite.Icons.outline_sort class="w-4 h-4" sr="Icon of outline_sort" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Sort icon"
 
   def outline_sort(assigns) do
     ~H"""
@@ -1378,6 +1592,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1390,12 +1605,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_undo />
-  <Flowbite.Icons.outline_undo class="w-4 h-4" />
+  <Flowbite.Icons.outline_undo class="w-4 h-4" sr="Icon of outline_undo" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Undo icon"
 
   def outline_undo(assigns) do
     ~H"""
@@ -1409,6 +1628,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1421,12 +1641,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_cart_plus_alt />
-  <Flowbite.Icons.outline_cart_plus_alt class="w-4 h-4" />
+  <Flowbite.Icons.outline_cart_plus_alt class="w-4 h-4" sr="Icon of outline_cart_plus_alt" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Cart Plus Alt icon"
 
   def outline_cart_plus_alt(assigns) do
     ~H"""
@@ -1440,6 +1664,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1452,12 +1677,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_cart_plus />
-  <Flowbite.Icons.outline_cart_plus class="w-4 h-4" />
+  <Flowbite.Icons.outline_cart_plus class="w-4 h-4" sr="Icon of outline_cart_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Cart Plus icon"
 
   def outline_cart_plus(assigns) do
     ~H"""
@@ -1471,6 +1700,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1483,12 +1713,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_cart />
-  <Flowbite.Icons.outline_cart class="w-4 h-4" />
+  <Flowbite.Icons.outline_cart class="w-4 h-4" sr="Icon of outline_cart" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Cart icon"
 
   def outline_cart(assigns) do
     ~H"""
@@ -1502,6 +1736,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1514,12 +1749,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_cash />
-  <Flowbite.Icons.outline_cash class="w-4 h-4" />
+  <Flowbite.Icons.outline_cash class="w-4 h-4" sr="Icon of outline_cash" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Cash icon"
 
   def outline_cash(assigns) do
     ~H"""
@@ -1533,6 +1772,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1545,12 +1785,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_credit_card />
-  <Flowbite.Icons.outline_credit_card class="w-4 h-4" />
+  <Flowbite.Icons.outline_credit_card class="w-4 h-4" sr="Icon of outline_credit_card" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Credit Card icon"
 
   def outline_credit_card(assigns) do
     ~H"""
@@ -1564,6 +1808,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1576,12 +1821,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_dollar />
-  <Flowbite.Icons.outline_dollar class="w-4 h-4" />
+  <Flowbite.Icons.outline_dollar class="w-4 h-4" sr="Icon of outline_dollar" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Dollar icon"
 
   def outline_dollar(assigns) do
     ~H"""
@@ -1595,6 +1844,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1607,12 +1857,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_euro />
-  <Flowbite.Icons.outline_euro class="w-4 h-4" />
+  <Flowbite.Icons.outline_euro class="w-4 h-4" sr="Icon of outline_euro" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Euro icon"
 
   def outline_euro(assigns) do
     ~H"""
@@ -1626,6 +1880,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1638,12 +1893,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_receipt />
-  <Flowbite.Icons.outline_receipt class="w-4 h-4" />
+  <Flowbite.Icons.outline_receipt class="w-4 h-4" sr="Icon of outline_receipt" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Receipt icon"
 
   def outline_receipt(assigns) do
     ~H"""
@@ -1657,6 +1916,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1669,12 +1929,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_sale_percent />
-  <Flowbite.Icons.outline_sale_percent class="w-4 h-4" />
+  <Flowbite.Icons.outline_sale_percent class="w-4 h-4" sr="Icon of outline_sale_percent" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Sale Percent icon"
 
   def outline_sale_percent(assigns) do
     ~H"""
@@ -1688,6 +1952,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1700,12 +1965,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_scale_balanced />
-  <Flowbite.Icons.outline_scale_balanced class="w-4 h-4" />
+  <Flowbite.Icons.outline_scale_balanced class="w-4 h-4" sr="Icon of outline_scale_balanced" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Scale Balanced icon"
 
   def outline_scale_balanced(assigns) do
     ~H"""
@@ -1719,6 +1988,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1731,12 +2001,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_shopping_bag />
-  <Flowbite.Icons.outline_shopping_bag class="w-4 h-4" />
+  <Flowbite.Icons.outline_shopping_bag class="w-4 h-4" sr="Icon of outline_shopping_bag" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Shopping Bag icon"
 
   def outline_shopping_bag(assigns) do
     ~H"""
@@ -1750,6 +2024,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1762,12 +2037,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_store />
-  <Flowbite.Icons.outline_store class="w-4 h-4" />
+  <Flowbite.Icons.outline_store class="w-4 h-4" sr="Icon of outline_store" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Store icon"
 
   def outline_store(assigns) do
     ~H"""
@@ -1779,6 +2058,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1791,12 +2071,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_tag />
-  <Flowbite.Icons.outline_tag class="w-4 h-4" />
+  <Flowbite.Icons.outline_tag class="w-4 h-4" sr="Icon of outline_tag" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Tag icon"
 
   def outline_tag(assigns) do
     ~H"""
@@ -1810,6 +2094,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1822,12 +2107,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_user_headset />
-  <Flowbite.Icons.outline_user_headset class="w-4 h-4" />
+  <Flowbite.Icons.outline_user_headset class="w-4 h-4" sr="Icon of outline_user_headset" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline User Headset icon"
 
   def outline_user_headset(assigns) do
     ~H"""
@@ -1841,6 +2130,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1853,12 +2143,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_wallet />
-  <Flowbite.Icons.outline_wallet class="w-4 h-4" />
+  <Flowbite.Icons.outline_wallet class="w-4 h-4" sr="Icon of outline_wallet" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Wallet icon"
 
   def outline_wallet(assigns) do
     ~H"""
@@ -1872,6 +2166,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1884,12 +2179,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_face_explode />
-  <Flowbite.Icons.outline_face_explode class="w-4 h-4" />
+  <Flowbite.Icons.outline_face_explode class="w-4 h-4" sr="Icon of outline_face_explode" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Face Explode icon"
 
   def outline_face_explode(assigns) do
     ~H"""
@@ -1900,6 +2199,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1912,12 +2212,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_face_grin_stars />
-  <Flowbite.Icons.outline_face_grin_stars class="w-4 h-4" />
+  <Flowbite.Icons.outline_face_grin_stars class="w-4 h-4" sr="Icon of outline_face_grin_stars" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Face Grin Stars icon"
 
   def outline_face_grin_stars(assigns) do
     ~H"""
@@ -1928,6 +2232,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1940,12 +2245,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_face_grin />
-  <Flowbite.Icons.outline_face_grin class="w-4 h-4" />
+  <Flowbite.Icons.outline_face_grin class="w-4 h-4" sr="Icon of outline_face_grin" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Face Grin icon"
 
   def outline_face_grin(assigns) do
     ~H"""
@@ -1956,6 +2265,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1968,12 +2278,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_face_laugh />
-  <Flowbite.Icons.outline_face_laugh class="w-4 h-4" />
+  <Flowbite.Icons.outline_face_laugh class="w-4 h-4" sr="Icon of outline_face_laugh" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Face Laugh icon"
 
   def outline_face_laugh(assigns) do
     ~H"""
@@ -1987,6 +2301,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -1999,12 +2314,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_thumbs_down />
-  <Flowbite.Icons.outline_thumbs_down class="w-4 h-4" />
+  <Flowbite.Icons.outline_thumbs_down class="w-4 h-4" sr="Icon of outline_thumbs_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Thumbs Down icon"
 
   def outline_thumbs_down(assigns) do
     ~H"""
@@ -2018,6 +2337,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2030,12 +2350,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_thumbs_up />
-  <Flowbite.Icons.outline_thumbs_up class="w-4 h-4" />
+  <Flowbite.Icons.outline_thumbs_up class="w-4 h-4" sr="Icon of outline_thumbs_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Thumbs Up icon"
 
   def outline_thumbs_up(assigns) do
     ~H"""
@@ -2049,6 +2373,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2061,12 +2386,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_archive_download />
-  <Flowbite.Icons.outline_archive_download class="w-4 h-4" />
+  <Flowbite.Icons.outline_archive_download class="w-4 h-4" sr="Icon of outline_archive_download" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Archive Download icon"
 
   def outline_archive_download(assigns) do
     ~H"""
@@ -2080,6 +2409,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2092,12 +2422,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_clipboard_check />
-  <Flowbite.Icons.outline_clipboard_check class="w-4 h-4" />
+  <Flowbite.Icons.outline_clipboard_check class="w-4 h-4" sr="Icon of outline_clipboard_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Clipboard Check icon"
 
   def outline_clipboard_check(assigns) do
     ~H"""
@@ -2111,6 +2445,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2123,12 +2458,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_clipboard_list />
-  <Flowbite.Icons.outline_clipboard_list class="w-4 h-4" />
+  <Flowbite.Icons.outline_clipboard_list class="w-4 h-4" sr="Icon of outline_clipboard_list" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Clipboard List icon"
 
   def outline_clipboard_list(assigns) do
     ~H"""
@@ -2140,6 +2479,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2152,12 +2492,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_clipboard />
-  <Flowbite.Icons.outline_clipboard class="w-4 h-4" />
+  <Flowbite.Icons.outline_clipboard class="w-4 h-4" sr="Icon of outline_clipboard" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Clipboard icon"
 
   def outline_clipboard(assigns) do
     ~H"""
@@ -2171,6 +2515,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2183,12 +2528,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_chart_bar />
-  <Flowbite.Icons.outline_file_chart_bar class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_chart_bar class="w-4 h-4" sr="Icon of outline_file_chart_bar" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Chart Bar icon"
 
   def outline_file_chart_bar(assigns) do
     ~H"""
@@ -2202,6 +2551,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2214,12 +2564,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_check />
-  <Flowbite.Icons.outline_file_check class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_check class="w-4 h-4" sr="Icon of outline_file_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Check icon"
 
   def outline_file_check(assigns) do
     ~H"""
@@ -2233,6 +2587,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2245,12 +2600,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_circle_plus />
-  <Flowbite.Icons.outline_file_circle_plus class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_circle_plus class="w-4 h-4" sr="Icon of outline_file_circle_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Circle Plus icon"
 
   def outline_file_circle_plus(assigns) do
     ~H"""
@@ -2264,6 +2623,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2276,12 +2636,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_clone />
-  <Flowbite.Icons.outline_file_clone class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_clone class="w-4 h-4" sr="Icon of outline_file_clone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Clone icon"
 
   def outline_file_clone(assigns) do
     ~H"""
@@ -2295,6 +2659,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2307,12 +2672,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_code />
-  <Flowbite.Icons.outline_file_code class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_code class="w-4 h-4" sr="Icon of outline_file_code" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Code icon"
 
   def outline_file_code(assigns) do
     ~H"""
@@ -2326,6 +2695,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2338,12 +2708,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_copy />
-  <Flowbite.Icons.outline_file_copy class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_copy class="w-4 h-4" sr="Icon of outline_file_copy" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Copy icon"
 
   def outline_file_copy(assigns) do
     ~H"""
@@ -2357,6 +2731,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2369,12 +2744,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_csv />
-  <Flowbite.Icons.outline_file_csv class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_csv class="w-4 h-4" sr="Icon of outline_file_csv" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Csv icon"
 
   def outline_file_csv(assigns) do
     ~H"""
@@ -2388,6 +2767,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2400,12 +2780,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_export />
-  <Flowbite.Icons.outline_file_export class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_export class="w-4 h-4" sr="Icon of outline_file_export" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Export icon"
 
   def outline_file_export(assigns) do
     ~H"""
@@ -2419,6 +2803,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2431,12 +2816,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_image />
-  <Flowbite.Icons.outline_file_image class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_image class="w-4 h-4" sr="Icon of outline_file_image" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Image icon"
 
   def outline_file_image(assigns) do
     ~H"""
@@ -2455,6 +2844,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2467,12 +2857,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_import />
-  <Flowbite.Icons.outline_file_import class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_import class="w-4 h-4" sr="Icon of outline_file_import" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Import icon"
 
   def outline_file_import(assigns) do
     ~H"""
@@ -2486,6 +2880,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2498,12 +2893,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_invoice />
-  <Flowbite.Icons.outline_file_invoice class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_invoice class="w-4 h-4" sr="Icon of outline_file_invoice" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Invoice icon"
 
   def outline_file_invoice(assigns) do
     ~H"""
@@ -2517,6 +2916,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2529,12 +2929,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_lines />
-  <Flowbite.Icons.outline_file_lines class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_lines class="w-4 h-4" sr="Icon of outline_file_lines" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Lines icon"
 
   def outline_file_lines(assigns) do
     ~H"""
@@ -2548,6 +2952,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2560,12 +2965,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_music />
-  <Flowbite.Icons.outline_file_music class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_music class="w-4 h-4" sr="Icon of outline_file_music" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Music icon"
 
   def outline_file_music(assigns) do
     ~H"""
@@ -2579,6 +2988,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2591,12 +3001,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_paste />
-  <Flowbite.Icons.outline_file_paste class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_paste class="w-4 h-4" sr="Icon of outline_file_paste" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Paste icon"
 
   def outline_file_paste(assigns) do
     ~H"""
@@ -2610,6 +3024,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2622,12 +3037,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_pdf />
-  <Flowbite.Icons.outline_file_pdf class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_pdf class="w-4 h-4" sr="Icon of outline_file_pdf" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Pdf icon"
 
   def outline_file_pdf(assigns) do
     ~H"""
@@ -2641,6 +3060,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2653,12 +3073,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_pen />
-  <Flowbite.Icons.outline_file_pen class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_pen class="w-4 h-4" sr="Icon of outline_file_pen" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Pen icon"
 
   def outline_file_pen(assigns) do
     ~H"""
@@ -2672,6 +3096,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2684,12 +3109,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_ppt />
-  <Flowbite.Icons.outline_file_ppt class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_ppt class="w-4 h-4" sr="Icon of outline_file_ppt" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Ppt icon"
 
   def outline_file_ppt(assigns) do
     ~H"""
@@ -2703,6 +3132,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2715,12 +3145,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_search />
-  <Flowbite.Icons.outline_file_search class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_search class="w-4 h-4" sr="Icon of outline_file_search" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Search icon"
 
   def outline_file_search(assigns) do
     ~H"""
@@ -2734,6 +3168,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2746,12 +3181,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_shield />
-  <Flowbite.Icons.outline_file_shield class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_shield class="w-4 h-4" sr="Icon of outline_file_shield" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Shield icon"
 
   def outline_file_shield(assigns) do
     ~H"""
@@ -2765,6 +3204,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2777,12 +3217,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_video />
-  <Flowbite.Icons.outline_file_video class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_video class="w-4 h-4" sr="Icon of outline_file_video" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Video icon"
 
   def outline_file_video(assigns) do
     ~H"""
@@ -2796,6 +3240,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2808,12 +3253,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_word />
-  <Flowbite.Icons.outline_file_word class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_word class="w-4 h-4" sr="Icon of outline_file_word" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Word icon"
 
   def outline_file_word(assigns) do
     ~H"""
@@ -2827,6 +3276,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2839,12 +3289,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file_zip />
-  <Flowbite.Icons.outline_file_zip class="w-4 h-4" />
+  <Flowbite.Icons.outline_file_zip class="w-4 h-4" sr="Icon of outline_file_zip" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File Zip icon"
 
   def outline_file_zip(assigns) do
     ~H"""
@@ -2855,6 +3309,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2867,12 +3322,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_file />
-  <Flowbite.Icons.outline_file class="w-4 h-4" />
+  <Flowbite.Icons.outline_file class="w-4 h-4" sr="Icon of outline_file" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline File icon"
 
   def outline_file(assigns) do
     ~H"""
@@ -2885,6 +3344,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2897,12 +3357,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_folder_arrow_right />
-  <Flowbite.Icons.outline_folder_arrow_right class="w-4 h-4" />
+  <Flowbite.Icons.outline_folder_arrow_right class="w-4 h-4" sr="Icon of outline_folder_arrow_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Folder Arrow Right icon"
 
   def outline_folder_arrow_right(assigns) do
     ~H"""
@@ -2916,6 +3380,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2928,12 +3393,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_folder_duplicate />
-  <Flowbite.Icons.outline_folder_duplicate class="w-4 h-4" />
+  <Flowbite.Icons.outline_folder_duplicate class="w-4 h-4" sr="Icon of outline_folder_duplicate" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Folder Duplicate icon"
 
   def outline_folder_duplicate(assigns) do
     ~H"""
@@ -2946,6 +3415,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2958,12 +3428,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_folder_open />
-  <Flowbite.Icons.outline_folder_open class="w-4 h-4" />
+  <Flowbite.Icons.outline_folder_open class="w-4 h-4" sr="Icon of outline_folder_open" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Folder Open icon"
 
   def outline_folder_open(assigns) do
     ~H"""
@@ -2977,6 +3451,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -2989,12 +3464,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_folder_plus />
-  <Flowbite.Icons.outline_folder_plus class="w-4 h-4" />
+  <Flowbite.Icons.outline_folder_plus class="w-4 h-4" sr="Icon of outline_folder_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Folder Plus icon"
 
   def outline_folder_plus(assigns) do
     ~H"""
@@ -3008,6 +3487,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3020,12 +3500,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_folder />
-  <Flowbite.Icons.outline_folder class="w-4 h-4" />
+  <Flowbite.Icons.outline_folder class="w-4 h-4" sr="Icon of outline_folder" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Folder icon"
 
   def outline_folder(assigns) do
     ~H"""
@@ -3039,6 +3523,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3051,12 +3536,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_adjustments_horizontal />
-  <Flowbite.Icons.outline_adjustments_horizontal class="w-4 h-4" />
+  <Flowbite.Icons.outline_adjustments_horizontal class="w-4 h-4" sr="Icon of outline_adjustments_horizontal" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Adjustments Horizontal icon"
 
   def outline_adjustments_horizontal(assigns) do
     ~H"""
@@ -3070,6 +3559,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3082,12 +3572,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_adjustments_vertical />
-  <Flowbite.Icons.outline_adjustments_vertical class="w-4 h-4" />
+  <Flowbite.Icons.outline_adjustments_vertical class="w-4 h-4" sr="Icon of outline_adjustments_vertical" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Adjustments Vertical icon"
 
   def outline_adjustments_vertical(assigns) do
     ~H"""
@@ -3101,6 +3595,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3113,12 +3608,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_annotation />
-  <Flowbite.Icons.outline_annotation class="w-4 h-4" />
+  <Flowbite.Icons.outline_annotation class="w-4 h-4" sr="Icon of outline_annotation" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Annotation icon"
 
   def outline_annotation(assigns) do
     ~H"""
@@ -3132,6 +3631,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3144,12 +3644,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_archive />
-  <Flowbite.Icons.outline_archive class="w-4 h-4" />
+  <Flowbite.Icons.outline_archive class="w-4 h-4" sr="Icon of outline_archive" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Archive icon"
 
   def outline_archive(assigns) do
     ~H"""
@@ -3162,6 +3666,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3174,12 +3679,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_arrow_up_right_from_square />
-  <Flowbite.Icons.outline_arrow_up_right_from_square class="w-4 h-4" />
+  <Flowbite.Icons.outline_arrow_up_right_from_square class="w-4 h-4" sr="Icon of outline_arrow_up_right_from_square" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Arrow Up Right From Square icon"
 
   def outline_arrow_up_right_from_square(assigns) do
     ~H"""
@@ -3193,6 +3702,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3205,12 +3715,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_atom />
-  <Flowbite.Icons.outline_atom class="w-4 h-4" />
+  <Flowbite.Icons.outline_atom class="w-4 h-4" sr="Icon of outline_atom" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Atom icon"
 
   def outline_atom(assigns) do
     ~H"""
@@ -3223,6 +3737,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3235,12 +3750,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_badge_check />
-  <Flowbite.Icons.outline_badge_check class="w-4 h-4" />
+  <Flowbite.Icons.outline_badge_check class="w-4 h-4" sr="Icon of outline_badge_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Badge Check icon"
 
   def outline_badge_check(assigns) do
     ~H"""
@@ -3254,6 +3773,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3266,12 +3786,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_bars />
-  <Flowbite.Icons.outline_bars class="w-4 h-4" />
+  <Flowbite.Icons.outline_bars class="w-4 h-4" sr="Icon of outline_bars" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Bars icon"
 
   def outline_bars(assigns) do
     ~H"""
@@ -3285,6 +3809,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3297,12 +3822,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_bell_active_alt />
-  <Flowbite.Icons.outline_bell_active_alt class="w-4 h-4" />
+  <Flowbite.Icons.outline_bell_active_alt class="w-4 h-4" sr="Icon of outline_bell_active_alt" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Bell Active Alt icon"
 
   def outline_bell_active_alt(assigns) do
     ~H"""
@@ -3316,6 +3845,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3328,12 +3858,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_bell_active />
-  <Flowbite.Icons.outline_bell_active class="w-4 h-4" />
+  <Flowbite.Icons.outline_bell_active class="w-4 h-4" sr="Icon of outline_bell_active" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Bell Active icon"
 
   def outline_bell_active(assigns) do
     ~H"""
@@ -3347,6 +3881,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3359,12 +3894,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_bell_ring />
-  <Flowbite.Icons.outline_bell_ring class="w-4 h-4" />
+  <Flowbite.Icons.outline_bell_ring class="w-4 h-4" sr="Icon of outline_bell_ring" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Bell Ring icon"
 
   def outline_bell_ring(assigns) do
     ~H"""
@@ -3378,6 +3917,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3390,12 +3930,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_bell />
-  <Flowbite.Icons.outline_bell class="w-4 h-4" />
+  <Flowbite.Icons.outline_bell class="w-4 h-4" sr="Icon of outline_bell" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Bell icon"
 
   def outline_bell(assigns) do
     ~H"""
@@ -3409,6 +3953,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3421,12 +3966,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_blender_phone />
-  <Flowbite.Icons.outline_blender_phone class="w-4 h-4" />
+  <Flowbite.Icons.outline_blender_phone class="w-4 h-4" sr="Icon of outline_blender_phone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Blender Phone icon"
 
   def outline_blender_phone(assigns) do
     ~H"""
@@ -3440,6 +3989,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3452,12 +4002,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_book_open />
-  <Flowbite.Icons.outline_book_open class="w-4 h-4" />
+  <Flowbite.Icons.outline_book_open class="w-4 h-4" sr="Icon of outline_book_open" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Book Open icon"
 
   def outline_book_open(assigns) do
     ~H"""
@@ -3471,6 +4025,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3483,12 +4038,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_book />
-  <Flowbite.Icons.outline_book class="w-4 h-4" />
+  <Flowbite.Icons.outline_book class="w-4 h-4" sr="Icon of outline_book" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Book icon"
 
   def outline_book(assigns) do
     ~H"""
@@ -3502,6 +4061,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3514,12 +4074,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_bookmark />
-  <Flowbite.Icons.outline_bookmark class="w-4 h-4" />
+  <Flowbite.Icons.outline_bookmark class="w-4 h-4" sr="Icon of outline_bookmark" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Bookmark icon"
 
   def outline_bookmark(assigns) do
     ~H"""
@@ -3533,6 +4097,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3545,12 +4110,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_brain />
-  <Flowbite.Icons.outline_brain class="w-4 h-4" />
+  <Flowbite.Icons.outline_brain class="w-4 h-4" sr="Icon of outline_brain" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Brain icon"
 
   def outline_brain(assigns) do
     ~H"""
@@ -3564,6 +4133,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3576,12 +4146,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_briefcase />
-  <Flowbite.Icons.outline_briefcase class="w-4 h-4" />
+  <Flowbite.Icons.outline_briefcase class="w-4 h-4" sr="Icon of outline_briefcase" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Briefcase icon"
 
   def outline_briefcase(assigns) do
     ~H"""
@@ -3592,6 +4166,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3604,12 +4179,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_bug />
-  <Flowbite.Icons.outline_bug class="w-4 h-4" />
+  <Flowbite.Icons.outline_bug class="w-4 h-4" sr="Icon of outline_bug" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Bug icon"
 
   def outline_bug(assigns) do
     ~H"""
@@ -3623,6 +4202,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3635,12 +4215,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_building />
-  <Flowbite.Icons.outline_building class="w-4 h-4" />
+  <Flowbite.Icons.outline_building class="w-4 h-4" sr="Icon of outline_building" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Building icon"
 
   def outline_building(assigns) do
     ~H"""
@@ -3654,6 +4238,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3666,12 +4251,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_bullhorn />
-  <Flowbite.Icons.outline_bullhorn class="w-4 h-4" />
+  <Flowbite.Icons.outline_bullhorn class="w-4 h-4" sr="Icon of outline_bullhorn" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Bullhorn icon"
 
   def outline_bullhorn(assigns) do
     ~H"""
@@ -3685,6 +4274,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3697,12 +4287,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_calendar_edit />
-  <Flowbite.Icons.outline_calendar_edit class="w-4 h-4" />
+  <Flowbite.Icons.outline_calendar_edit class="w-4 h-4" sr="Icon of outline_calendar_edit" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Calendar Edit icon"
 
   def outline_calendar_edit(assigns) do
     ~H"""
@@ -3716,6 +4310,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3728,12 +4323,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_calendar_month />
-  <Flowbite.Icons.outline_calendar_month class="w-4 h-4" />
+  <Flowbite.Icons.outline_calendar_month class="w-4 h-4" sr="Icon of outline_calendar_month" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Calendar Month icon"
 
   def outline_calendar_month(assigns) do
     ~H"""
@@ -3744,6 +4343,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3756,12 +4356,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_calendar_week />
-  <Flowbite.Icons.outline_calendar_week class="w-4 h-4" />
+  <Flowbite.Icons.outline_calendar_week class="w-4 h-4" sr="Icon of outline_calendar_week" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Calendar Week icon"
 
   def outline_calendar_week(assigns) do
     ~H"""
@@ -3775,6 +4379,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3787,12 +4392,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chart_bars_3_from_left />
-  <Flowbite.Icons.outline_chart_bars_3_from_left class="w-4 h-4" />
+  <Flowbite.Icons.outline_chart_bars_3_from_left class="w-4 h-4" sr="Icon of outline_chart_bars_3_from_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chart Bars 3 From Left icon"
 
   def outline_chart_bars_3_from_left(assigns) do
     ~H"""
@@ -3806,6 +4415,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3818,12 +4428,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chart_line_up />
-  <Flowbite.Icons.outline_chart_line_up class="w-4 h-4" />
+  <Flowbite.Icons.outline_chart_line_up class="w-4 h-4" sr="Icon of outline_chart_line_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chart Line Up icon"
 
   def outline_chart_line_up(assigns) do
     ~H"""
@@ -3837,6 +4451,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3849,12 +4464,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chart_mixed_dollar />
-  <Flowbite.Icons.outline_chart_mixed_dollar class="w-4 h-4" />
+  <Flowbite.Icons.outline_chart_mixed_dollar class="w-4 h-4" sr="Icon of outline_chart_mixed_dollar" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chart Mixed Dollar icon"
 
   def outline_chart_mixed_dollar(assigns) do
     ~H"""
@@ -3868,6 +4487,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3880,12 +4500,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chart_mixed />
-  <Flowbite.Icons.outline_chart_mixed class="w-4 h-4" />
+  <Flowbite.Icons.outline_chart_mixed class="w-4 h-4" sr="Icon of outline_chart_mixed" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chart Mixed icon"
 
   def outline_chart_mixed(assigns) do
     ~H"""
@@ -3899,6 +4523,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3911,12 +4536,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chart_pie />
-  <Flowbite.Icons.outline_chart_pie class="w-4 h-4" />
+  <Flowbite.Icons.outline_chart_pie class="w-4 h-4" sr="Icon of outline_chart_pie" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chart Pie icon"
 
   def outline_chart_pie(assigns) do
     ~H"""
@@ -3927,6 +4556,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3939,12 +4569,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_chart />
-  <Flowbite.Icons.outline_chart class="w-4 h-4" />
+  <Flowbite.Icons.outline_chart class="w-4 h-4" sr="Icon of outline_chart" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Chart icon"
 
   def outline_chart(assigns) do
     ~H"""
@@ -3958,6 +4592,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -3970,12 +4605,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_check_circle />
-  <Flowbite.Icons.outline_check_circle class="w-4 h-4" />
+  <Flowbite.Icons.outline_check_circle class="w-4 h-4" sr="Icon of outline_check_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Check Circle icon"
 
   def outline_check_circle(assigns) do
     ~H"""
@@ -3989,6 +4628,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4001,12 +4641,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_check_plus_circle />
-  <Flowbite.Icons.outline_check_plus_circle class="w-4 h-4" />
+  <Flowbite.Icons.outline_check_plus_circle class="w-4 h-4" sr="Icon of outline_check_plus_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Check Plus Circle icon"
 
   def outline_check_plus_circle(assigns) do
     ~H"""
@@ -4020,6 +4664,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4032,12 +4677,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_check />
-  <Flowbite.Icons.outline_check class="w-4 h-4" />
+  <Flowbite.Icons.outline_check class="w-4 h-4" sr="Icon of outline_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Check icon"
 
   def outline_check(assigns) do
     ~H"""
@@ -4051,6 +4700,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4063,12 +4713,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_circle_plus />
-  <Flowbite.Icons.outline_circle_plus class="w-4 h-4" />
+  <Flowbite.Icons.outline_circle_plus class="w-4 h-4" sr="Icon of outline_circle_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Circle Plus icon"
 
   def outline_circle_plus(assigns) do
     ~H"""
@@ -4082,6 +4736,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4094,12 +4749,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_clock />
-  <Flowbite.Icons.outline_clock class="w-4 h-4" />
+  <Flowbite.Icons.outline_clock class="w-4 h-4" sr="Icon of outline_clock" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Clock icon"
 
   def outline_clock(assigns) do
     ~H"""
@@ -4112,6 +4771,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4124,12 +4784,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_close />
-  <Flowbite.Icons.outline_close class="w-4 h-4" />
+  <Flowbite.Icons.outline_close class="w-4 h-4" sr="Icon of outline_close" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Close icon"
 
   def outline_close(assigns) do
     ~H"""
@@ -4143,6 +4807,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4155,12 +4820,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_cloud_arrow_up />
-  <Flowbite.Icons.outline_cloud_arrow_up class="w-4 h-4" />
+  <Flowbite.Icons.outline_cloud_arrow_up class="w-4 h-4" sr="Icon of outline_cloud_arrow_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Cloud Arrow Up icon"
 
   def outline_cloud_arrow_up(assigns) do
     ~H"""
@@ -4174,6 +4843,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4186,12 +4856,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_code_branch />
-  <Flowbite.Icons.outline_code_branch class="w-4 h-4" />
+  <Flowbite.Icons.outline_code_branch class="w-4 h-4" sr="Icon of outline_code_branch" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Code Branch icon"
 
   def outline_code_branch(assigns) do
     ~H"""
@@ -4205,6 +4879,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4217,12 +4892,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_code_fork />
-  <Flowbite.Icons.outline_code_fork class="w-4 h-4" />
+  <Flowbite.Icons.outline_code_fork class="w-4 h-4" sr="Icon of outline_code_fork" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Code Fork icon"
 
   def outline_code_fork(assigns) do
     ~H"""
@@ -4236,6 +4915,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4248,12 +4928,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_code_merge />
-  <Flowbite.Icons.outline_code_merge class="w-4 h-4" />
+  <Flowbite.Icons.outline_code_merge class="w-4 h-4" sr="Icon of outline_code_merge" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Code Merge icon"
 
   def outline_code_merge(assigns) do
     ~H"""
@@ -4267,6 +4951,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4279,12 +4964,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_code_pull_request />
-  <Flowbite.Icons.outline_code_pull_request class="w-4 h-4" />
+  <Flowbite.Icons.outline_code_pull_request class="w-4 h-4" sr="Icon of outline_code_pull_request" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Code Pull Request icon"
 
   def outline_code_pull_request(assigns) do
     ~H"""
@@ -4298,6 +4987,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4310,12 +5000,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_code />
-  <Flowbite.Icons.outline_code class="w-4 h-4" />
+  <Flowbite.Icons.outline_code class="w-4 h-4" sr="Icon of outline_code" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Code icon"
 
   def outline_code(assigns) do
     ~H"""
@@ -4329,6 +5023,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4341,12 +5036,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_cog />
-  <Flowbite.Icons.outline_cog class="w-4 h-4" />
+  <Flowbite.Icons.outline_cog class="w-4 h-4" sr="Icon of outline_cog" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Cog icon"
 
   def outline_cog(assigns) do
     ~H"""
@@ -4357,6 +5056,7 @@ defmodule Flowbite.Icons do
         <path d="M10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4369,12 +5069,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_column />
-  <Flowbite.Icons.outline_column class="w-4 h-4" />
+  <Flowbite.Icons.outline_column class="w-4 h-4" sr="Icon of outline_column" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Column icon"
 
   def outline_column(assigns) do
     ~H"""
@@ -4388,6 +5092,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4400,12 +5105,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_command />
-  <Flowbite.Icons.outline_command class="w-4 h-4" />
+  <Flowbite.Icons.outline_command class="w-4 h-4" sr="Icon of outline_command" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Command icon"
 
   def outline_command(assigns) do
     ~H"""
@@ -4419,6 +5128,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4431,12 +5141,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_database />
-  <Flowbite.Icons.outline_database class="w-4 h-4" />
+  <Flowbite.Icons.outline_database class="w-4 h-4" sr="Icon of outline_database" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Database icon"
 
   def outline_database(assigns) do
     ~H"""
@@ -4450,6 +5164,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4462,12 +5177,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_desktop_pc />
-  <Flowbite.Icons.outline_desktop_pc class="w-4 h-4" />
+  <Flowbite.Icons.outline_desktop_pc class="w-4 h-4" sr="Icon of outline_desktop_pc" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Desktop Pc icon"
 
   def outline_desktop_pc(assigns) do
     ~H"""
@@ -4481,6 +5200,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4493,12 +5213,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_dna />
-  <Flowbite.Icons.outline_dna class="w-4 h-4" />
+  <Flowbite.Icons.outline_dna class="w-4 h-4" sr="Icon of outline_dna" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Dna icon"
 
   def outline_dna(assigns) do
     ~H"""
@@ -4512,6 +5236,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4524,12 +5249,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_dots_horizontal />
-  <Flowbite.Icons.outline_dots_horizontal class="w-4 h-4" />
+  <Flowbite.Icons.outline_dots_horizontal class="w-4 h-4" sr="Icon of outline_dots_horizontal" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Dots Horizontal icon"
 
   def outline_dots_horizontal(assigns) do
     ~H"""
@@ -4542,6 +5271,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4554,12 +5284,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_dots_vertical />
-  <Flowbite.Icons.outline_dots_vertical class="w-4 h-4" />
+  <Flowbite.Icons.outline_dots_vertical class="w-4 h-4" sr="Icon of outline_dots_vertical" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Dots Vertical icon"
 
   def outline_dots_vertical(assigns) do
     ~H"""
@@ -4572,6 +5306,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4584,12 +5319,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_download />
-  <Flowbite.Icons.outline_download class="w-4 h-4" />
+  <Flowbite.Icons.outline_download class="w-4 h-4" sr="Icon of outline_download" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Download icon"
 
   def outline_download(assigns) do
     ~H"""
@@ -4603,6 +5342,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4615,12 +5355,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_draw_square />
-  <Flowbite.Icons.outline_draw_square class="w-4 h-4" />
+  <Flowbite.Icons.outline_draw_square class="w-4 h-4" sr="Icon of outline_draw_square" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Draw Square icon"
 
   def outline_draw_square(assigns) do
     ~H"""
@@ -4634,6 +5378,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4646,12 +5391,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_edit />
-  <Flowbite.Icons.outline_edit class="w-4 h-4" />
+  <Flowbite.Icons.outline_edit class="w-4 h-4" sr="Icon of outline_edit" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Edit icon"
 
   def outline_edit(assigns) do
     ~H"""
@@ -4665,6 +5414,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4677,12 +5427,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_envelope_open />
-  <Flowbite.Icons.outline_envelope_open class="w-4 h-4" />
+  <Flowbite.Icons.outline_envelope_open class="w-4 h-4" sr="Icon of outline_envelope_open" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Envelope Open icon"
 
   def outline_envelope_open(assigns) do
     ~H"""
@@ -4696,6 +5450,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4708,12 +5463,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_envelope />
-  <Flowbite.Icons.outline_envelope class="w-4 h-4" />
+  <Flowbite.Icons.outline_envelope class="w-4 h-4" sr="Icon of outline_envelope" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Envelope icon"
 
   def outline_envelope(assigns) do
     ~H"""
@@ -4727,6 +5486,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4739,12 +5499,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_exclamation_circle />
-  <Flowbite.Icons.outline_exclamation_circle class="w-4 h-4" />
+  <Flowbite.Icons.outline_exclamation_circle class="w-4 h-4" sr="Icon of outline_exclamation_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Exclamation Circle icon"
 
   def outline_exclamation_circle(assigns) do
     ~H"""
@@ -4758,6 +5522,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4770,12 +5535,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_eye_slash />
-  <Flowbite.Icons.outline_eye_slash class="w-4 h-4" />
+  <Flowbite.Icons.outline_eye_slash class="w-4 h-4" sr="Icon of outline_eye_slash" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Eye Slash icon"
 
   def outline_eye_slash(assigns) do
     ~H"""
@@ -4789,6 +5558,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4801,12 +5571,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_eye />
-  <Flowbite.Icons.outline_eye class="w-4 h-4" />
+  <Flowbite.Icons.outline_eye class="w-4 h-4" sr="Icon of outline_eye" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Eye icon"
 
   def outline_eye(assigns) do
     ~H"""
@@ -4816,6 +5590,7 @@ defmodule Flowbite.Icons do
         <path d="M10 13c4.97 0 9-2.686 9-6s-4.03-6-9-6-9 2.686-9 6 4.03 6 9 6Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4828,12 +5603,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_filter />
-  <Flowbite.Icons.outline_filter class="w-4 h-4" />
+  <Flowbite.Icons.outline_filter class="w-4 h-4" sr="Icon of outline_filter" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Filter icon"
 
   def outline_filter(assigns) do
     ~H"""
@@ -4847,6 +5626,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4859,12 +5639,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_fingerprint />
-  <Flowbite.Icons.outline_fingerprint class="w-4 h-4" />
+  <Flowbite.Icons.outline_fingerprint class="w-4 h-4" sr="Icon of outline_fingerprint" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Fingerprint icon"
 
   def outline_fingerprint(assigns) do
     ~H"""
@@ -4878,6 +5662,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4890,12 +5675,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_fire />
-  <Flowbite.Icons.outline_fire class="w-4 h-4" />
+  <Flowbite.Icons.outline_fire class="w-4 h-4" sr="Icon of outline_fire" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Fire icon"
 
   def outline_fire(assigns) do
     ~H"""
@@ -4909,6 +5698,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4921,12 +5711,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_flag />
-  <Flowbite.Icons.outline_flag class="w-4 h-4" />
+  <Flowbite.Icons.outline_flag class="w-4 h-4" sr="Icon of outline_flag" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Flag icon"
 
   def outline_flag(assigns) do
     ~H"""
@@ -4940,6 +5734,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4952,12 +5747,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_gift_box />
-  <Flowbite.Icons.outline_gift_box class="w-4 h-4" />
+  <Flowbite.Icons.outline_gift_box class="w-4 h-4" sr="Icon of outline_gift_box" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Gift Box icon"
 
   def outline_gift_box(assigns) do
     ~H"""
@@ -4971,6 +5770,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -4983,12 +5783,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_globe />
-  <Flowbite.Icons.outline_globe class="w-4 h-4" />
+  <Flowbite.Icons.outline_globe class="w-4 h-4" sr="Icon of outline_globe" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Globe icon"
 
   def outline_globe(assigns) do
     ~H"""
@@ -5002,6 +5806,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5014,12 +5819,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_grid_plus />
-  <Flowbite.Icons.outline_grid_plus class="w-4 h-4" />
+  <Flowbite.Icons.outline_grid_plus class="w-4 h-4" sr="Icon of outline_grid_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Grid Plus icon"
 
   def outline_grid_plus(assigns) do
     ~H"""
@@ -5033,6 +5842,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5045,12 +5855,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_grid />
-  <Flowbite.Icons.outline_grid class="w-4 h-4" />
+  <Flowbite.Icons.outline_grid class="w-4 h-4" sr="Icon of outline_grid" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Grid icon"
 
   def outline_grid(assigns) do
     ~H"""
@@ -5064,6 +5878,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5076,12 +5891,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_heart />
-  <Flowbite.Icons.outline_heart class="w-4 h-4" />
+  <Flowbite.Icons.outline_heart class="w-4 h-4" sr="Icon of outline_heart" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Heart icon"
 
   def outline_heart(assigns) do
     ~H"""
@@ -5095,6 +5914,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5107,12 +5927,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_home />
-  <Flowbite.Icons.outline_home class="w-4 h-4" />
+  <Flowbite.Icons.outline_home class="w-4 h-4" sr="Icon of outline_home" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Home icon"
 
   def outline_home(assigns) do
     ~H"""
@@ -5126,6 +5950,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5138,12 +5963,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_hourglass />
-  <Flowbite.Icons.outline_hourglass class="w-4 h-4" />
+  <Flowbite.Icons.outline_hourglass class="w-4 h-4" sr="Icon of outline_hourglass" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Hourglass icon"
 
   def outline_hourglass(assigns) do
     ~H"""
@@ -5157,6 +5986,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5169,12 +5999,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_image />
-  <Flowbite.Icons.outline_image class="w-4 h-4" />
+  <Flowbite.Icons.outline_image class="w-4 h-4" sr="Icon of outline_image" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Image icon"
 
   def outline_image(assigns) do
     ~H"""
@@ -5201,6 +6035,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5213,12 +6048,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_inbox_full />
-  <Flowbite.Icons.outline_inbox_full class="w-4 h-4" />
+  <Flowbite.Icons.outline_inbox_full class="w-4 h-4" sr="Icon of outline_inbox_full" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Inbox Full icon"
 
   def outline_inbox_full(assigns) do
     ~H"""
@@ -5232,6 +6071,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5244,12 +6084,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_inbox />
-  <Flowbite.Icons.outline_inbox class="w-4 h-4" />
+  <Flowbite.Icons.outline_inbox class="w-4 h-4" sr="Icon of outline_inbox" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Inbox icon"
 
   def outline_inbox(assigns) do
     ~H"""
@@ -5263,6 +6107,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5275,12 +6120,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_info_circle />
-  <Flowbite.Icons.outline_info_circle class="w-4 h-4" />
+  <Flowbite.Icons.outline_info_circle class="w-4 h-4" sr="Icon of outline_info_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Info Circle icon"
 
   def outline_info_circle(assigns) do
     ~H"""
@@ -5294,6 +6143,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5306,12 +6156,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_keyboard />
-  <Flowbite.Icons.outline_keyboard class="w-4 h-4" />
+  <Flowbite.Icons.outline_keyboard class="w-4 h-4" sr="Icon of outline_keyboard" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Keyboard icon"
 
   def outline_keyboard(assigns) do
     ~H"""
@@ -5322,6 +6176,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5334,12 +6189,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_label />
-  <Flowbite.Icons.outline_label class="w-4 h-4" />
+  <Flowbite.Icons.outline_label class="w-4 h-4" sr="Icon of outline_label" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Label icon"
 
   def outline_label(assigns) do
     ~H"""
@@ -5353,6 +6212,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5365,12 +6225,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_landmark />
-  <Flowbite.Icons.outline_landmark class="w-4 h-4" />
+  <Flowbite.Icons.outline_landmark class="w-4 h-4" sr="Icon of outline_landmark" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Landmark icon"
 
   def outline_landmark(assigns) do
     ~H"""
@@ -5384,6 +6248,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5396,12 +6261,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_layers />
-  <Flowbite.Icons.outline_layers class="w-4 h-4" />
+  <Flowbite.Icons.outline_layers class="w-4 h-4" sr="Icon of outline_layers" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Layers icon"
 
   def outline_layers(assigns) do
     ~H"""
@@ -5415,6 +6284,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5427,12 +6297,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_life_buoy />
-  <Flowbite.Icons.outline_life_buoy class="w-4 h-4" />
+  <Flowbite.Icons.outline_life_buoy class="w-4 h-4" sr="Icon of outline_life_buoy" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Life Buoy icon"
 
   def outline_life_buoy(assigns) do
     ~H"""
@@ -5446,6 +6320,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5458,12 +6333,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_lightbulb />
-  <Flowbite.Icons.outline_lightbulb class="w-4 h-4" />
+  <Flowbite.Icons.outline_lightbulb class="w-4 h-4" sr="Icon of outline_lightbulb" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Lightbulb icon"
 
   def outline_lightbulb(assigns) do
     ~H"""
@@ -5477,6 +6356,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5489,12 +6369,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_link />
-  <Flowbite.Icons.outline_link class="w-4 h-4" />
+  <Flowbite.Icons.outline_link class="w-4 h-4" sr="Icon of outline_link" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Link icon"
 
   def outline_link(assigns) do
     ~H"""
@@ -5508,6 +6392,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5520,12 +6405,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_lock_open />
-  <Flowbite.Icons.outline_lock_open class="w-4 h-4" />
+  <Flowbite.Icons.outline_lock_open class="w-4 h-4" sr="Icon of outline_lock_open" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Lock Open icon"
 
   def outline_lock_open(assigns) do
     ~H"""
@@ -5539,6 +6428,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5551,12 +6441,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_lock_time />
-  <Flowbite.Icons.outline_lock_time class="w-4 h-4" />
+  <Flowbite.Icons.outline_lock_time class="w-4 h-4" sr="Icon of outline_lock_time" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Lock Time icon"
 
   def outline_lock_time(assigns) do
     ~H"""
@@ -5570,6 +6464,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5582,12 +6477,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_lock />
-  <Flowbite.Icons.outline_lock class="w-4 h-4" />
+  <Flowbite.Icons.outline_lock class="w-4 h-4" sr="Icon of outline_lock" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Lock icon"
 
   def outline_lock(assigns) do
     ~H"""
@@ -5601,6 +6500,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5613,12 +6513,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_mail_box />
-  <Flowbite.Icons.outline_mail_box class="w-4 h-4" />
+  <Flowbite.Icons.outline_mail_box class="w-4 h-4" sr="Icon of outline_mail_box" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Mail Box icon"
 
   def outline_mail_box(assigns) do
     ~H"""
@@ -5632,6 +6536,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5644,12 +6549,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_map_location />
-  <Flowbite.Icons.outline_map_location class="w-4 h-4" />
+  <Flowbite.Icons.outline_map_location class="w-4 h-4" sr="Icon of outline_map_location" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Map Location icon"
 
   def outline_map_location(assigns) do
     ~H"""
@@ -5660,6 +6569,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5672,12 +6582,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_map_pin />
-  <Flowbite.Icons.outline_map_pin class="w-4 h-4" />
+  <Flowbite.Icons.outline_map_pin class="w-4 h-4" sr="Icon of outline_map_pin" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Map Pin icon"
 
   def outline_map_pin(assigns) do
     ~H"""
@@ -5691,6 +6605,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5703,12 +6618,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_message_caption />
-  <Flowbite.Icons.outline_message_caption class="w-4 h-4" />
+  <Flowbite.Icons.outline_message_caption class="w-4 h-4" sr="Icon of outline_message_caption" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Message Caption icon"
 
   def outline_message_caption(assigns) do
     ~H"""
@@ -5722,6 +6641,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5734,12 +6654,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_message_dots />
-  <Flowbite.Icons.outline_message_dots class="w-4 h-4" />
+  <Flowbite.Icons.outline_message_dots class="w-4 h-4" sr="Icon of outline_message_dots" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Message Dots icon"
 
   def outline_message_dots(assigns) do
     ~H"""
@@ -5753,6 +6677,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5765,12 +6690,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_messages />
-  <Flowbite.Icons.outline_messages class="w-4 h-4" />
+  <Flowbite.Icons.outline_messages class="w-4 h-4" sr="Icon of outline_messages" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Messages icon"
 
   def outline_messages(assigns) do
     ~H"""
@@ -5784,6 +6713,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5796,12 +6726,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_minus />
-  <Flowbite.Icons.outline_minus class="w-4 h-4" />
+  <Flowbite.Icons.outline_minus class="w-4 h-4" sr="Icon of outline_minus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Minus icon"
 
   def outline_minus(assigns) do
     ~H"""
@@ -5815,6 +6749,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5827,12 +6762,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_mobile_phone />
-  <Flowbite.Icons.outline_mobile_phone class="w-4 h-4" />
+  <Flowbite.Icons.outline_mobile_phone class="w-4 h-4" sr="Icon of outline_mobile_phone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Mobile Phone icon"
 
   def outline_mobile_phone(assigns) do
     ~H"""
@@ -5846,6 +6785,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5858,12 +6798,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_newspapper />
-  <Flowbite.Icons.outline_newspapper class="w-4 h-4" />
+  <Flowbite.Icons.outline_newspapper class="w-4 h-4" sr="Icon of outline_newspapper" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Newspapper icon"
 
   def outline_newspapper(assigns) do
     ~H"""
@@ -5877,6 +6821,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5889,12 +6834,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_palette />
-  <Flowbite.Icons.outline_palette class="w-4 h-4" />
+  <Flowbite.Icons.outline_palette class="w-4 h-4" sr="Icon of outline_palette" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Palette icon"
 
   def outline_palette(assigns) do
     ~H"""
@@ -5908,6 +6857,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5920,12 +6870,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_paper_clip />
-  <Flowbite.Icons.outline_paper_clip class="w-4 h-4" />
+  <Flowbite.Icons.outline_paper_clip class="w-4 h-4" sr="Icon of outline_paper_clip" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Paper Clip icon"
 
   def outline_paper_clip(assigns) do
     ~H"""
@@ -5938,6 +6892,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5950,12 +6905,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_papper_plane />
-  <Flowbite.Icons.outline_papper_plane class="w-4 h-4" />
+  <Flowbite.Icons.outline_papper_plane class="w-4 h-4" sr="Icon of outline_papper_plane" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Papper Plane icon"
 
   def outline_papper_plane(assigns) do
     ~H"""
@@ -5969,6 +6928,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -5981,12 +6941,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_pen_nib />
-  <Flowbite.Icons.outline_pen_nib class="w-4 h-4" />
+  <Flowbite.Icons.outline_pen_nib class="w-4 h-4" sr="Icon of outline_pen_nib" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Pen Nib icon"
 
   def outline_pen_nib(assigns) do
     ~H"""
@@ -6002,6 +6966,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6014,12 +6979,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_pen />
-  <Flowbite.Icons.outline_pen class="w-4 h-4" />
+  <Flowbite.Icons.outline_pen class="w-4 h-4" sr="Icon of outline_pen" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Pen icon"
 
   def outline_pen(assigns) do
     ~H"""
@@ -6033,6 +7002,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6045,12 +7015,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_phone />
-  <Flowbite.Icons.outline_phone class="w-4 h-4" />
+  <Flowbite.Icons.outline_phone class="w-4 h-4" sr="Icon of outline_phone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Phone icon"
 
   def outline_phone(assigns) do
     ~H"""
@@ -6064,6 +7038,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6076,12 +7051,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_plus />
-  <Flowbite.Icons.outline_plus class="w-4 h-4" />
+  <Flowbite.Icons.outline_plus class="w-4 h-4" sr="Icon of outline_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Plus icon"
 
   def outline_plus(assigns) do
     ~H"""
@@ -6095,6 +7074,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6107,12 +7087,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_printer />
-  <Flowbite.Icons.outline_printer class="w-4 h-4" />
+  <Flowbite.Icons.outline_printer class="w-4 h-4" sr="Icon of outline_printer" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Printer icon"
 
   def outline_printer(assigns) do
     ~H"""
@@ -6126,6 +7110,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6138,12 +7123,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_question_circle />
-  <Flowbite.Icons.outline_question_circle class="w-4 h-4" />
+  <Flowbite.Icons.outline_question_circle class="w-4 h-4" sr="Icon of outline_question_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Question Circle icon"
 
   def outline_question_circle(assigns) do
     ~H"""
@@ -6157,6 +7146,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6169,12 +7159,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_rocket />
-  <Flowbite.Icons.outline_rocket class="w-4 h-4" />
+  <Flowbite.Icons.outline_rocket class="w-4 h-4" sr="Icon of outline_rocket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Rocket icon"
 
   def outline_rocket(assigns) do
     ~H"""
@@ -6188,6 +7182,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6200,12 +7195,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_rule_combined />
-  <Flowbite.Icons.outline_rule_combined class="w-4 h-4" />
+  <Flowbite.Icons.outline_rule_combined class="w-4 h-4" sr="Icon of outline_rule_combined" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Rule Combined icon"
 
   def outline_rule_combined(assigns) do
     ~H"""
@@ -6219,6 +7218,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6231,12 +7231,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_search />
-  <Flowbite.Icons.outline_search class="w-4 h-4" />
+  <Flowbite.Icons.outline_search class="w-4 h-4" sr="Icon of outline_search" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Search icon"
 
   def outline_search(assigns) do
     ~H"""
@@ -6250,6 +7254,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6262,12 +7267,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_share_nodes />
-  <Flowbite.Icons.outline_share_nodes class="w-4 h-4" />
+  <Flowbite.Icons.outline_share_nodes class="w-4 h-4" sr="Icon of outline_share_nodes" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Share Nodes icon"
 
   def outline_share_nodes(assigns) do
     ~H"""
@@ -6281,6 +7290,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6293,12 +7303,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_shield_check />
-  <Flowbite.Icons.outline_shield_check class="w-4 h-4" />
+  <Flowbite.Icons.outline_shield_check class="w-4 h-4" sr="Icon of outline_shield_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Shield Check icon"
 
   def outline_shield_check(assigns) do
     ~H"""
@@ -6312,6 +7326,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6324,12 +7339,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_shield />
-  <Flowbite.Icons.outline_shield class="w-4 h-4" />
+  <Flowbite.Icons.outline_shield class="w-4 h-4" sr="Icon of outline_shield" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Shield icon"
 
   def outline_shield(assigns) do
     ~H"""
@@ -6343,6 +7362,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6355,12 +7375,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_star_half_stroke />
-  <Flowbite.Icons.outline_star_half_stroke class="w-4 h-4" />
+  <Flowbite.Icons.outline_star_half_stroke class="w-4 h-4" sr="Icon of outline_star_half_stroke" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Star Half Stroke icon"
 
   def outline_star_half_stroke(assigns) do
     ~H"""
@@ -6373,6 +7397,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6385,12 +7410,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_star_half />
-  <Flowbite.Icons.outline_star_half class="w-4 h-4" />
+  <Flowbite.Icons.outline_star_half class="w-4 h-4" sr="Icon of outline_star_half" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Star Half icon"
 
   def outline_star_half(assigns) do
     ~H"""
@@ -6404,6 +7433,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6416,12 +7446,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_star />
-  <Flowbite.Icons.outline_star class="w-4 h-4" />
+  <Flowbite.Icons.outline_star class="w-4 h-4" sr="Icon of outline_star" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Star icon"
 
   def outline_star(assigns) do
     ~H"""
@@ -6435,6 +7469,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6447,12 +7482,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_swatchbook />
-  <Flowbite.Icons.outline_swatchbook class="w-4 h-4" />
+  <Flowbite.Icons.outline_swatchbook class="w-4 h-4" sr="Icon of outline_swatchbook" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Swatchbook icon"
 
   def outline_swatchbook(assigns) do
     ~H"""
@@ -6466,6 +7505,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6478,12 +7518,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_table_column />
-  <Flowbite.Icons.outline_table_column class="w-4 h-4" />
+  <Flowbite.Icons.outline_table_column class="w-4 h-4" sr="Icon of outline_table_column" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Table Column icon"
 
   def outline_table_column(assigns) do
     ~H"""
@@ -6497,6 +7541,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6509,12 +7554,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_table_row />
-  <Flowbite.Icons.outline_table_row class="w-4 h-4" />
+  <Flowbite.Icons.outline_table_row class="w-4 h-4" sr="Icon of outline_table_row" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Table Row icon"
 
   def outline_table_row(assigns) do
     ~H"""
@@ -6525,6 +7574,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6537,12 +7587,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_tablet />
-  <Flowbite.Icons.outline_tablet class="w-4 h-4" />
+  <Flowbite.Icons.outline_tablet class="w-4 h-4" sr="Icon of outline_tablet" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Tablet icon"
 
   def outline_tablet(assigns) do
     ~H"""
@@ -6556,6 +7610,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6568,12 +7623,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_terminal />
-  <Flowbite.Icons.outline_terminal class="w-4 h-4" />
+  <Flowbite.Icons.outline_terminal class="w-4 h-4" sr="Icon of outline_terminal" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Terminal icon"
 
   def outline_terminal(assigns) do
     ~H"""
@@ -6587,6 +7646,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6599,12 +7659,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_ticket />
-  <Flowbite.Icons.outline_ticket class="w-4 h-4" />
+  <Flowbite.Icons.outline_ticket class="w-4 h-4" sr="Icon of outline_ticket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Ticket icon"
 
   def outline_ticket(assigns) do
     ~H"""
@@ -6618,6 +7682,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6630,12 +7695,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_trash_bin />
-  <Flowbite.Icons.outline_trash_bin class="w-4 h-4" />
+  <Flowbite.Icons.outline_trash_bin class="w-4 h-4" sr="Icon of outline_trash_bin" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Trash Bin icon"
 
   def outline_trash_bin(assigns) do
     ~H"""
@@ -6649,6 +7718,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6661,12 +7731,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_truck />
-  <Flowbite.Icons.outline_truck class="w-4 h-4" />
+  <Flowbite.Icons.outline_truck class="w-4 h-4" sr="Icon of outline_truck" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Truck icon"
 
   def outline_truck(assigns) do
     ~H"""
@@ -6680,6 +7754,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6692,12 +7767,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_upload />
-  <Flowbite.Icons.outline_upload class="w-4 h-4" />
+  <Flowbite.Icons.outline_upload class="w-4 h-4" sr="Icon of outline_upload" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Upload icon"
 
   def outline_upload(assigns) do
     ~H"""
@@ -6711,6 +7790,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6723,12 +7803,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_volume_down />
-  <Flowbite.Icons.outline_volume_down class="w-4 h-4" />
+  <Flowbite.Icons.outline_volume_down class="w-4 h-4" sr="Icon of outline_volume_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Volume Down icon"
 
   def outline_volume_down(assigns) do
     ~H"""
@@ -6742,6 +7826,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6754,12 +7839,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_volume_up />
-  <Flowbite.Icons.outline_volume_up class="w-4 h-4" />
+  <Flowbite.Icons.outline_volume_up class="w-4 h-4" sr="Icon of outline_volume_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Volume Up icon"
 
   def outline_volume_up(assigns) do
     ~H"""
@@ -6773,6 +7862,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6785,12 +7875,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_wand_magic_sparkles />
-  <Flowbite.Icons.outline_wand_magic_sparkles class="w-4 h-4" />
+  <Flowbite.Icons.outline_wand_magic_sparkles class="w-4 h-4" sr="Icon of outline_wand_magic_sparkles" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Wand Magic Sparkles icon"
 
   def outline_wand_magic_sparkles(assigns) do
     ~H"""
@@ -6810,6 +7904,7 @@ defmodule Flowbite.Icons do
       <path d="M20 9H18V11H20V9Z" fill="currentColor"></path>
       <path d="M20 14H18V16H20V14Z" fill="currentColor"></path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6822,12 +7917,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_window_restore />
-  <Flowbite.Icons.outline_window_restore class="w-4 h-4" />
+  <Flowbite.Icons.outline_window_restore class="w-4 h-4" sr="Icon of outline_window_restore" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Window Restore icon"
 
   def outline_window_restore(assigns) do
     ~H"""
@@ -6841,6 +7940,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6853,12 +7953,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_window />
-  <Flowbite.Icons.outline_window class="w-4 h-4" />
+  <Flowbite.Icons.outline_window class="w-4 h-4" sr="Icon of outline_window" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Window icon"
 
   def outline_window(assigns) do
     ~H"""
@@ -6886,6 +7990,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6898,12 +8003,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_x_circle />
-  <Flowbite.Icons.outline_x_circle class="w-4 h-4" />
+  <Flowbite.Icons.outline_x_circle class="w-4 h-4" sr="Icon of outline_x_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline X Circle icon"
 
   def outline_x_circle(assigns) do
     ~H"""
@@ -6917,6 +8026,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6929,12 +8039,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_zoom_in />
-  <Flowbite.Icons.outline_zoom_in class="w-4 h-4" />
+  <Flowbite.Icons.outline_zoom_in class="w-4 h-4" sr="Icon of outline_zoom_in" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Zoom In icon"
 
   def outline_zoom_in(assigns) do
     ~H"""
@@ -6948,6 +8062,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6960,12 +8075,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_zoom_out />
-  <Flowbite.Icons.outline_zoom_out class="w-4 h-4" />
+  <Flowbite.Icons.outline_zoom_out class="w-4 h-4" sr="Icon of outline_zoom_out" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Zoom Out icon"
 
   def outline_zoom_out(assigns) do
     ~H"""
@@ -6979,6 +8098,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -6991,12 +8111,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_backward_step />
-  <Flowbite.Icons.outline_backward_step class="w-4 h-4" />
+  <Flowbite.Icons.outline_backward_step class="w-4 h-4" sr="Icon of outline_backward_step" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Backward Step icon"
 
   def outline_backward_step(assigns) do
     ~H"""
@@ -7010,6 +8134,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7022,12 +8147,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_camera_foto />
-  <Flowbite.Icons.outline_camera_foto class="w-4 h-4" />
+  <Flowbite.Icons.outline_camera_foto class="w-4 h-4" sr="Icon of outline_camera_foto" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Camera Foto icon"
 
   def outline_camera_foto(assigns) do
     ~H"""
@@ -7038,6 +8167,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7050,12 +8180,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_captioning />
-  <Flowbite.Icons.outline_captioning class="w-4 h-4" />
+  <Flowbite.Icons.outline_captioning class="w-4 h-4" sr="Icon of outline_captioning" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Captioning icon"
 
   def outline_captioning(assigns) do
     ~H"""
@@ -7069,6 +8203,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7081,12 +8216,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_circle_pause />
-  <Flowbite.Icons.outline_circle_pause class="w-4 h-4" />
+  <Flowbite.Icons.outline_circle_pause class="w-4 h-4" sr="Icon of outline_circle_pause" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Circle Pause icon"
 
   def outline_circle_pause(assigns) do
     ~H"""
@@ -7100,6 +8239,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7112,12 +8252,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_clapperboard_play />
-  <Flowbite.Icons.outline_clapperboard_play class="w-4 h-4" />
+  <Flowbite.Icons.outline_clapperboard_play class="w-4 h-4" sr="Icon of outline_clapperboard_play" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Clapperboard Play icon"
 
   def outline_clapperboard_play(assigns) do
     ~H"""
@@ -7131,6 +8275,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7143,12 +8288,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_computer_speaker />
-  <Flowbite.Icons.outline_computer_speaker class="w-4 h-4" />
+  <Flowbite.Icons.outline_computer_speaker class="w-4 h-4" sr="Icon of outline_computer_speaker" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Computer Speaker icon"
 
   def outline_computer_speaker(assigns) do
     ~H"""
@@ -7162,6 +8311,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7174,12 +8324,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_forward_step />
-  <Flowbite.Icons.outline_forward_step class="w-4 h-4" />
+  <Flowbite.Icons.outline_forward_step class="w-4 h-4" sr="Icon of outline_forward_step" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Forward Step icon"
 
   def outline_forward_step(assigns) do
     ~H"""
@@ -7193,6 +8347,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7205,12 +8360,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_headphones />
-  <Flowbite.Icons.outline_headphones class="w-4 h-4" />
+  <Flowbite.Icons.outline_headphones class="w-4 h-4" sr="Icon of outline_headphones" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Headphones icon"
 
   def outline_headphones(assigns) do
     ~H"""
@@ -7224,6 +8383,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7236,12 +8396,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_list_music />
-  <Flowbite.Icons.outline_list_music class="w-4 h-4" />
+  <Flowbite.Icons.outline_list_music class="w-4 h-4" sr="Icon of outline_list_music" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline List Music icon"
 
   def outline_list_music(assigns) do
     ~H"""
@@ -7255,6 +8419,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7267,12 +8432,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_microphone />
-  <Flowbite.Icons.outline_microphone class="w-4 h-4" />
+  <Flowbite.Icons.outline_microphone class="w-4 h-4" sr="Icon of outline_microphone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Microphone icon"
 
   def outline_microphone(assigns) do
     ~H"""
@@ -7286,6 +8455,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7298,12 +8468,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_play />
-  <Flowbite.Icons.outline_play class="w-4 h-4" />
+  <Flowbite.Icons.outline_play class="w-4 h-4" sr="Icon of outline_play" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Play icon"
 
   def outline_play(assigns) do
     ~H"""
@@ -7317,6 +8491,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7329,12 +8504,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_rectangle_list />
-  <Flowbite.Icons.outline_rectangle_list class="w-4 h-4" />
+  <Flowbite.Icons.outline_rectangle_list class="w-4 h-4" sr="Icon of outline_rectangle_list" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Rectangle List icon"
 
   def outline_rectangle_list(assigns) do
     ~H"""
@@ -7348,6 +8527,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7360,12 +8540,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_shuffle />
-  <Flowbite.Icons.outline_shuffle class="w-4 h-4" />
+  <Flowbite.Icons.outline_shuffle class="w-4 h-4" sr="Icon of outline_shuffle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Shuffle icon"
 
   def outline_shuffle(assigns) do
     ~H"""
@@ -7379,6 +8563,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7391,12 +8576,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_video_camera />
-  <Flowbite.Icons.outline_video_camera class="w-4 h-4" />
+  <Flowbite.Icons.outline_video_camera class="w-4 h-4" sr="Icon of outline_video_camera" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Video Camera icon"
 
   def outline_video_camera(assigns) do
     ~H"""
@@ -7410,6 +8599,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7422,12 +8612,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_align_center />
-  <Flowbite.Icons.outline_align_center class="w-4 h-4" />
+  <Flowbite.Icons.outline_align_center class="w-4 h-4" sr="Icon of outline_align_center" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Align Center icon"
 
   def outline_align_center(assigns) do
     ~H"""
@@ -7441,6 +8635,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7453,12 +8648,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_indent />
-  <Flowbite.Icons.outline_indent class="w-4 h-4" />
+  <Flowbite.Icons.outline_indent class="w-4 h-4" sr="Icon of outline_indent" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Indent icon"
 
   def outline_indent(assigns) do
     ~H"""
@@ -7472,6 +8671,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7484,12 +8684,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_letter_bold />
-  <Flowbite.Icons.outline_letter_bold class="w-4 h-4" />
+  <Flowbite.Icons.outline_letter_bold class="w-4 h-4" sr="Icon of outline_letter_bold" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Letter Bold icon"
 
   def outline_letter_bold(assigns) do
     ~H"""
@@ -7503,6 +8707,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7515,12 +8720,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_letter_italic />
-  <Flowbite.Icons.outline_letter_italic class="w-4 h-4" />
+  <Flowbite.Icons.outline_letter_italic class="w-4 h-4" sr="Icon of outline_letter_italic" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Letter Italic icon"
 
   def outline_letter_italic(assigns) do
     ~H"""
@@ -7534,6 +8743,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7546,12 +8756,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_letter_underline />
-  <Flowbite.Icons.outline_letter_underline class="w-4 h-4" />
+  <Flowbite.Icons.outline_letter_underline class="w-4 h-4" sr="Icon of outline_letter_underline" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Letter Underline icon"
 
   def outline_letter_underline(assigns) do
     ~H"""
@@ -7565,6 +8779,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7577,12 +8792,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_list />
-  <Flowbite.Icons.outline_list class="w-4 h-4" />
+  <Flowbite.Icons.outline_list class="w-4 h-4" sr="Icon of outline_list" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline List icon"
 
   def outline_list(assigns) do
     ~H"""
@@ -7595,6 +8814,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7607,12 +8827,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_ordored_list />
-  <Flowbite.Icons.outline_ordored_list class="w-4 h-4" />
+  <Flowbite.Icons.outline_ordored_list class="w-4 h-4" sr="Icon of outline_ordored_list" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Ordored List icon"
 
   def outline_ordored_list(assigns) do
     ~H"""
@@ -7626,6 +8850,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7638,12 +8863,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_outdent />
-  <Flowbite.Icons.outline_outdent class="w-4 h-4" />
+  <Flowbite.Icons.outline_outdent class="w-4 h-4" sr="Icon of outline_outdent" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Outdent icon"
 
   def outline_outdent(assigns) do
     ~H"""
@@ -7657,6 +8886,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7669,12 +8899,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_paragraph />
-  <Flowbite.Icons.outline_paragraph class="w-4 h-4" />
+  <Flowbite.Icons.outline_paragraph class="w-4 h-4" sr="Icon of outline_paragraph" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Paragraph icon"
 
   def outline_paragraph(assigns) do
     ~H"""
@@ -7688,6 +8922,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7700,12 +8935,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_quote />
-  <Flowbite.Icons.outline_quote class="w-4 h-4" />
+  <Flowbite.Icons.outline_quote class="w-4 h-4" sr="Icon of outline_quote" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Quote icon"
 
   def outline_quote(assigns) do
     ~H"""
@@ -7719,6 +8958,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7731,12 +8971,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_text_size />
-  <Flowbite.Icons.outline_text_size class="w-4 h-4" />
+  <Flowbite.Icons.outline_text_size class="w-4 h-4" sr="Icon of outline_text_size" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Text Size icon"
 
   def outline_text_size(assigns) do
     ~H"""
@@ -7750,6 +8994,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7762,12 +9007,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_text_slash />
-  <Flowbite.Icons.outline_text_slash class="w-4 h-4" />
+  <Flowbite.Icons.outline_text_slash class="w-4 h-4" sr="Icon of outline_text_slash" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Text Slash icon"
 
   def outline_text_slash(assigns) do
     ~H"""
@@ -7781,6 +9030,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7793,12 +9043,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_adress_book />
-  <Flowbite.Icons.outline_adress_book class="w-4 h-4" />
+  <Flowbite.Icons.outline_adress_book class="w-4 h-4" sr="Icon of outline_adress_book" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Adress Book icon"
 
   def outline_adress_book(assigns) do
     ~H"""
@@ -7812,6 +9066,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7824,12 +9079,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_profile_card />
-  <Flowbite.Icons.outline_profile_card class="w-4 h-4" />
+  <Flowbite.Icons.outline_profile_card class="w-4 h-4" sr="Icon of outline_profile_card" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Profile Card icon"
 
   def outline_profile_card(assigns) do
     ~H"""
@@ -7843,6 +9102,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7855,12 +9115,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_user_add />
-  <Flowbite.Icons.outline_user_add class="w-4 h-4" />
+  <Flowbite.Icons.outline_user_add class="w-4 h-4" sr="Icon of outline_user_add" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline User Add icon"
 
   def outline_user_add(assigns) do
     ~H"""
@@ -7874,6 +9138,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7886,12 +9151,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_user_circle />
-  <Flowbite.Icons.outline_user_circle class="w-4 h-4" />
+  <Flowbite.Icons.outline_user_circle class="w-4 h-4" sr="Icon of outline_user_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline User Circle icon"
 
   def outline_user_circle(assigns) do
     ~H"""
@@ -7905,6 +9174,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7917,12 +9187,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_user_edit />
-  <Flowbite.Icons.outline_user_edit class="w-4 h-4" />
+  <Flowbite.Icons.outline_user_edit class="w-4 h-4" sr="Icon of outline_user_edit" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline User Edit icon"
 
   def outline_user_edit(assigns) do
     ~H"""
@@ -7936,6 +9210,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7948,12 +9223,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_user_remove />
-  <Flowbite.Icons.outline_user_remove class="w-4 h-4" />
+  <Flowbite.Icons.outline_user_remove class="w-4 h-4" sr="Icon of outline_user_remove" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline User Remove icon"
 
   def outline_user_remove(assigns) do
     ~H"""
@@ -7967,6 +9246,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -7979,12 +9259,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_user_settings />
-  <Flowbite.Icons.outline_user_settings class="w-4 h-4" />
+  <Flowbite.Icons.outline_user_settings class="w-4 h-4" sr="Icon of outline_user_settings" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline User Settings icon"
 
   def outline_user_settings(assigns) do
     ~H"""
@@ -8000,6 +9284,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8012,12 +9297,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_user />
-  <Flowbite.Icons.outline_user class="w-4 h-4" />
+  <Flowbite.Icons.outline_user class="w-4 h-4" sr="Icon of outline_user" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline User icon"
 
   def outline_user(assigns) do
     ~H"""
@@ -8031,6 +9320,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8043,12 +9333,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_users_group />
-  <Flowbite.Icons.outline_users_group class="w-4 h-4" />
+  <Flowbite.Icons.outline_users_group class="w-4 h-4" sr="Icon of outline_users_group" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Users Group icon"
 
   def outline_users_group(assigns) do
     ~H"""
@@ -8062,6 +9356,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8074,12 +9369,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_users />
-  <Flowbite.Icons.outline_users class="w-4 h-4" />
+  <Flowbite.Icons.outline_users class="w-4 h-4" sr="Icon of outline_users" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Users icon"
 
   def outline_users(assigns) do
     ~H"""
@@ -8093,6 +9392,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8105,12 +9405,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_moon />
-  <Flowbite.Icons.outline_moon class="w-4 h-4" />
+  <Flowbite.Icons.outline_moon class="w-4 h-4" sr="Icon of outline_moon" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Moon icon"
 
   def outline_moon(assigns) do
     ~H"""
@@ -8124,6 +9428,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8136,12 +9441,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.outline_sun />
-  <Flowbite.Icons.outline_sun class="w-4 h-4" />
+  <Flowbite.Icons.outline_sun class="w-4 h-4" sr="Icon of outline_sun" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Outline Sun icon"
 
   def outline_sun(assigns) do
     ~H"""
@@ -8155,6 +9464,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8167,12 +9477,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_angle_down />
-  <Flowbite.Icons.solid_angle_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_angle_down class="w-4 h-4" sr="Icon of solid_angle_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Angle Down icon"
 
   def solid_angle_down(assigns) do
     ~H"""
@@ -8183,6 +9497,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8195,12 +9510,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_angle_left />
-  <Flowbite.Icons.solid_angle_left class="w-4 h-4" />
+  <Flowbite.Icons.solid_angle_left class="w-4 h-4" sr="Icon of solid_angle_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Angle Left icon"
 
   def solid_angle_left(assigns) do
     ~H"""
@@ -8211,6 +9530,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8223,12 +9543,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_angle_right />
-  <Flowbite.Icons.solid_angle_right class="w-4 h-4" />
+  <Flowbite.Icons.solid_angle_right class="w-4 h-4" sr="Icon of solid_angle_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Angle Right icon"
 
   def solid_angle_right(assigns) do
     ~H"""
@@ -8239,6 +9563,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8251,12 +9576,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_angle_up />
-  <Flowbite.Icons.solid_angle_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_angle_up class="w-4 h-4" sr="Icon of solid_angle_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Angle Up icon"
 
   def solid_angle_up(assigns) do
     ~H"""
@@ -8267,6 +9596,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8279,12 +9609,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_big />
-  <Flowbite.Icons.solid_arrow_big class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_big class="w-4 h-4" sr="Icon of solid_arrow_big" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Big icon"
 
   def solid_arrow_big(assigns) do
     ~H"""
@@ -8295,6 +9629,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8307,12 +9642,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_down_to_braket />
-  <Flowbite.Icons.solid_arrow_down_to_braket class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_down_to_braket class="w-4 h-4" sr="Icon of solid_arrow_down_to_braket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Down To Braket icon"
 
   def solid_arrow_down_to_braket(assigns) do
     ~H"""
@@ -8324,6 +9663,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8336,12 +9676,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_down />
-  <Flowbite.Icons.solid_arrow_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_down class="w-4 h-4" sr="Icon of solid_arrow_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Down icon"
 
   def solid_arrow_down(assigns) do
     ~H"""
@@ -8352,6 +9696,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8364,12 +9709,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_left />
-  <Flowbite.Icons.solid_arrow_left class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_left class="w-4 h-4" sr="Icon of solid_arrow_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Left icon"
 
   def solid_arrow_left(assigns) do
     ~H"""
@@ -8380,6 +9729,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8392,12 +9742,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_right_from_bracket />
-  <Flowbite.Icons.solid_arrow_right_from_bracket class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_right_from_bracket class="w-4 h-4" sr="Icon of solid_arrow_right_from_bracket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Right From Bracket icon"
 
   def solid_arrow_right_from_bracket(assigns) do
     ~H"""
@@ -8409,6 +9763,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8421,12 +9776,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_right_to_bracket />
-  <Flowbite.Icons.solid_arrow_right_to_bracket class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_right_to_bracket class="w-4 h-4" sr="Icon of solid_arrow_right_to_bracket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Right To Bracket icon"
 
   def solid_arrow_right_to_bracket(assigns) do
     ~H"""
@@ -8438,6 +9797,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8450,12 +9810,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_right />
-  <Flowbite.Icons.solid_arrow_right class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_right class="w-4 h-4" sr="Icon of solid_arrow_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Right icon"
 
   def solid_arrow_right(assigns) do
     ~H"""
@@ -8466,6 +9830,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8478,12 +9843,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_sort_letters />
-  <Flowbite.Icons.solid_arrow_sort_letters class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_sort_letters class="w-4 h-4" sr="Icon of solid_arrow_sort_letters" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Sort Letters icon"
 
   def solid_arrow_sort_letters(assigns) do
     ~H"""
@@ -8494,6 +9863,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8506,12 +9876,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_up_down />
-  <Flowbite.Icons.solid_arrow_up_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_up_down class="w-4 h-4" sr="Icon of solid_arrow_up_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Up Down icon"
 
   def solid_arrow_up_down(assigns) do
     ~H"""
@@ -8522,6 +9896,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8534,12 +9909,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_up_from_bracket />
-  <Flowbite.Icons.solid_arrow_up_from_bracket class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_up_from_bracket class="w-4 h-4" sr="Icon of solid_arrow_up_from_bracket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Up From Bracket icon"
 
   def solid_arrow_up_from_bracket(assigns) do
     ~H"""
@@ -8553,6 +9932,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8565,12 +9945,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_up />
-  <Flowbite.Icons.solid_arrow_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_up class="w-4 h-4" sr="Icon of solid_arrow_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Up icon"
 
   def solid_arrow_up(assigns) do
     ~H"""
@@ -8581,6 +9965,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8593,12 +9978,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrows_repeat_1 />
-  <Flowbite.Icons.solid_arrows_repeat_1 class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrows_repeat_1 class="w-4 h-4" sr="Icon of solid_arrows_repeat_1" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrows Repeat 1 icon"
 
   def solid_arrows_repeat_1(assigns) do
     ~H"""
@@ -8610,6 +9999,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8622,12 +10012,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrows_repeat />
-  <Flowbite.Icons.solid_arrows_repeat class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrows_repeat class="w-4 h-4" sr="Icon of solid_arrows_repeat" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrows Repeat icon"
 
   def solid_arrows_repeat(assigns) do
     ~H"""
@@ -8638,6 +10032,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8650,12 +10045,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_caret_down />
-  <Flowbite.Icons.solid_caret_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_caret_down class="w-4 h-4" sr="Icon of solid_caret_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Caret Down icon"
 
   def solid_caret_down(assigns) do
     ~H"""
@@ -8666,6 +10065,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8678,12 +10078,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_caret_left />
-  <Flowbite.Icons.solid_caret_left class="w-4 h-4" />
+  <Flowbite.Icons.solid_caret_left class="w-4 h-4" sr="Icon of solid_caret_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Caret Left icon"
 
   def solid_caret_left(assigns) do
     ~H"""
@@ -8694,6 +10098,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8706,12 +10111,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_caret_right />
-  <Flowbite.Icons.solid_caret_right class="w-4 h-4" />
+  <Flowbite.Icons.solid_caret_right class="w-4 h-4" sr="Icon of solid_caret_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Caret Right icon"
 
   def solid_caret_right(assigns) do
     ~H"""
@@ -8722,6 +10131,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8734,12 +10144,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_caret_sort />
-  <Flowbite.Icons.solid_caret_sort class="w-4 h-4" />
+  <Flowbite.Icons.solid_caret_sort class="w-4 h-4" sr="Icon of solid_caret_sort" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Caret Sort icon"
 
   def solid_caret_sort(assigns) do
     ~H"""
@@ -8750,6 +10164,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8762,12 +10177,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_caret_up />
-  <Flowbite.Icons.solid_caret_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_caret_up class="w-4 h-4" sr="Icon of solid_caret_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Caret Up icon"
 
   def solid_caret_up(assigns) do
     ~H"""
@@ -8778,6 +10197,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8790,12 +10210,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chervon_double_down />
-  <Flowbite.Icons.solid_chervon_double_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_chervon_double_down class="w-4 h-4" sr="Icon of solid_chervon_double_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chervon Double Down icon"
 
   def solid_chervon_double_down(assigns) do
     ~H"""
@@ -8807,6 +10231,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8819,12 +10244,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chervon_double_left />
-  <Flowbite.Icons.solid_chervon_double_left class="w-4 h-4" />
+  <Flowbite.Icons.solid_chervon_double_left class="w-4 h-4" sr="Icon of solid_chervon_double_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chervon Double Left icon"
 
   def solid_chervon_double_left(assigns) do
     ~H"""
@@ -8836,6 +10265,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8848,12 +10278,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chervon_double_right />
-  <Flowbite.Icons.solid_chervon_double_right class="w-4 h-4" />
+  <Flowbite.Icons.solid_chervon_double_right class="w-4 h-4" sr="Icon of solid_chervon_double_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chervon Double Right icon"
 
   def solid_chervon_double_right(assigns) do
     ~H"""
@@ -8865,6 +10299,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8877,12 +10312,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chervon_double_up />
-  <Flowbite.Icons.solid_chervon_double_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_chervon_double_up class="w-4 h-4" sr="Icon of solid_chervon_double_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chervon Double Up icon"
 
   def solid_chervon_double_up(assigns) do
     ~H"""
@@ -8894,6 +10333,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8906,12 +10346,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chevron_down />
-  <Flowbite.Icons.solid_chevron_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_chevron_down class="w-4 h-4" sr="Icon of solid_chevron_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chevron Down icon"
 
   def solid_chevron_down(assigns) do
     ~H"""
@@ -8922,6 +10366,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8934,12 +10379,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chevron_left />
-  <Flowbite.Icons.solid_chevron_left class="w-4 h-4" />
+  <Flowbite.Icons.solid_chevron_left class="w-4 h-4" sr="Icon of solid_chevron_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chevron Left icon"
 
   def solid_chevron_left(assigns) do
     ~H"""
@@ -8950,6 +10399,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8962,12 +10412,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chevron_right />
-  <Flowbite.Icons.solid_chevron_right class="w-4 h-4" />
+  <Flowbite.Icons.solid_chevron_right class="w-4 h-4" sr="Icon of solid_chevron_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chevron Right icon"
 
   def solid_chevron_right(assigns) do
     ~H"""
@@ -8978,6 +10432,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -8990,12 +10445,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chevron_sort />
-  <Flowbite.Icons.solid_chevron_sort class="w-4 h-4" />
+  <Flowbite.Icons.solid_chevron_sort class="w-4 h-4" sr="Icon of solid_chevron_sort" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chevron Sort icon"
 
   def solid_chevron_sort(assigns) do
     ~H"""
@@ -9006,6 +10465,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9018,12 +10478,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chevron_up />
-  <Flowbite.Icons.solid_chevron_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_chevron_up class="w-4 h-4" sr="Icon of solid_chevron_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chevron Up icon"
 
   def solid_chevron_up(assigns) do
     ~H"""
@@ -9034,6 +10498,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9046,12 +10511,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_compress />
-  <Flowbite.Icons.solid_compress class="w-4 h-4" />
+  <Flowbite.Icons.solid_compress class="w-4 h-4" sr="Icon of solid_compress" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Compress icon"
 
   def solid_compress(assigns) do
     ~H"""
@@ -9062,6 +10531,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9074,12 +10544,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_cotate />
-  <Flowbite.Icons.solid_cotate class="w-4 h-4" />
+  <Flowbite.Icons.solid_cotate class="w-4 h-4" sr="Icon of solid_cotate" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Cotate icon"
 
   def solid_cotate(assigns) do
     ~H"""
@@ -9090,6 +10564,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9102,12 +10577,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_expand />
-  <Flowbite.Icons.solid_expand class="w-4 h-4" />
+  <Flowbite.Icons.solid_expand class="w-4 h-4" sr="Icon of solid_expand" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Expand icon"
 
   def solid_expand(assigns) do
     ~H"""
@@ -9118,6 +10597,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9130,12 +10610,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_forward />
-  <Flowbite.Icons.solid_forward class="w-4 h-4" />
+  <Flowbite.Icons.solid_forward class="w-4 h-4" sr="Icon of solid_forward" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Forward icon"
 
   def solid_forward(assigns) do
     ~H"""
@@ -9146,6 +10630,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9158,12 +10643,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_minimize />
-  <Flowbite.Icons.solid_minimize class="w-4 h-4" />
+  <Flowbite.Icons.solid_minimize class="w-4 h-4" sr="Icon of solid_minimize" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Minimize icon"
 
   def solid_minimize(assigns) do
     ~H"""
@@ -9174,6 +10663,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9186,12 +10676,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_reply_all />
-  <Flowbite.Icons.solid_reply_all class="w-4 h-4" />
+  <Flowbite.Icons.solid_reply_all class="w-4 h-4" sr="Icon of solid_reply_all" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Reply All icon"
 
   def solid_reply_all(assigns) do
     ~H"""
@@ -9203,6 +10697,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9215,12 +10710,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_reply />
-  <Flowbite.Icons.solid_reply class="w-4 h-4" />
+  <Flowbite.Icons.solid_reply class="w-4 h-4" sr="Icon of solid_reply" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Reply icon"
 
   def solid_reply(assigns) do
     ~H"""
@@ -9231,6 +10730,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9243,12 +10743,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_share_all />
-  <Flowbite.Icons.solid_share_all class="w-4 h-4" />
+  <Flowbite.Icons.solid_share_all class="w-4 h-4" sr="Icon of solid_share_all" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Share All icon"
 
   def solid_share_all(assigns) do
     ~H"""
@@ -9260,6 +10764,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9272,12 +10777,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_sort_horizontal />
-  <Flowbite.Icons.solid_sort_horizontal class="w-4 h-4" />
+  <Flowbite.Icons.solid_sort_horizontal class="w-4 h-4" sr="Icon of solid_sort_horizontal" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Sort Horizontal icon"
 
   def solid_sort_horizontal(assigns) do
     ~H"""
@@ -9288,6 +10797,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9300,12 +10810,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_sort_vertical />
-  <Flowbite.Icons.solid_sort_vertical class="w-4 h-4" />
+  <Flowbite.Icons.solid_sort_vertical class="w-4 h-4" sr="Icon of solid_sort_vertical" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Sort Vertical icon"
 
   def solid_sort_vertical(assigns) do
     ~H"""
@@ -9316,6 +10830,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9328,12 +10843,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_apple />
-  <Flowbite.Icons.solid_apple class="w-4 h-4" />
+  <Flowbite.Icons.solid_apple class="w-4 h-4" sr="Icon of solid_apple" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Apple icon"
 
   def solid_apple(assigns) do
     ~H"""
@@ -9344,6 +10863,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9356,12 +10876,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_css />
-  <Flowbite.Icons.solid_css class="w-4 h-4" />
+  <Flowbite.Icons.solid_css class="w-4 h-4" sr="Icon of solid_css" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Css icon"
 
   def solid_css(assigns) do
     ~H"""
@@ -9372,6 +10896,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9384,12 +10909,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_discord />
-  <Flowbite.Icons.solid_discord class="w-4 h-4" />
+  <Flowbite.Icons.solid_discord class="w-4 h-4" sr="Icon of solid_discord" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Discord icon"
 
   def solid_discord(assigns) do
     ~H"""
@@ -9400,6 +10929,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9412,12 +10942,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_dribbble />
-  <Flowbite.Icons.solid_dribbble class="w-4 h-4" />
+  <Flowbite.Icons.solid_dribbble class="w-4 h-4" sr="Icon of solid_dribbble" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Dribbble icon"
 
   def solid_dribbble(assigns) do
     ~H"""
@@ -9430,6 +10964,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9442,12 +10977,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_dropbox />
-  <Flowbite.Icons.solid_dropbox class="w-4 h-4" />
+  <Flowbite.Icons.solid_dropbox class="w-4 h-4" sr="Icon of solid_dropbox" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Dropbox icon"
 
   def solid_dropbox(assigns) do
     ~H"""
@@ -9459,6 +10998,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9471,12 +11011,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_facebook />
-  <Flowbite.Icons.solid_facebook class="w-4 h-4" />
+  <Flowbite.Icons.solid_facebook class="w-4 h-4" sr="Icon of solid_facebook" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Facebook icon"
 
   def solid_facebook(assigns) do
     ~H"""
@@ -9489,6 +11033,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9501,12 +11046,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_flowbite />
-  <Flowbite.Icons.solid_flowbite class="w-4 h-4" />
+  <Flowbite.Icons.solid_flowbite class="w-4 h-4" sr="Icon of solid_flowbite" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Flowbite icon"
 
   def solid_flowbite(assigns) do
     ~H"""
@@ -9532,6 +11081,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9544,12 +11094,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_github />
-  <Flowbite.Icons.solid_github class="w-4 h-4" />
+  <Flowbite.Icons.solid_github class="w-4 h-4" sr="Icon of solid_github" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Github icon"
 
   def solid_github(assigns) do
     ~H"""
@@ -9562,6 +11116,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9574,12 +11129,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_google />
-  <Flowbite.Icons.solid_google class="w-4 h-4" />
+  <Flowbite.Icons.solid_google class="w-4 h-4" sr="Icon of solid_google" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Google icon"
 
   def solid_google(assigns) do
     ~H"""
@@ -9592,6 +11151,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9604,12 +11164,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_html />
-  <Flowbite.Icons.solid_html class="w-4 h-4" />
+  <Flowbite.Icons.solid_html class="w-4 h-4" sr="Icon of solid_html" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Html icon"
 
   def solid_html(assigns) do
     ~H"""
@@ -9620,6 +11184,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9632,12 +11197,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_linkedin />
-  <Flowbite.Icons.solid_linkedin class="w-4 h-4" />
+  <Flowbite.Icons.solid_linkedin class="w-4 h-4" sr="Icon of solid_linkedin" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Linkedin icon"
 
   def solid_linkedin(assigns) do
     ~H"""
@@ -9652,6 +11221,7 @@ defmodule Flowbite.Icons do
         <path d="M3 5.012H0V15h3V5.012Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9664,12 +11234,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_npm />
-  <Flowbite.Icons.solid_npm class="w-4 h-4" />
+  <Flowbite.Icons.solid_npm class="w-4 h-4" sr="Icon of solid_npm" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Npm icon"
 
   def solid_npm(assigns) do
     ~H"""
@@ -9684,6 +11258,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9696,12 +11271,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_react />
-  <Flowbite.Icons.solid_react class="w-4 h-4" />
+  <Flowbite.Icons.solid_react class="w-4 h-4" sr="Icon of solid_react" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid React icon"
 
   def solid_react(assigns) do
     ~H"""
@@ -9717,6 +11296,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9729,12 +11309,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_stackoverflow />
-  <Flowbite.Icons.solid_stackoverflow class="w-4 h-4" />
+  <Flowbite.Icons.solid_stackoverflow class="w-4 h-4" sr="Icon of solid_stackoverflow" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Stackoverflow icon"
 
   def solid_stackoverflow(assigns) do
     ~H"""
@@ -9745,6 +11329,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9757,12 +11342,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_tailwind />
-  <Flowbite.Icons.solid_tailwind class="w-4 h-4" />
+  <Flowbite.Icons.solid_tailwind class="w-4 h-4" sr="Icon of solid_tailwind" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Tailwind icon"
 
   def solid_tailwind(assigns) do
     ~H"""
@@ -9773,6 +11362,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9785,12 +11375,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_twitter />
-  <Flowbite.Icons.solid_twitter class="w-4 h-4" />
+  <Flowbite.Icons.solid_twitter class="w-4 h-4" sr="Icon of solid_twitter" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Twitter icon"
 
   def solid_twitter(assigns) do
     ~H"""
@@ -9803,6 +11397,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9815,12 +11410,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_vue />
-  <Flowbite.Icons.solid_vue class="w-4 h-4" />
+  <Flowbite.Icons.solid_vue class="w-4 h-4" sr="Icon of solid_vue" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Vue icon"
 
   def solid_vue(assigns) do
     ~H"""
@@ -9831,6 +11430,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9843,12 +11443,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_x_company />
-  <Flowbite.Icons.solid_x_company class="w-4 h-4" />
+  <Flowbite.Icons.solid_x_company class="w-4 h-4" sr="Icon of solid_x_company" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid X Company icon"
 
   def solid_x_company(assigns) do
     ~H"""
@@ -9859,6 +11463,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9871,12 +11476,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_youtube />
-  <Flowbite.Icons.solid_youtube class="w-4 h-4" />
+  <Flowbite.Icons.solid_youtube class="w-4 h-4" sr="Icon of solid_youtube" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Youtube icon"
 
   def solid_youtube(assigns) do
     ~H"""
@@ -9889,6 +11498,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9901,12 +11511,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bag />
-  <Flowbite.Icons.solid_bag class="w-4 h-4" />
+  <Flowbite.Icons.solid_bag class="w-4 h-4" sr="Icon of solid_bag" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bag icon"
 
   def solid_bag(assigns) do
     ~H"""
@@ -9917,6 +11531,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9929,12 +11544,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_cart_plus_alt />
-  <Flowbite.Icons.solid_cart_plus_alt class="w-4 h-4" />
+  <Flowbite.Icons.solid_cart_plus_alt class="w-4 h-4" sr="Icon of solid_cart_plus_alt" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Cart Plus Alt icon"
 
   def solid_cart_plus_alt(assigns) do
     ~H"""
@@ -9946,6 +11565,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9958,12 +11578,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_cart_plus />
-  <Flowbite.Icons.solid_cart_plus class="w-4 h-4" />
+  <Flowbite.Icons.solid_cart_plus class="w-4 h-4" sr="Icon of solid_cart_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Cart Plus icon"
 
   def solid_cart_plus(assigns) do
     ~H"""
@@ -9974,6 +11598,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -9986,12 +11611,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_cash />
-  <Flowbite.Icons.solid_cash class="w-4 h-4" />
+  <Flowbite.Icons.solid_cash class="w-4 h-4" sr="Icon of solid_cash" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Cash icon"
 
   def solid_cash(assigns) do
     ~H"""
@@ -10012,6 +11641,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10024,12 +11654,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_credit_card />
-  <Flowbite.Icons.solid_credit_card class="w-4 h-4" />
+  <Flowbite.Icons.solid_credit_card class="w-4 h-4" sr="Icon of solid_credit_card" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Credit Card icon"
 
   def solid_credit_card(assigns) do
     ~H"""
@@ -10040,6 +11674,7 @@ defmodule Flowbite.Icons do
         <path d="M6 8H4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm8 0H9a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10052,12 +11687,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_dollar />
-  <Flowbite.Icons.solid_dollar class="w-4 h-4" />
+  <Flowbite.Icons.solid_dollar class="w-4 h-4" sr="Icon of solid_dollar" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Dollar icon"
 
   def solid_dollar(assigns) do
     ~H"""
@@ -10068,6 +11707,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10080,12 +11720,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_euro />
-  <Flowbite.Icons.solid_euro class="w-4 h-4" />
+  <Flowbite.Icons.solid_euro class="w-4 h-4" sr="Icon of solid_euro" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Euro icon"
 
   def solid_euro(assigns) do
     ~H"""
@@ -10096,6 +11740,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10108,12 +11753,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_receipt />
-  <Flowbite.Icons.solid_receipt class="w-4 h-4" />
+  <Flowbite.Icons.solid_receipt class="w-4 h-4" sr="Icon of solid_receipt" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Receipt icon"
 
   def solid_receipt(assigns) do
     ~H"""
@@ -10124,6 +11773,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10136,12 +11786,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_sale_percent />
-  <Flowbite.Icons.solid_sale_percent class="w-4 h-4" />
+  <Flowbite.Icons.solid_sale_percent class="w-4 h-4" sr="Icon of solid_sale_percent" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Sale Percent icon"
 
   def solid_sale_percent(assigns) do
     ~H"""
@@ -10152,6 +11806,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10164,12 +11819,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_scale_balance />
-  <Flowbite.Icons.solid_scale_balance class="w-4 h-4" />
+  <Flowbite.Icons.solid_scale_balance class="w-4 h-4" sr="Icon of solid_scale_balance" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Scale Balance icon"
 
   def solid_scale_balance(assigns) do
     ~H"""
@@ -10180,6 +11839,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10192,12 +11852,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_shopping_cart />
-  <Flowbite.Icons.solid_shopping_cart class="w-4 h-4" />
+  <Flowbite.Icons.solid_shopping_cart class="w-4 h-4" sr="Icon of solid_shopping_cart" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Shopping Cart icon"
 
   def solid_shopping_cart(assigns) do
     ~H"""
@@ -10208,6 +11872,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10220,12 +11885,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_store />
-  <Flowbite.Icons.solid_store class="w-4 h-4" />
+  <Flowbite.Icons.solid_store class="w-4 h-4" sr="Icon of solid_store" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Store icon"
 
   def solid_store(assigns) do
     ~H"""
@@ -10236,6 +11905,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10248,12 +11918,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_tag />
-  <Flowbite.Icons.solid_tag class="w-4 h-4" />
+  <Flowbite.Icons.solid_tag class="w-4 h-4" sr="Icon of solid_tag" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Tag icon"
 
   def solid_tag(assigns) do
     ~H"""
@@ -10264,6 +11938,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10276,12 +11951,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_user_headset />
-  <Flowbite.Icons.solid_user_headset class="w-4 h-4" />
+  <Flowbite.Icons.solid_user_headset class="w-4 h-4" sr="Icon of solid_user_headset" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid User Headset icon"
 
   def solid_user_headset(assigns) do
     ~H"""
@@ -10293,6 +11972,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10305,12 +11985,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_wallet />
-  <Flowbite.Icons.solid_wallet class="w-4 h-4" />
+  <Flowbite.Icons.solid_wallet class="w-4 h-4" sr="Icon of solid_wallet" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Wallet icon"
 
   def solid_wallet(assigns) do
     ~H"""
@@ -10322,6 +12006,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10334,12 +12019,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_face_grin />
-  <Flowbite.Icons.solid_face_grin class="w-4 h-4" />
+  <Flowbite.Icons.solid_face_grin class="w-4 h-4" sr="Icon of solid_face_grin" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Face Grin icon"
 
   def solid_face_grin(assigns) do
     ~H"""
@@ -10350,6 +12039,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10362,12 +12052,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_face_laugh />
-  <Flowbite.Icons.solid_face_laugh class="w-4 h-4" />
+  <Flowbite.Icons.solid_face_laugh class="w-4 h-4" sr="Icon of solid_face_laugh" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Face Laugh icon"
 
   def solid_face_laugh(assigns) do
     ~H"""
@@ -10378,6 +12072,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10390,12 +12085,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_face_mind_blow />
-  <Flowbite.Icons.solid_face_mind_blow class="w-4 h-4" />
+  <Flowbite.Icons.solid_face_mind_blow class="w-4 h-4" sr="Icon of solid_face_mind_blow" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Face Mind Blow icon"
 
   def solid_face_mind_blow(assigns) do
     ~H"""
@@ -10406,6 +12105,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10418,12 +12118,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_face_star_struck />
-  <Flowbite.Icons.solid_face_star_struck class="w-4 h-4" />
+  <Flowbite.Icons.solid_face_star_struck class="w-4 h-4" sr="Icon of solid_face_star_struck" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Face Star Struck icon"
 
   def solid_face_star_struck(assigns) do
     ~H"""
@@ -10434,6 +12138,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10446,12 +12151,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_thumbs_down />
-  <Flowbite.Icons.solid_thumbs_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_thumbs_down class="w-4 h-4" sr="Icon of solid_thumbs_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Thumbs Down icon"
 
   def solid_thumbs_down(assigns) do
     ~H"""
@@ -10462,6 +12171,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10474,12 +12184,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_thumbs_up />
-  <Flowbite.Icons.solid_thumbs_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_thumbs_up class="w-4 h-4" sr="Icon of solid_thumbs_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Thumbs Up icon"
 
   def solid_thumbs_up(assigns) do
     ~H"""
@@ -10490,6 +12204,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10502,12 +12217,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_archive_download />
-  <Flowbite.Icons.solid_archive_download class="w-4 h-4" />
+  <Flowbite.Icons.solid_archive_download class="w-4 h-4" sr="Icon of solid_archive_download" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Archive Download icon"
 
   def solid_archive_download(assigns) do
     ~H"""
@@ -10518,6 +12237,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10530,12 +12250,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_clipboard_check />
-  <Flowbite.Icons.solid_clipboard_check class="w-4 h-4" />
+  <Flowbite.Icons.solid_clipboard_check class="w-4 h-4" sr="Icon of solid_clipboard_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Clipboard Check icon"
 
   def solid_clipboard_check(assigns) do
     ~H"""
@@ -10546,6 +12270,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10558,12 +12283,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_clipboard_list />
-  <Flowbite.Icons.solid_clipboard_list class="w-4 h-4" />
+  <Flowbite.Icons.solid_clipboard_list class="w-4 h-4" sr="Icon of solid_clipboard_list" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Clipboard List icon"
 
   def solid_clipboard_list(assigns) do
     ~H"""
@@ -10574,6 +12303,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10586,12 +12316,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_clipboard />
-  <Flowbite.Icons.solid_clipboard class="w-4 h-4" />
+  <Flowbite.Icons.solid_clipboard class="w-4 h-4" sr="Icon of solid_clipboard" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Clipboard icon"
 
   def solid_clipboard(assigns) do
     ~H"""
@@ -10602,6 +12336,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10614,12 +12349,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_clone />
-  <Flowbite.Icons.solid_clone class="w-4 h-4" />
+  <Flowbite.Icons.solid_clone class="w-4 h-4" sr="Icon of solid_clone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Clone icon"
 
   def solid_clone(assigns) do
     ~H"""
@@ -10631,6 +12370,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10643,12 +12383,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_copy />
-  <Flowbite.Icons.solid_copy class="w-4 h-4" />
+  <Flowbite.Icons.solid_copy class="w-4 h-4" sr="Icon of solid_copy" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Copy icon"
 
   def solid_copy(assigns) do
     ~H"""
@@ -10660,6 +12404,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10672,12 +12417,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_video />
-  <Flowbite.Icons.solid_file_video class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_video class="w-4 h-4" sr="Icon of solid_file_video" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Video icon"
 
   def solid_file_video(assigns) do
     ~H"""
@@ -10688,6 +12437,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10700,12 +12450,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_chart_bar />
-  <Flowbite.Icons.solid_file_chart_bar class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_chart_bar class="w-4 h-4" sr="Icon of solid_file_chart_bar" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Chart Bar icon"
 
   def solid_file_chart_bar(assigns) do
     ~H"""
@@ -10716,6 +12470,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10728,12 +12483,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_check />
-  <Flowbite.Icons.solid_file_check class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_check class="w-4 h-4" sr="Icon of solid_file_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Check icon"
 
   def solid_file_check(assigns) do
     ~H"""
@@ -10744,6 +12503,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10756,12 +12516,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_code />
-  <Flowbite.Icons.solid_file_code class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_code class="w-4 h-4" sr="Icon of solid_file_code" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Code icon"
 
   def solid_file_code(assigns) do
     ~H"""
@@ -10772,6 +12536,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10784,12 +12549,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_copy />
-  <Flowbite.Icons.solid_file_copy class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_copy class="w-4 h-4" sr="Icon of solid_file_copy" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Copy icon"
 
   def solid_file_copy(assigns) do
     ~H"""
@@ -10801,6 +12570,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10813,12 +12583,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_csv />
-  <Flowbite.Icons.solid_file_csv class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_csv class="w-4 h-4" sr="Icon of solid_file_csv" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Csv icon"
 
   def solid_file_csv(assigns) do
     ~H"""
@@ -10829,6 +12603,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10841,12 +12616,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_edit />
-  <Flowbite.Icons.solid_file_edit class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_edit class="w-4 h-4" sr="Icon of solid_file_edit" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Edit icon"
 
   def solid_file_edit(assigns) do
     ~H"""
@@ -10859,6 +12638,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10871,12 +12651,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_export />
-  <Flowbite.Icons.solid_file_export class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_export class="w-4 h-4" sr="Icon of solid_file_export" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Export icon"
 
   def solid_file_export(assigns) do
     ~H"""
@@ -10887,6 +12671,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10899,12 +12684,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_image />
-  <Flowbite.Icons.solid_file_image class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_image class="w-4 h-4" sr="Icon of solid_file_image" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Image icon"
 
   def solid_file_image(assigns) do
     ~H"""
@@ -10915,6 +12704,7 @@ defmodule Flowbite.Icons do
         <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10927,12 +12717,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_import />
-  <Flowbite.Icons.solid_file_import class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_import class="w-4 h-4" sr="Icon of solid_file_import" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Import icon"
 
   def solid_file_import(assigns) do
     ~H"""
@@ -10943,6 +12737,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10955,12 +12750,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_invoice />
-  <Flowbite.Icons.solid_file_invoice class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_invoice class="w-4 h-4" sr="Icon of solid_file_invoice" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Invoice icon"
 
   def solid_file_invoice(assigns) do
     ~H"""
@@ -10977,6 +12776,7 @@ defmodule Flowbite.Icons do
       </path>
       <path fill="currentColor" d="M11 11H9v1h2v-1Z"></path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -10989,12 +12789,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_lines />
-  <Flowbite.Icons.solid_file_lines class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_lines class="w-4 h-4" sr="Icon of solid_file_lines" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Lines icon"
 
   def solid_file_lines(assigns) do
     ~H"""
@@ -11005,6 +12809,7 @@ defmodule Flowbite.Icons do
         <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11017,12 +12822,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_music />
-  <Flowbite.Icons.solid_file_music class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_music class="w-4 h-4" sr="Icon of solid_file_music" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Music icon"
 
   def solid_file_music(assigns) do
     ~H"""
@@ -11034,6 +12843,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11046,12 +12856,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_paste />
-  <Flowbite.Icons.solid_file_paste class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_paste class="w-4 h-4" sr="Icon of solid_file_paste" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Paste icon"
 
   def solid_file_paste(assigns) do
     ~H"""
@@ -11064,6 +12878,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11076,12 +12891,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_pdf />
-  <Flowbite.Icons.solid_file_pdf class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_pdf class="w-4 h-4" sr="Icon of solid_file_pdf" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Pdf icon"
 
   def solid_file_pdf(assigns) do
     ~H"""
@@ -11093,6 +12912,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11105,12 +12925,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_plus />
-  <Flowbite.Icons.solid_file_plus class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_plus class="w-4 h-4" sr="Icon of solid_file_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Plus icon"
 
   def solid_file_plus(assigns) do
     ~H"""
@@ -11122,6 +12946,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11134,12 +12959,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_powerpoint />
-  <Flowbite.Icons.solid_file_powerpoint class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_powerpoint class="w-4 h-4" sr="Icon of solid_file_powerpoint" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Powerpoint icon"
 
   def solid_file_powerpoint(assigns) do
     ~H"""
@@ -11152,6 +12981,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11164,12 +12994,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_search />
-  <Flowbite.Icons.solid_file_search class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_search class="w-4 h-4" sr="Icon of solid_file_search" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Search icon"
 
   def solid_file_search(assigns) do
     ~H"""
@@ -11185,6 +13019,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11197,12 +13032,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_shield />
-  <Flowbite.Icons.solid_file_shield class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_shield class="w-4 h-4" sr="Icon of solid_file_shield" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Shield icon"
 
   def solid_file_shield(assigns) do
     ~H"""
@@ -11214,6 +13053,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11226,12 +13066,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_wordpress />
-  <Flowbite.Icons.solid_file_wordpress class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_wordpress class="w-4 h-4" sr="Icon of solid_file_wordpress" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Wordpress icon"
 
   def solid_file_wordpress(assigns) do
     ~H"""
@@ -11242,6 +13086,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11254,12 +13099,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file_zipper />
-  <Flowbite.Icons.solid_file_zipper class="w-4 h-4" />
+  <Flowbite.Icons.solid_file_zipper class="w-4 h-4" sr="Icon of solid_file_zipper" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File Zipper icon"
 
   def solid_file_zipper(assigns) do
     ~H"""
@@ -11270,6 +13119,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11282,12 +13132,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_file />
-  <Flowbite.Icons.solid_file class="w-4 h-4" />
+  <Flowbite.Icons.solid_file class="w-4 h-4" sr="Icon of solid_file" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid File icon"
 
   def solid_file(assigns) do
     ~H"""
@@ -11298,6 +13152,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11310,12 +13165,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_folder_arrow_right />
-  <Flowbite.Icons.solid_folder_arrow_right class="w-4 h-4" />
+  <Flowbite.Icons.solid_folder_arrow_right class="w-4 h-4" sr="Icon of solid_folder_arrow_right" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Folder Arrow Right icon"
 
   def solid_folder_arrow_right(assigns) do
     ~H"""
@@ -11326,6 +13185,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11338,12 +13198,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_folder_duplicate />
-  <Flowbite.Icons.solid_folder_duplicate class="w-4 h-4" />
+  <Flowbite.Icons.solid_folder_duplicate class="w-4 h-4" sr="Icon of solid_folder_duplicate" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Folder Duplicate icon"
 
   def solid_folder_duplicate(assigns) do
     ~H"""
@@ -11355,6 +13219,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11367,12 +13232,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_folder_open />
-  <Flowbite.Icons.solid_folder_open class="w-4 h-4" />
+  <Flowbite.Icons.solid_folder_open class="w-4 h-4" sr="Icon of solid_folder_open" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Folder Open icon"
 
   def solid_folder_open(assigns) do
     ~H"""
@@ -11384,6 +13253,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11396,12 +13266,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_folder_plus />
-  <Flowbite.Icons.solid_folder_plus class="w-4 h-4" />
+  <Flowbite.Icons.solid_folder_plus class="w-4 h-4" sr="Icon of solid_folder_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Folder Plus icon"
 
   def solid_folder_plus(assigns) do
     ~H"""
@@ -11412,6 +13286,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11424,12 +13299,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_folder />
-  <Flowbite.Icons.solid_folder class="w-4 h-4" />
+  <Flowbite.Icons.solid_folder class="w-4 h-4" sr="Icon of solid_folder" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Folder icon"
 
   def solid_folder(assigns) do
     ~H"""
@@ -11440,6 +13319,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11452,12 +13332,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_adjustments_horizontal />
-  <Flowbite.Icons.solid_adjustments_horizontal class="w-4 h-4" />
+  <Flowbite.Icons.solid_adjustments_horizontal class="w-4 h-4" sr="Icon of solid_adjustments_horizontal" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Adjustments Horizontal icon"
 
   def solid_adjustments_horizontal(assigns) do
     ~H"""
@@ -11468,6 +13352,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11480,12 +13365,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_adjustments_vertical />
-  <Flowbite.Icons.solid_adjustments_vertical class="w-4 h-4" />
+  <Flowbite.Icons.solid_adjustments_vertical class="w-4 h-4" sr="Icon of solid_adjustments_vertical" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Adjustments Vertical icon"
 
   def solid_adjustments_vertical(assigns) do
     ~H"""
@@ -11496,6 +13385,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11508,12 +13398,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_annotation />
-  <Flowbite.Icons.solid_annotation class="w-4 h-4" />
+  <Flowbite.Icons.solid_annotation class="w-4 h-4" sr="Icon of solid_annotation" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Annotation icon"
 
   def solid_annotation(assigns) do
     ~H"""
@@ -11524,6 +13418,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11536,12 +13431,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_archive />
-  <Flowbite.Icons.solid_archive class="w-4 h-4" />
+  <Flowbite.Icons.solid_archive class="w-4 h-4" sr="Icon of solid_archive" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Archive icon"
 
   def solid_archive(assigns) do
     ~H"""
@@ -11552,6 +13451,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11564,12 +13464,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_arrow_up_right_square />
-  <Flowbite.Icons.solid_arrow_up_right_square class="w-4 h-4" />
+  <Flowbite.Icons.solid_arrow_up_right_square class="w-4 h-4" sr="Icon of solid_arrow_up_right_square" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Arrow Up Right Square icon"
 
   def solid_arrow_up_right_square(assigns) do
     ~H"""
@@ -11581,6 +13485,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11593,12 +13498,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_atom />
-  <Flowbite.Icons.solid_atom class="w-4 h-4" />
+  <Flowbite.Icons.solid_atom class="w-4 h-4" sr="Icon of solid_atom" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Atom icon"
 
   def solid_atom(assigns) do
     ~H"""
@@ -11609,6 +13518,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11621,12 +13531,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_badge_check />
-  <Flowbite.Icons.solid_badge_check class="w-4 h-4" />
+  <Flowbite.Icons.solid_badge_check class="w-4 h-4" sr="Icon of solid_badge_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Badge Check icon"
 
   def solid_badge_check(assigns) do
     ~H"""
@@ -11642,6 +13556,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11654,12 +13569,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bars />
-  <Flowbite.Icons.solid_bars class="w-4 h-4" />
+  <Flowbite.Icons.solid_bars class="w-4 h-4" sr="Icon of solid_bars" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bars icon"
 
   def solid_bars(assigns) do
     ~H"""
@@ -11670,6 +13589,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11682,12 +13602,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bell_active_alt />
-  <Flowbite.Icons.solid_bell_active_alt class="w-4 h-4" />
+  <Flowbite.Icons.solid_bell_active_alt class="w-4 h-4" sr="Icon of solid_bell_active_alt" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bell Active Alt icon"
 
   def solid_bell_active_alt(assigns) do
     ~H"""
@@ -11698,6 +13622,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11710,12 +13635,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bell_active />
-  <Flowbite.Icons.solid_bell_active class="w-4 h-4" />
+  <Flowbite.Icons.solid_bell_active class="w-4 h-4" sr="Icon of solid_bell_active" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bell Active icon"
 
   def solid_bell_active(assigns) do
     ~H"""
@@ -11726,6 +13655,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11738,12 +13668,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bell_ring />
-  <Flowbite.Icons.solid_bell_ring class="w-4 h-4" />
+  <Flowbite.Icons.solid_bell_ring class="w-4 h-4" sr="Icon of solid_bell_ring" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bell Ring icon"
 
   def solid_bell_ring(assigns) do
     ~H"""
@@ -11754,6 +13688,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11766,12 +13701,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bell />
-  <Flowbite.Icons.solid_bell class="w-4 h-4" />
+  <Flowbite.Icons.solid_bell class="w-4 h-4" sr="Icon of solid_bell" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bell icon"
 
   def solid_bell(assigns) do
     ~H"""
@@ -11782,6 +13721,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11794,12 +13734,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_blender_phone />
-  <Flowbite.Icons.solid_blender_phone class="w-4 h-4" />
+  <Flowbite.Icons.solid_blender_phone class="w-4 h-4" sr="Icon of solid_blender_phone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Blender Phone icon"
 
   def solid_blender_phone(assigns) do
     ~H"""
@@ -11810,6 +13754,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11822,12 +13767,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_book />
-  <Flowbite.Icons.solid_book class="w-4 h-4" />
+  <Flowbite.Icons.solid_book class="w-4 h-4" sr="Icon of solid_book" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Book icon"
 
   def solid_book(assigns) do
     ~H"""
@@ -11838,6 +13787,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11850,12 +13800,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bookmark />
-  <Flowbite.Icons.solid_bookmark class="w-4 h-4" />
+  <Flowbite.Icons.solid_bookmark class="w-4 h-4" sr="Icon of solid_bookmark" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bookmark icon"
 
   def solid_bookmark(assigns) do
     ~H"""
@@ -11866,6 +13820,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11878,12 +13833,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_brain />
-  <Flowbite.Icons.solid_brain class="w-4 h-4" />
+  <Flowbite.Icons.solid_brain class="w-4 h-4" sr="Icon of solid_brain" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Brain icon"
 
   def solid_brain(assigns) do
     ~H"""
@@ -11894,6 +13853,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11906,12 +13866,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_briefcase />
-  <Flowbite.Icons.solid_briefcase class="w-4 h-4" />
+  <Flowbite.Icons.solid_briefcase class="w-4 h-4" sr="Icon of solid_briefcase" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Briefcase icon"
 
   def solid_briefcase(assigns) do
     ~H"""
@@ -11923,6 +13887,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11935,12 +13900,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bug />
-  <Flowbite.Icons.solid_bug class="w-4 h-4" />
+  <Flowbite.Icons.solid_bug class="w-4 h-4" sr="Icon of solid_bug" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bug icon"
 
   def solid_bug(assigns) do
     ~H"""
@@ -11951,6 +13920,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11963,12 +13933,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_building />
-  <Flowbite.Icons.solid_building class="w-4 h-4" />
+  <Flowbite.Icons.solid_building class="w-4 h-4" sr="Icon of solid_building" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Building icon"
 
   def solid_building(assigns) do
     ~H"""
@@ -11979,6 +13953,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -11991,12 +13966,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bullhorn />
-  <Flowbite.Icons.solid_bullhorn class="w-4 h-4" />
+  <Flowbite.Icons.solid_bullhorn class="w-4 h-4" sr="Icon of solid_bullhorn" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bullhorn icon"
 
   def solid_bullhorn(assigns) do
     ~H"""
@@ -12007,6 +13986,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12019,12 +13999,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_calendar_edit />
-  <Flowbite.Icons.solid_calendar_edit class="w-4 h-4" />
+  <Flowbite.Icons.solid_calendar_edit class="w-4 h-4" sr="Icon of solid_calendar_edit" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Calendar Edit icon"
 
   def solid_calendar_edit(assigns) do
     ~H"""
@@ -12036,6 +14020,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12048,12 +14033,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_calendar_month />
-  <Flowbite.Icons.solid_calendar_month class="w-4 h-4" />
+  <Flowbite.Icons.solid_calendar_month class="w-4 h-4" sr="Icon of solid_calendar_month" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Calendar Month icon"
 
   def solid_calendar_month(assigns) do
     ~H"""
@@ -12064,6 +14053,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12076,12 +14066,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_calendar_plus />
-  <Flowbite.Icons.solid_calendar_plus class="w-4 h-4" />
+  <Flowbite.Icons.solid_calendar_plus class="w-4 h-4" sr="Icon of solid_calendar_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Calendar Plus icon"
 
   def solid_calendar_plus(assigns) do
     ~H"""
@@ -12092,6 +14086,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12104,12 +14099,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_calendar_week />
-  <Flowbite.Icons.solid_calendar_week class="w-4 h-4" />
+  <Flowbite.Icons.solid_calendar_week class="w-4 h-4" sr="Icon of solid_calendar_week" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Calendar Week icon"
 
   def solid_calendar_week(assigns) do
     ~H"""
@@ -12120,6 +14119,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12132,12 +14132,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chart_bars_3_from_left />
-  <Flowbite.Icons.solid_chart_bars_3_from_left class="w-4 h-4" />
+  <Flowbite.Icons.solid_chart_bars_3_from_left class="w-4 h-4" sr="Icon of solid_chart_bars_3_from_left" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chart Bars 3 From Left icon"
 
   def solid_chart_bars_3_from_left(assigns) do
     ~H"""
@@ -12151,6 +14155,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12163,12 +14168,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chart_line_down />
-  <Flowbite.Icons.solid_chart_line_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_chart_line_down class="w-4 h-4" sr="Icon of solid_chart_line_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chart Line Down icon"
 
   def solid_chart_line_down(assigns) do
     ~H"""
@@ -12179,6 +14188,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12191,12 +14201,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chart_line_up />
-  <Flowbite.Icons.solid_chart_line_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_chart_line_up class="w-4 h-4" sr="Icon of solid_chart_line_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chart Line Up icon"
 
   def solid_chart_line_up(assigns) do
     ~H"""
@@ -12207,6 +14221,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12219,12 +14234,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chart_mixed_dollar />
-  <Flowbite.Icons.solid_chart_mixed_dollar class="w-4 h-4" />
+  <Flowbite.Icons.solid_chart_mixed_dollar class="w-4 h-4" sr="Icon of solid_chart_mixed_dollar" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chart Mixed Dollar icon"
 
   def solid_chart_mixed_dollar(assigns) do
     ~H"""
@@ -12235,6 +14254,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12247,12 +14267,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chart_mixed />
-  <Flowbite.Icons.solid_chart_mixed class="w-4 h-4" />
+  <Flowbite.Icons.solid_chart_mixed class="w-4 h-4" sr="Icon of solid_chart_mixed" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chart Mixed icon"
 
   def solid_chart_mixed(assigns) do
     ~H"""
@@ -12264,6 +14288,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12276,12 +14301,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chart_pie />
-  <Flowbite.Icons.solid_chart_pie class="w-4 h-4" />
+  <Flowbite.Icons.solid_chart_pie class="w-4 h-4" sr="Icon of solid_chart_pie" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chart Pie icon"
 
   def solid_chart_pie(assigns) do
     ~H"""
@@ -12293,6 +14322,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12305,12 +14335,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_chart />
-  <Flowbite.Icons.solid_chart class="w-4 h-4" />
+  <Flowbite.Icons.solid_chart class="w-4 h-4" sr="Icon of solid_chart" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Chart icon"
 
   def solid_chart(assigns) do
     ~H"""
@@ -12321,6 +14355,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12333,12 +14368,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_check_circle />
-  <Flowbite.Icons.solid_check_circle class="w-4 h-4" />
+  <Flowbite.Icons.solid_check_circle class="w-4 h-4" sr="Icon of solid_check_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Check Circle icon"
 
   def solid_check_circle(assigns) do
     ~H"""
@@ -12349,6 +14388,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12361,12 +14401,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_check_plus_circle />
-  <Flowbite.Icons.solid_check_plus_circle class="w-4 h-4" />
+  <Flowbite.Icons.solid_check_plus_circle class="w-4 h-4" sr="Icon of solid_check_plus_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Check Plus Circle icon"
 
   def solid_check_plus_circle(assigns) do
     ~H"""
@@ -12382,6 +14426,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12394,12 +14439,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_check />
-  <Flowbite.Icons.solid_check class="w-4 h-4" />
+  <Flowbite.Icons.solid_check class="w-4 h-4" sr="Icon of solid_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Check icon"
 
   def solid_check(assigns) do
     ~H"""
@@ -12410,6 +14459,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12422,12 +14472,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_circle_plus />
-  <Flowbite.Icons.solid_circle_plus class="w-4 h-4" />
+  <Flowbite.Icons.solid_circle_plus class="w-4 h-4" sr="Icon of solid_circle_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Circle Plus icon"
 
   def solid_circle_plus(assigns) do
     ~H"""
@@ -12438,6 +14492,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12450,12 +14505,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_clock />
-  <Flowbite.Icons.solid_clock class="w-4 h-4" />
+  <Flowbite.Icons.solid_clock class="w-4 h-4" sr="Icon of solid_clock" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Clock icon"
 
   def solid_clock(assigns) do
     ~H"""
@@ -12466,6 +14525,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12478,12 +14538,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_close_circle />
-  <Flowbite.Icons.solid_close_circle class="w-4 h-4" />
+  <Flowbite.Icons.solid_close_circle class="w-4 h-4" sr="Icon of solid_close_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Close Circle icon"
 
   def solid_close_circle(assigns) do
     ~H"""
@@ -12494,6 +14558,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12506,12 +14571,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_close />
-  <Flowbite.Icons.solid_close class="w-4 h-4" />
+  <Flowbite.Icons.solid_close class="w-4 h-4" sr="Icon of solid_close" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Close icon"
 
   def solid_close(assigns) do
     ~H"""
@@ -12522,6 +14591,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12534,12 +14604,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_cloud_arrow_up />
-  <Flowbite.Icons.solid_cloud_arrow_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_cloud_arrow_up class="w-4 h-4" sr="Icon of solid_cloud_arrow_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Cloud Arrow Up icon"
 
   def solid_cloud_arrow_up(assigns) do
     ~H"""
@@ -12550,6 +14624,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12562,12 +14637,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_code_branch />
-  <Flowbite.Icons.solid_code_branch class="w-4 h-4" />
+  <Flowbite.Icons.solid_code_branch class="w-4 h-4" sr="Icon of solid_code_branch" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Code Branch icon"
 
   def solid_code_branch(assigns) do
     ~H"""
@@ -12578,6 +14657,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12590,12 +14670,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_code_fork />
-  <Flowbite.Icons.solid_code_fork class="w-4 h-4" />
+  <Flowbite.Icons.solid_code_fork class="w-4 h-4" sr="Icon of solid_code_fork" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Code Fork icon"
 
   def solid_code_fork(assigns) do
     ~H"""
@@ -12606,6 +14690,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12618,12 +14703,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_code_merge />
-  <Flowbite.Icons.solid_code_merge class="w-4 h-4" />
+  <Flowbite.Icons.solid_code_merge class="w-4 h-4" sr="Icon of solid_code_merge" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Code Merge icon"
 
   def solid_code_merge(assigns) do
     ~H"""
@@ -12634,6 +14723,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12646,12 +14736,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_code_pull_request />
-  <Flowbite.Icons.solid_code_pull_request class="w-4 h-4" />
+  <Flowbite.Icons.solid_code_pull_request class="w-4 h-4" sr="Icon of solid_code_pull_request" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Code Pull Request icon"
 
   def solid_code_pull_request(assigns) do
     ~H"""
@@ -12662,6 +14756,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12674,12 +14769,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_code />
-  <Flowbite.Icons.solid_code class="w-4 h-4" />
+  <Flowbite.Icons.solid_code class="w-4 h-4" sr="Icon of solid_code" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Code icon"
 
   def solid_code(assigns) do
     ~H"""
@@ -12690,6 +14789,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12702,12 +14802,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_column />
-  <Flowbite.Icons.solid_column class="w-4 h-4" />
+  <Flowbite.Icons.solid_column class="w-4 h-4" sr="Icon of solid_column" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Column icon"
 
   def solid_column(assigns) do
     ~H"""
@@ -12718,6 +14822,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12730,12 +14835,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_database />
-  <Flowbite.Icons.solid_database class="w-4 h-4" />
+  <Flowbite.Icons.solid_database class="w-4 h-4" sr="Icon of solid_database" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Database icon"
 
   def solid_database(assigns) do
     ~H"""
@@ -12746,6 +14855,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12758,12 +14868,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_desktop_pc />
-  <Flowbite.Icons.solid_desktop_pc class="w-4 h-4" />
+  <Flowbite.Icons.solid_desktop_pc class="w-4 h-4" sr="Icon of solid_desktop_pc" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Desktop Pc icon"
 
   def solid_desktop_pc(assigns) do
     ~H"""
@@ -12774,6 +14888,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12786,12 +14901,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_dna />
-  <Flowbite.Icons.solid_dna class="w-4 h-4" />
+  <Flowbite.Icons.solid_dna class="w-4 h-4" sr="Icon of solid_dna" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Dna icon"
 
   def solid_dna(assigns) do
     ~H"""
@@ -12802,6 +14921,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12814,12 +14934,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_download />
-  <Flowbite.Icons.solid_download class="w-4 h-4" />
+  <Flowbite.Icons.solid_download class="w-4 h-4" sr="Icon of solid_download" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Download icon"
 
   def solid_download(assigns) do
     ~H"""
@@ -12831,6 +14955,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12843,12 +14968,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_draw_square />
-  <Flowbite.Icons.solid_draw_square class="w-4 h-4" />
+  <Flowbite.Icons.solid_draw_square class="w-4 h-4" sr="Icon of solid_draw_square" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Draw Square icon"
 
   def solid_draw_square(assigns) do
     ~H"""
@@ -12859,6 +14988,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12871,12 +15001,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_ellipse_horizontal />
-  <Flowbite.Icons.solid_ellipse_horizontal class="w-4 h-4" />
+  <Flowbite.Icons.solid_ellipse_horizontal class="w-4 h-4" sr="Icon of solid_ellipse_horizontal" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Ellipse Horizontal icon"
 
   def solid_ellipse_horizontal(assigns) do
     ~H"""
@@ -12887,6 +15021,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12899,12 +15034,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_ellipse_vertical />
-  <Flowbite.Icons.solid_ellipse_vertical class="w-4 h-4" />
+  <Flowbite.Icons.solid_ellipse_vertical class="w-4 h-4" sr="Icon of solid_ellipse_vertical" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Ellipse Vertical icon"
 
   def solid_ellipse_vertical(assigns) do
     ~H"""
@@ -12915,6 +15054,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12927,12 +15067,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_envelope_open />
-  <Flowbite.Icons.solid_envelope_open class="w-4 h-4" />
+  <Flowbite.Icons.solid_envelope_open class="w-4 h-4" sr="Icon of solid_envelope_open" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Envelope Open icon"
 
   def solid_envelope_open(assigns) do
     ~H"""
@@ -12944,6 +15088,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12956,12 +15101,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_envelope />
-  <Flowbite.Icons.solid_envelope class="w-4 h-4" />
+  <Flowbite.Icons.solid_envelope class="w-4 h-4" sr="Icon of solid_envelope" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Envelope icon"
 
   def solid_envelope(assigns) do
     ~H"""
@@ -12973,6 +15122,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -12985,12 +15135,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_exclamation_circle />
-  <Flowbite.Icons.solid_exclamation_circle class="w-4 h-4" />
+  <Flowbite.Icons.solid_exclamation_circle class="w-4 h-4" sr="Icon of solid_exclamation_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Exclamation Circle icon"
 
   def solid_exclamation_circle(assigns) do
     ~H"""
@@ -13001,6 +15155,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13013,12 +15168,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_eye_slash />
-  <Flowbite.Icons.solid_eye_slash class="w-4 h-4" />
+  <Flowbite.Icons.solid_eye_slash class="w-4 h-4" sr="Icon of solid_eye_slash" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Eye Slash icon"
 
   def solid_eye_slash(assigns) do
     ~H"""
@@ -13032,6 +15191,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13044,12 +15204,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_eye />
-  <Flowbite.Icons.solid_eye class="w-4 h-4" />
+  <Flowbite.Icons.solid_eye class="w-4 h-4" sr="Icon of solid_eye" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Eye icon"
 
   def solid_eye(assigns) do
     ~H"""
@@ -13060,6 +15224,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13072,12 +15237,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_filter />
-  <Flowbite.Icons.solid_filter class="w-4 h-4" />
+  <Flowbite.Icons.solid_filter class="w-4 h-4" sr="Icon of solid_filter" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Filter icon"
 
   def solid_filter(assigns) do
     ~H"""
@@ -13088,6 +15257,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13100,12 +15270,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_fingerprint />
-  <Flowbite.Icons.solid_fingerprint class="w-4 h-4" />
+  <Flowbite.Icons.solid_fingerprint class="w-4 h-4" sr="Icon of solid_fingerprint" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Fingerprint icon"
 
   def solid_fingerprint(assigns) do
     ~H"""
@@ -13121,6 +15295,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13133,12 +15308,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_fire />
-  <Flowbite.Icons.solid_fire class="w-4 h-4" />
+  <Flowbite.Icons.solid_fire class="w-4 h-4" sr="Icon of solid_fire" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Fire icon"
 
   def solid_fire(assigns) do
     ~H"""
@@ -13149,6 +15328,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13161,12 +15341,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_gear />
-  <Flowbite.Icons.solid_gear class="w-4 h-4" />
+  <Flowbite.Icons.solid_gear class="w-4 h-4" sr="Icon of solid_gear" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Gear icon"
 
   def solid_gear(assigns) do
     ~H"""
@@ -13177,6 +15361,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13189,12 +15374,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_gift_box />
-  <Flowbite.Icons.solid_gift_box class="w-4 h-4" />
+  <Flowbite.Icons.solid_gift_box class="w-4 h-4" sr="Icon of solid_gift_box" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Gift Box icon"
 
   def solid_gift_box(assigns) do
     ~H"""
@@ -13205,6 +15394,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13217,12 +15407,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_globe />
-  <Flowbite.Icons.solid_globe class="w-4 h-4" />
+  <Flowbite.Icons.solid_globe class="w-4 h-4" sr="Icon of solid_globe" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Globe icon"
 
   def solid_globe(assigns) do
     ~H"""
@@ -13233,6 +15427,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13245,12 +15440,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_grid_plus />
-  <Flowbite.Icons.solid_grid_plus class="w-4 h-4" />
+  <Flowbite.Icons.solid_grid_plus class="w-4 h-4" sr="Icon of solid_grid_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Grid Plus icon"
 
   def solid_grid_plus(assigns) do
     ~H"""
@@ -13261,6 +15460,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13273,12 +15473,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_grid />
-  <Flowbite.Icons.solid_grid class="w-4 h-4" />
+  <Flowbite.Icons.solid_grid class="w-4 h-4" sr="Icon of solid_grid" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Grid icon"
 
   def solid_grid(assigns) do
     ~H"""
@@ -13289,6 +15493,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13301,12 +15506,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_heart />
-  <Flowbite.Icons.solid_heart class="w-4 h-4" />
+  <Flowbite.Icons.solid_heart class="w-4 h-4" sr="Icon of solid_heart" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Heart icon"
 
   def solid_heart(assigns) do
     ~H"""
@@ -13317,6 +15526,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13329,12 +15539,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_home />
-  <Flowbite.Icons.solid_home class="w-4 h-4" />
+  <Flowbite.Icons.solid_home class="w-4 h-4" sr="Icon of solid_home" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Home icon"
 
   def solid_home(assigns) do
     ~H"""
@@ -13345,6 +15559,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13357,12 +15572,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_hourglass />
-  <Flowbite.Icons.solid_hourglass class="w-4 h-4" />
+  <Flowbite.Icons.solid_hourglass class="w-4 h-4" sr="Icon of solid_hourglass" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Hourglass icon"
 
   def solid_hourglass(assigns) do
     ~H"""
@@ -13373,6 +15592,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13385,12 +15605,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_image />
-  <Flowbite.Icons.solid_image class="w-4 h-4" />
+  <Flowbite.Icons.solid_image class="w-4 h-4" sr="Icon of solid_image" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Image icon"
 
   def solid_image(assigns) do
     ~H"""
@@ -13401,6 +15625,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13413,12 +15638,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_inbox_full />
-  <Flowbite.Icons.solid_inbox_full class="w-4 h-4" />
+  <Flowbite.Icons.solid_inbox_full class="w-4 h-4" sr="Icon of solid_inbox_full" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Inbox Full icon"
 
   def solid_inbox_full(assigns) do
     ~H"""
@@ -13430,6 +15659,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13442,12 +15672,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_inbox />
-  <Flowbite.Icons.solid_inbox class="w-4 h-4" />
+  <Flowbite.Icons.solid_inbox class="w-4 h-4" sr="Icon of solid_inbox" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Inbox icon"
 
   def solid_inbox(assigns) do
     ~H"""
@@ -13459,6 +15693,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13471,12 +15706,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_info_circle />
-  <Flowbite.Icons.solid_info_circle class="w-4 h-4" />
+  <Flowbite.Icons.solid_info_circle class="w-4 h-4" sr="Icon of solid_info_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Info Circle icon"
 
   def solid_info_circle(assigns) do
     ~H"""
@@ -13487,6 +15726,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13499,12 +15739,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_keyboard />
-  <Flowbite.Icons.solid_keyboard class="w-4 h-4" />
+  <Flowbite.Icons.solid_keyboard class="w-4 h-4" sr="Icon of solid_keyboard" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Keyboard icon"
 
   def solid_keyboard(assigns) do
     ~H"""
@@ -13515,6 +15759,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13527,12 +15772,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_label />
-  <Flowbite.Icons.solid_label class="w-4 h-4" />
+  <Flowbite.Icons.solid_label class="w-4 h-4" sr="Icon of solid_label" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Label icon"
 
   def solid_label(assigns) do
     ~H"""
@@ -13543,6 +15792,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13555,12 +15805,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_landmark />
-  <Flowbite.Icons.solid_landmark class="w-4 h-4" />
+  <Flowbite.Icons.solid_landmark class="w-4 h-4" sr="Icon of solid_landmark" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Landmark icon"
 
   def solid_landmark(assigns) do
     ~H"""
@@ -13571,6 +15825,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13583,12 +15838,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_layers />
-  <Flowbite.Icons.solid_layers class="w-4 h-4" />
+  <Flowbite.Icons.solid_layers class="w-4 h-4" sr="Icon of solid_layers" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Layers icon"
 
   def solid_layers(assigns) do
     ~H"""
@@ -13602,6 +15861,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13614,12 +15874,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_life_buoy />
-  <Flowbite.Icons.solid_life_buoy class="w-4 h-4" />
+  <Flowbite.Icons.solid_life_buoy class="w-4 h-4" sr="Icon of solid_life_buoy" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Life Buoy icon"
 
   def solid_life_buoy(assigns) do
     ~H"""
@@ -13630,6 +15894,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13642,12 +15907,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_lightbulb />
-  <Flowbite.Icons.solid_lightbulb class="w-4 h-4" />
+  <Flowbite.Icons.solid_lightbulb class="w-4 h-4" sr="Icon of solid_lightbulb" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Lightbulb icon"
 
   def solid_lightbulb(assigns) do
     ~H"""
@@ -13658,6 +15927,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13670,12 +15940,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_link />
-  <Flowbite.Icons.solid_link class="w-4 h-4" />
+  <Flowbite.Icons.solid_link class="w-4 h-4" sr="Icon of solid_link" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Link icon"
 
   def solid_link(assigns) do
     ~H"""
@@ -13687,6 +15961,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13699,12 +15974,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_lock_open />
-  <Flowbite.Icons.solid_lock_open class="w-4 h-4" />
+  <Flowbite.Icons.solid_lock_open class="w-4 h-4" sr="Icon of solid_lock_open" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Lock Open icon"
 
   def solid_lock_open(assigns) do
     ~H"""
@@ -13715,6 +15994,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13727,12 +16007,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_lock_time />
-  <Flowbite.Icons.solid_lock_time class="w-4 h-4" />
+  <Flowbite.Icons.solid_lock_time class="w-4 h-4" sr="Icon of solid_lock_time" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Lock Time icon"
 
   def solid_lock_time(assigns) do
     ~H"""
@@ -13748,6 +16032,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13760,12 +16045,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_lock />
-  <Flowbite.Icons.solid_lock class="w-4 h-4" />
+  <Flowbite.Icons.solid_lock class="w-4 h-4" sr="Icon of solid_lock" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Lock icon"
 
   def solid_lock(assigns) do
     ~H"""
@@ -13776,6 +16065,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13788,12 +16078,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_mail_box />
-  <Flowbite.Icons.solid_mail_box class="w-4 h-4" />
+  <Flowbite.Icons.solid_mail_box class="w-4 h-4" sr="Icon of solid_mail_box" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Mail Box icon"
 
   def solid_mail_box(assigns) do
     ~H"""
@@ -13804,6 +16098,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13816,12 +16111,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_map_pin_alt />
-  <Flowbite.Icons.solid_map_pin_alt class="w-4 h-4" />
+  <Flowbite.Icons.solid_map_pin_alt class="w-4 h-4" sr="Icon of solid_map_pin_alt" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Map Pin Alt icon"
 
   def solid_map_pin_alt(assigns) do
     ~H"""
@@ -13832,6 +16131,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13844,12 +16144,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_map_pin />
-  <Flowbite.Icons.solid_map_pin class="w-4 h-4" />
+  <Flowbite.Icons.solid_map_pin class="w-4 h-4" sr="Icon of solid_map_pin" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Map Pin icon"
 
   def solid_map_pin(assigns) do
     ~H"""
@@ -13860,6 +16164,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13872,12 +16177,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_message_caption />
-  <Flowbite.Icons.solid_message_caption class="w-4 h-4" />
+  <Flowbite.Icons.solid_message_caption class="w-4 h-4" sr="Icon of solid_message_caption" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Message Caption icon"
 
   def solid_message_caption(assigns) do
     ~H"""
@@ -13888,6 +16197,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13900,12 +16210,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_messages />
-  <Flowbite.Icons.solid_messages class="w-4 h-4" />
+  <Flowbite.Icons.solid_messages class="w-4 h-4" sr="Icon of solid_messages" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Messages icon"
 
   def solid_messages(assigns) do
     ~H"""
@@ -13931,6 +16245,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13943,18 +16258,23 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_minus />
-  <Flowbite.Icons.solid_minus class="w-4 h-4" />
+  <Flowbite.Icons.solid_minus class="w-4 h-4" sr="Icon of solid_minus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
 
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Minus icon"
+
   def solid_minus(assigns) do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "fill" => "none", "viewbox" => "0 0 18 2" }, @rest)}>
       <path fill="currentColor" d="M17 0H1a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2Z"></path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13967,12 +16287,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_mobile_phone />
-  <Flowbite.Icons.solid_mobile_phone class="w-4 h-4" />
+  <Flowbite.Icons.solid_mobile_phone class="w-4 h-4" sr="Icon of solid_mobile_phone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Mobile Phone icon"
 
   def solid_mobile_phone(assigns) do
     ~H"""
@@ -13983,6 +16307,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -13995,12 +16320,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_mountain_sun />
-  <Flowbite.Icons.solid_mountain_sun class="w-4 h-4" />
+  <Flowbite.Icons.solid_mountain_sun class="w-4 h-4" sr="Icon of solid_mountain_sun" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Mountain Sun icon"
 
   def solid_mountain_sun(assigns) do
     ~H"""
@@ -14011,6 +16340,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14023,12 +16353,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_newspaper />
-  <Flowbite.Icons.solid_newspaper class="w-4 h-4" />
+  <Flowbite.Icons.solid_newspaper class="w-4 h-4" sr="Icon of solid_newspaper" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Newspaper icon"
 
   def solid_newspaper(assigns) do
     ~H"""
@@ -14039,6 +16373,7 @@ defmodule Flowbite.Icons do
         <path d="M6 5H5v1h1V5Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14051,12 +16386,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_open_book />
-  <Flowbite.Icons.solid_open_book class="w-4 h-4" />
+  <Flowbite.Icons.solid_open_book class="w-4 h-4" sr="Icon of solid_open_book" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Open Book icon"
 
   def solid_open_book(assigns) do
     ~H"""
@@ -14067,6 +16406,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14079,12 +16419,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_pallete />
-  <Flowbite.Icons.solid_pallete class="w-4 h-4" />
+  <Flowbite.Icons.solid_pallete class="w-4 h-4" sr="Icon of solid_pallete" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Pallete icon"
 
   def solid_pallete(assigns) do
     ~H"""
@@ -14095,6 +16439,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14107,12 +16452,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_papper_clip />
-  <Flowbite.Icons.solid_papper_clip class="w-4 h-4" />
+  <Flowbite.Icons.solid_papper_clip class="w-4 h-4" sr="Icon of solid_papper_clip" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Papper Clip icon"
 
   def solid_papper_clip(assigns) do
     ~H"""
@@ -14123,6 +16472,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14135,12 +16485,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_papper_plane />
-  <Flowbite.Icons.solid_papper_plane class="w-4 h-4" />
+  <Flowbite.Icons.solid_papper_plane class="w-4 h-4" sr="Icon of solid_papper_plane" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Papper Plane icon"
 
   def solid_papper_plane(assigns) do
     ~H"""
@@ -14151,6 +16505,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14163,12 +16518,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_pen_nib />
-  <Flowbite.Icons.solid_pen_nib class="w-4 h-4" />
+  <Flowbite.Icons.solid_pen_nib class="w-4 h-4" sr="Icon of solid_pen_nib" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Pen Nib icon"
 
   def solid_pen_nib(assigns) do
     ~H"""
@@ -14179,6 +16538,7 @@ defmodule Flowbite.Icons do
         <path d="M10.233 11.1a.614.614 0 1 0-.867-.868.614.614 0 0 0 .867.868Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14191,12 +16551,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_pen_to_square />
-  <Flowbite.Icons.solid_pen_to_square class="w-4 h-4" />
+  <Flowbite.Icons.solid_pen_to_square class="w-4 h-4" sr="Icon of solid_pen_to_square" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Pen To Square icon"
 
   def solid_pen_to_square(assigns) do
     ~H"""
@@ -14208,6 +16572,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14220,12 +16585,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_pen />
-  <Flowbite.Icons.solid_pen class="w-4 h-4" />
+  <Flowbite.Icons.solid_pen class="w-4 h-4" sr="Icon of solid_pen" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Pen icon"
 
   def solid_pen(assigns) do
     ~H"""
@@ -14236,6 +16605,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14248,12 +16618,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_phone />
-  <Flowbite.Icons.solid_phone class="w-4 h-4" />
+  <Flowbite.Icons.solid_phone class="w-4 h-4" sr="Icon of solid_phone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Phone icon"
 
   def solid_phone(assigns) do
     ~H"""
@@ -14264,6 +16638,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14276,12 +16651,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_plus />
-  <Flowbite.Icons.solid_plus class="w-4 h-4" />
+  <Flowbite.Icons.solid_plus class="w-4 h-4" sr="Icon of solid_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Plus icon"
 
   def solid_plus(assigns) do
     ~H"""
@@ -14292,6 +16671,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14304,12 +16684,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_print />
-  <Flowbite.Icons.solid_print class="w-4 h-4" />
+  <Flowbite.Icons.solid_print class="w-4 h-4" sr="Icon of solid_print" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Print icon"
 
   def solid_print(assigns) do
     ~H"""
@@ -14320,6 +16704,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14332,12 +16717,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_question_circle />
-  <Flowbite.Icons.solid_question_circle class="w-4 h-4" />
+  <Flowbite.Icons.solid_question_circle class="w-4 h-4" sr="Icon of solid_question_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Question Circle icon"
 
   def solid_question_circle(assigns) do
     ~H"""
@@ -14348,6 +16737,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14360,12 +16750,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_restore_window />
-  <Flowbite.Icons.solid_restore_window class="w-4 h-4" />
+  <Flowbite.Icons.solid_restore_window class="w-4 h-4" sr="Icon of solid_restore_window" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Restore Window icon"
 
   def solid_restore_window(assigns) do
     ~H"""
@@ -14376,6 +16770,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14388,12 +16783,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_rocket />
-  <Flowbite.Icons.solid_rocket class="w-4 h-4" />
+  <Flowbite.Icons.solid_rocket class="w-4 h-4" sr="Icon of solid_rocket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Rocket icon"
 
   def solid_rocket(assigns) do
     ~H"""
@@ -14404,6 +16803,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14416,12 +16816,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_ruler_combined />
-  <Flowbite.Icons.solid_ruler_combined class="w-4 h-4" />
+  <Flowbite.Icons.solid_ruler_combined class="w-4 h-4" sr="Icon of solid_ruler_combined" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Ruler Combined icon"
 
   def solid_ruler_combined(assigns) do
     ~H"""
@@ -14432,6 +16836,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14444,12 +16849,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_search />
-  <Flowbite.Icons.solid_search class="w-4 h-4" />
+  <Flowbite.Icons.solid_search class="w-4 h-4" sr="Icon of solid_search" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Search icon"
 
   def solid_search(assigns) do
     ~H"""
@@ -14460,6 +16869,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14472,12 +16882,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_share_nodes />
-  <Flowbite.Icons.solid_share_nodes class="w-4 h-4" />
+  <Flowbite.Icons.solid_share_nodes class="w-4 h-4" sr="Icon of solid_share_nodes" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Share Nodes icon"
 
   def solid_share_nodes(assigns) do
     ~H"""
@@ -14488,6 +16902,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14500,12 +16915,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_shield_check />
-  <Flowbite.Icons.solid_shield_check class="w-4 h-4" />
+  <Flowbite.Icons.solid_shield_check class="w-4 h-4" sr="Icon of solid_shield_check" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Shield Check icon"
 
   def solid_shield_check(assigns) do
     ~H"""
@@ -14516,6 +16935,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14528,12 +16948,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_shield />
-  <Flowbite.Icons.solid_shield class="w-4 h-4" />
+  <Flowbite.Icons.solid_shield class="w-4 h-4" sr="Icon of solid_shield" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Shield icon"
 
   def solid_shield(assigns) do
     ~H"""
@@ -14541,6 +16965,7 @@ defmodule Flowbite.Icons do
       <path fill="currentColor" d="M8 18A18.55 18.55 0 0 1 0 3l8-3 8 3a18.549 18.549 0 0 1-8 15Z">
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14553,12 +16978,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_star_half_stroke />
-  <Flowbite.Icons.solid_star_half_stroke class="w-4 h-4" />
+  <Flowbite.Icons.solid_star_half_stroke class="w-4 h-4" sr="Icon of solid_star_half_stroke" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Star Half Stroke icon"
 
   def solid_star_half_stroke(assigns) do
     ~H"""
@@ -14569,6 +16998,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14581,12 +17011,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_star_half />
-  <Flowbite.Icons.solid_star_half class="w-4 h-4" />
+  <Flowbite.Icons.solid_star_half class="w-4 h-4" sr="Icon of solid_star_half" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Star Half icon"
 
   def solid_star_half(assigns) do
     ~H"""
@@ -14597,6 +17031,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14609,12 +17044,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_star />
-  <Flowbite.Icons.solid_star class="w-4 h-4" />
+  <Flowbite.Icons.solid_star class="w-4 h-4" sr="Icon of solid_star" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Star icon"
 
   def solid_star(assigns) do
     ~H"""
@@ -14625,6 +17064,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14637,12 +17077,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_swatchbook />
-  <Flowbite.Icons.solid_swatchbook class="w-4 h-4" />
+  <Flowbite.Icons.solid_swatchbook class="w-4 h-4" sr="Icon of solid_swatchbook" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Swatchbook icon"
 
   def solid_swatchbook(assigns) do
     ~H"""
@@ -14653,6 +17097,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14665,12 +17110,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_table_column />
-  <Flowbite.Icons.solid_table_column class="w-4 h-4" />
+  <Flowbite.Icons.solid_table_column class="w-4 h-4" sr="Icon of solid_table_column" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Table Column icon"
 
   def solid_table_column(assigns) do
     ~H"""
@@ -14681,6 +17130,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14693,12 +17143,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_table />
-  <Flowbite.Icons.solid_table class="w-4 h-4" />
+  <Flowbite.Icons.solid_table class="w-4 h-4" sr="Icon of solid_table" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Table icon"
 
   def solid_table(assigns) do
     ~H"""
@@ -14709,6 +17163,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14721,12 +17176,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_tablet />
-  <Flowbite.Icons.solid_tablet class="w-4 h-4" />
+  <Flowbite.Icons.solid_tablet class="w-4 h-4" sr="Icon of solid_tablet" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Tablet icon"
 
   def solid_tablet(assigns) do
     ~H"""
@@ -14737,6 +17196,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14749,12 +17209,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_terminal />
-  <Flowbite.Icons.solid_terminal class="w-4 h-4" />
+  <Flowbite.Icons.solid_terminal class="w-4 h-4" sr="Icon of solid_terminal" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Terminal icon"
 
   def solid_terminal(assigns) do
     ~H"""
@@ -14765,6 +17229,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14777,12 +17242,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_ticket />
-  <Flowbite.Icons.solid_ticket class="w-4 h-4" />
+  <Flowbite.Icons.solid_ticket class="w-4 h-4" sr="Icon of solid_ticket" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Ticket icon"
 
   def solid_ticket(assigns) do
     ~H"""
@@ -14793,6 +17262,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14805,12 +17275,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_trash_bin />
-  <Flowbite.Icons.solid_trash_bin class="w-4 h-4" />
+  <Flowbite.Icons.solid_trash_bin class="w-4 h-4" sr="Icon of solid_trash_bin" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Trash Bin icon"
 
   def solid_trash_bin(assigns) do
     ~H"""
@@ -14821,6 +17295,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14833,12 +17308,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_truck />
-  <Flowbite.Icons.solid_truck class="w-4 h-4" />
+  <Flowbite.Icons.solid_truck class="w-4 h-4" sr="Icon of solid_truck" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Truck icon"
 
   def solid_truck(assigns) do
     ~H"""
@@ -14849,6 +17328,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14861,12 +17341,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_upload />
-  <Flowbite.Icons.solid_upload class="w-4 h-4" />
+  <Flowbite.Icons.solid_upload class="w-4 h-4" sr="Icon of solid_upload" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Upload icon"
 
   def solid_upload(assigns) do
     ~H"""
@@ -14878,6 +17362,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14890,12 +17375,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_volume_down />
-  <Flowbite.Icons.solid_volume_down class="w-4 h-4" />
+  <Flowbite.Icons.solid_volume_down class="w-4 h-4" sr="Icon of solid_volume_down" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Volume Down icon"
 
   def solid_volume_down(assigns) do
     ~H"""
@@ -14906,6 +17395,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14918,12 +17408,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_volume_up />
-  <Flowbite.Icons.solid_volume_up class="w-4 h-4" />
+  <Flowbite.Icons.solid_volume_up class="w-4 h-4" sr="Icon of solid_volume_up" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Volume Up icon"
 
   def solid_volume_up(assigns) do
     ~H"""
@@ -14934,6 +17428,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14946,12 +17441,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_wand_sparkles />
-  <Flowbite.Icons.solid_wand_sparkles class="w-4 h-4" />
+  <Flowbite.Icons.solid_wand_sparkles class="w-4 h-4" sr="Icon of solid_wand_sparkles" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Wand Sparkles icon"
 
   def solid_wand_sparkles(assigns) do
     ~H"""
@@ -14962,6 +17461,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -14974,12 +17474,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_window />
-  <Flowbite.Icons.solid_window class="w-4 h-4" />
+  <Flowbite.Icons.solid_window class="w-4 h-4" sr="Icon of solid_window" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Window icon"
 
   def solid_window(assigns) do
     ~H"""
@@ -14990,6 +17494,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15002,12 +17507,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_zoom_in />
-  <Flowbite.Icons.solid_zoom_in class="w-4 h-4" />
+  <Flowbite.Icons.solid_zoom_in class="w-4 h-4" sr="Icon of solid_zoom_in" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Zoom In icon"
 
   def solid_zoom_in(assigns) do
     ~H"""
@@ -15018,6 +17527,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15030,12 +17540,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_zoom_out />
-  <Flowbite.Icons.solid_zoom_out class="w-4 h-4" />
+  <Flowbite.Icons.solid_zoom_out class="w-4 h-4" sr="Icon of solid_zoom_out" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Zoom Out icon"
 
   def solid_zoom_out(assigns) do
     ~H"""
@@ -15046,6 +17560,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15058,12 +17573,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_backward_step />
-  <Flowbite.Icons.solid_backward_step class="w-4 h-4" />
+  <Flowbite.Icons.solid_backward_step class="w-4 h-4" sr="Icon of solid_backward_step" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Backward Step icon"
 
   def solid_backward_step(assigns) do
     ~H"""
@@ -15074,6 +17593,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15086,12 +17606,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_camera_foto />
-  <Flowbite.Icons.solid_camera_foto class="w-4 h-4" />
+  <Flowbite.Icons.solid_camera_foto class="w-4 h-4" sr="Icon of solid_camera_foto" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Camera Foto icon"
 
   def solid_camera_foto(assigns) do
     ~H"""
@@ -15102,6 +17626,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15114,12 +17639,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_captioning />
-  <Flowbite.Icons.solid_captioning class="w-4 h-4" />
+  <Flowbite.Icons.solid_captioning class="w-4 h-4" sr="Icon of solid_captioning" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Captioning icon"
 
   def solid_captioning(assigns) do
     ~H"""
@@ -15130,6 +17659,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15142,12 +17672,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_circle_pause />
-  <Flowbite.Icons.solid_circle_pause class="w-4 h-4" />
+  <Flowbite.Icons.solid_circle_pause class="w-4 h-4" sr="Icon of solid_circle_pause" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Circle Pause icon"
 
   def solid_circle_pause(assigns) do
     ~H"""
@@ -15158,6 +17692,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15170,12 +17705,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_clapperboard_play />
-  <Flowbite.Icons.solid_clapperboard_play class="w-4 h-4" />
+  <Flowbite.Icons.solid_clapperboard_play class="w-4 h-4" sr="Icon of solid_clapperboard_play" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Clapperboard Play icon"
 
   def solid_clapperboard_play(assigns) do
     ~H"""
@@ -15186,6 +17725,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15198,12 +17738,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_computer_speaker />
-  <Flowbite.Icons.solid_computer_speaker class="w-4 h-4" />
+  <Flowbite.Icons.solid_computer_speaker class="w-4 h-4" sr="Icon of solid_computer_speaker" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Computer Speaker icon"
 
   def solid_computer_speaker(assigns) do
     ~H"""
@@ -15216,6 +17760,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15228,12 +17773,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_forward_step />
-  <Flowbite.Icons.solid_forward_step class="w-4 h-4" />
+  <Flowbite.Icons.solid_forward_step class="w-4 h-4" sr="Icon of solid_forward_step" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Forward Step icon"
 
   def solid_forward_step(assigns) do
     ~H"""
@@ -15244,6 +17793,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15256,12 +17806,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_headphones />
-  <Flowbite.Icons.solid_headphones class="w-4 h-4" />
+  <Flowbite.Icons.solid_headphones class="w-4 h-4" sr="Icon of solid_headphones" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Headphones icon"
 
   def solid_headphones(assigns) do
     ~H"""
@@ -15272,6 +17826,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15284,12 +17839,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_list_music />
-  <Flowbite.Icons.solid_list_music class="w-4 h-4" />
+  <Flowbite.Icons.solid_list_music class="w-4 h-4" sr="Icon of solid_list_music" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid List Music icon"
 
   def solid_list_music(assigns) do
     ~H"""
@@ -15300,6 +17859,7 @@ defmodule Flowbite.Icons do
         <path d="M10 7H1a1 1 0 0 1 0-2h9a1 1 0 1 1 0 2Zm-5 4H1a1 1 0 0 1 0-2h4a1 1 0 1 1 0 2Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15312,12 +17872,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_microphone />
-  <Flowbite.Icons.solid_microphone class="w-4 h-4" />
+  <Flowbite.Icons.solid_microphone class="w-4 h-4" sr="Icon of solid_microphone" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Microphone icon"
 
   def solid_microphone(assigns) do
     ~H"""
@@ -15328,6 +17892,7 @@ defmodule Flowbite.Icons do
         <path d="M9 0H7a3 3 0 0 0-3 3v5a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3Z"></path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15340,12 +17905,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_pause />
-  <Flowbite.Icons.solid_pause class="w-4 h-4" />
+  <Flowbite.Icons.solid_pause class="w-4 h-4" sr="Icon of solid_pause" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Pause icon"
 
   def solid_pause(assigns) do
     ~H"""
@@ -15356,6 +17925,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15368,12 +17938,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_play />
-  <Flowbite.Icons.solid_play class="w-4 h-4" />
+  <Flowbite.Icons.solid_play class="w-4 h-4" sr="Icon of solid_play" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Play icon"
 
   def solid_play(assigns) do
     ~H"""
@@ -15384,6 +17958,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15396,12 +17971,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_rectangle_list />
-  <Flowbite.Icons.solid_rectangle_list class="w-4 h-4" />
+  <Flowbite.Icons.solid_rectangle_list class="w-4 h-4" sr="Icon of solid_rectangle_list" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Rectangle List icon"
 
   def solid_rectangle_list(assigns) do
     ~H"""
@@ -15412,6 +17991,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15424,12 +18004,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_shuffle />
-  <Flowbite.Icons.solid_shuffle class="w-4 h-4" />
+  <Flowbite.Icons.solid_shuffle class="w-4 h-4" sr="Icon of solid_shuffle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Shuffle icon"
 
   def solid_shuffle(assigns) do
     ~H"""
@@ -15441,6 +18025,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15453,12 +18038,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_video />
-  <Flowbite.Icons.solid_video class="w-4 h-4" />
+  <Flowbite.Icons.solid_video class="w-4 h-4" sr="Icon of solid_video" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Video icon"
 
   def solid_video(assigns) do
     ~H"""
@@ -15469,6 +18058,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15481,12 +18071,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_bold />
-  <Flowbite.Icons.solid_bold class="w-4 h-4" />
+  <Flowbite.Icons.solid_bold class="w-4 h-4" sr="Icon of solid_bold" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Bold icon"
 
   def solid_bold(assigns) do
     ~H"""
@@ -15497,6 +18091,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15509,12 +18104,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_italic />
-  <Flowbite.Icons.solid_italic class="w-4 h-4" />
+  <Flowbite.Icons.solid_italic class="w-4 h-4" sr="Icon of solid_italic" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Italic icon"
 
   def solid_italic(assigns) do
     ~H"""
@@ -15526,6 +18125,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15538,12 +18138,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_list_ordored />
-  <Flowbite.Icons.solid_list_ordored class="w-4 h-4" />
+  <Flowbite.Icons.solid_list_ordored class="w-4 h-4" sr="Icon of solid_list_ordored" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid List Ordored icon"
 
   def solid_list_ordored(assigns) do
     ~H"""
@@ -15554,6 +18158,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15566,12 +18171,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_list />
-  <Flowbite.Icons.solid_list class="w-4 h-4" />
+  <Flowbite.Icons.solid_list class="w-4 h-4" sr="Icon of solid_list" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid List icon"
 
   def solid_list(assigns) do
     ~H"""
@@ -15582,6 +18191,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15594,12 +18204,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_quote />
-  <Flowbite.Icons.solid_quote class="w-4 h-4" />
+  <Flowbite.Icons.solid_quote class="w-4 h-4" sr="Icon of solid_quote" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Quote icon"
 
   def solid_quote(assigns) do
     ~H"""
@@ -15610,6 +18224,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15622,12 +18237,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_text_center />
-  <Flowbite.Icons.solid_text_center class="w-4 h-4" />
+  <Flowbite.Icons.solid_text_center class="w-4 h-4" sr="Icon of solid_text_center" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Text Center icon"
 
   def solid_text_center(assigns) do
     ~H"""
@@ -15638,6 +18257,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15650,12 +18270,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_underline />
-  <Flowbite.Icons.solid_underline class="w-4 h-4" />
+  <Flowbite.Icons.solid_underline class="w-4 h-4" sr="Icon of solid_underline" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Underline icon"
 
   def solid_underline(assigns) do
     ~H"""
@@ -15667,6 +18291,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15679,12 +18304,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_address_card />
-  <Flowbite.Icons.solid_address_card class="w-4 h-4" />
+  <Flowbite.Icons.solid_address_card class="w-4 h-4" sr="Icon of solid_address_card" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Address Card icon"
 
   def solid_address_card(assigns) do
     ~H"""
@@ -15695,6 +18324,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15707,12 +18337,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_adress_book />
-  <Flowbite.Icons.solid_adress_book class="w-4 h-4" />
+  <Flowbite.Icons.solid_adress_book class="w-4 h-4" sr="Icon of solid_adress_book" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Adress Book icon"
 
   def solid_adress_book(assigns) do
     ~H"""
@@ -15723,6 +18357,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15735,12 +18370,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_user_circle />
-  <Flowbite.Icons.solid_user_circle class="w-4 h-4" />
+  <Flowbite.Icons.solid_user_circle class="w-4 h-4" sr="Icon of solid_user_circle" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid User Circle icon"
 
   def solid_user_circle(assigns) do
     ~H"""
@@ -15751,6 +18390,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15763,12 +18403,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_user_edit />
-  <Flowbite.Icons.solid_user_edit class="w-4 h-4" />
+  <Flowbite.Icons.solid_user_edit class="w-4 h-4" sr="Icon of solid_user_edit" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid User Edit icon"
 
   def solid_user_edit(assigns) do
     ~H"""
@@ -15779,6 +18423,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15791,12 +18436,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_user_group />
-  <Flowbite.Icons.solid_user_group class="w-4 h-4" />
+  <Flowbite.Icons.solid_user_group class="w-4 h-4" sr="Icon of solid_user_group" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid User Group icon"
 
   def solid_user_group(assigns) do
     ~H"""
@@ -15808,6 +18457,7 @@ defmodule Flowbite.Icons do
         </path>
       </g>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15820,12 +18470,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_user_plus />
-  <Flowbite.Icons.solid_user_plus class="w-4 h-4" />
+  <Flowbite.Icons.solid_user_plus class="w-4 h-4" sr="Icon of solid_user_plus" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid User Plus icon"
 
   def solid_user_plus(assigns) do
     ~H"""
@@ -15836,6 +18490,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15848,12 +18503,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_user_remove />
-  <Flowbite.Icons.solid_user_remove class="w-4 h-4" />
+  <Flowbite.Icons.solid_user_remove class="w-4 h-4" sr="Icon of solid_user_remove" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid User Remove icon"
 
   def solid_user_remove(assigns) do
     ~H"""
@@ -15864,6 +18523,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15876,12 +18536,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_user_settings />
-  <Flowbite.Icons.solid_user_settings class="w-4 h-4" />
+  <Flowbite.Icons.solid_user_settings class="w-4 h-4" sr="Icon of solid_user_settings" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid User Settings icon"
 
   def solid_user_settings(assigns) do
     ~H"""
@@ -15892,6 +18556,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15904,12 +18569,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_user />
-  <Flowbite.Icons.solid_user class="w-4 h-4" />
+  <Flowbite.Icons.solid_user class="w-4 h-4" sr="Icon of solid_user" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid User icon"
 
   def solid_user(assigns) do
     ~H"""
@@ -15920,6 +18589,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15932,12 +18602,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_users />
-  <Flowbite.Icons.solid_users class="w-4 h-4" />
+  <Flowbite.Icons.solid_users class="w-4 h-4" sr="Icon of solid_users" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Users icon"
 
   def solid_users(assigns) do
     ~H"""
@@ -15948,6 +18622,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15960,12 +18635,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_moon />
-  <Flowbite.Icons.solid_moon class="w-4 h-4" />
+  <Flowbite.Icons.solid_moon class="w-4 h-4" sr="Icon of solid_moon" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Moon icon"
 
   def solid_moon(assigns) do
     ~H"""
@@ -15976,6 +18655,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 
@@ -15988,12 +18668,16 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.solid_sun />
-  <Flowbite.Icons.solid_sun class="w-4 h-4" />
+  <Flowbite.Icons.solid_sun class="w-4 h-4" sr="Icon of solid_sun" />
   ```
   """
   attr :rest, :global,
     doc: "the arbitrary HTML attributes for the svg container",
     include: ~w(fill stroke stroke-width)
+
+  attr :sr, :string,
+    doc: "a description of the icon for screen readers",
+    default: "Solid Sun icon"
 
   def solid_sun(assigns) do
     ~H"""
@@ -16004,6 +18688,7 @@ defmodule Flowbite.Icons do
       >
       </path>
     </svg>
+    <span class="sr-only"><%= @sr %></span>
     """
   end
 end

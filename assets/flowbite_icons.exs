@@ -58,15 +58,17 @@ defmodule Flowbite.Icons do
 
   ```heex
   <Flowbite.Icons.<%= name %> />
-  <Flowbite.Icons.<%= name %> class="w-4 h-4" />
+  <Flowbite.Icons.<%= name %> class="w-4 h-4" sr="Icon of <%= name %>" />
   ```
   """
   attr :rest, :global, doc: "the arbitrary HTML attributes for the svg container", include: ~w(fill stroke stroke-width)
+  attr :sr, :string, doc: "a description of the icon for screen readers", default: "<%= name |> String.split("_") |> Enum.map(&Macro.camelize/1) |> Enum.join(" ") %> icon"
   def <%= name %>(assigns) do
     ~H"""
       <svg {Map.merge(%{ <%= Enum.map(attrs, fn {k, v} -> "\"#{k}\" => \"#{v}\"" end) |> Enum.join(", ") %> }, @rest)}>
         <%= Floki.raw_html(child_nodes) %>
       </svg>
+      <span class="sr-only"><%%= @sr %></span>
     """
   end
   <% end %>
