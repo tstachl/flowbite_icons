@@ -10,15 +10,18 @@ defmodule FlowbiteIconsTest do
 
   test "default" do
     assert render_component(&Flowbite.Icons.outline_angle_down/1, %{}) ==
-             ~s|<svg fill="none" viewbox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">\n  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1.497 5.326 5.402a.94.94 0 0 0 .305.21.952.952 0 0 0 1.043-.21L13 1.497">\n  </path>\n</svg>|
+             ~s|<svg fill="none" viewbox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">\n  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1.497 5.326 5.402a.94.94 0 0 0 .305.21.952.952 0 0 0 1.043-.21L13 1.497">\n  </path>\n</svg>\n<span class="sr-only">Outline Angle Down icon</span>|
 
     class = "w-2"
 
     assert render_component(&Flowbite.Icons.outline_angle_down/1, %{class: class}) ==
-             ~s|<svg class="#{class}" fill="none" viewbox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">\n  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1.497 5.326 5.402a.94.94 0 0 0 .305.21.952.952 0 0 0 1.043-.21L13 1.497">\n  </path>\n</svg>|
+             ~s|<svg class="#{class}" fill="none" viewbox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">\n  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1.497 5.326 5.402a.94.94 0 0 0 .305.21.952.952 0 0 0 1.043-.21L13 1.497">\n  </path>\n</svg>\n<span class="sr-only">Outline Angle Down icon</span>|
 
     assert render_component(&Flowbite.Icons.outline_angle_down/1, %{"stroke-width": "2"}) ==
-             ~s|<svg stroke-width="2" fill="none" viewbox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">\n  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1.497 5.326 5.402a.94.94 0 0 0 .305.21.952.952 0 0 0 1.043-.21L13 1.497">\n  </path>\n</svg>|
+             ~s|<svg stroke-width="2" fill="none" viewbox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">\n  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1.497 5.326 5.402a.94.94 0 0 0 .305.21.952.952 0 0 0 1.043-.21L13 1.497">\n  </path>\n</svg>\n<span class="sr-only">Outline Angle Down icon</span>|
+
+    assert render_component(&Flowbite.Icons.outline_angle_down/1, %{sr: "Go Down"}) ==
+             ~s|<svg fill="none" viewbox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">\n  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1.497 5.326 5.402a.94.94 0 0 0 .305.21.952.952 0 0 0 1.043-.21L13 1.497">\n  </path>\n</svg>\n<span class="sr-only">Go Down</span>|
   end
 
   test "generated docs" do
@@ -40,11 +43,12 @@ defmodule FlowbiteIconsTest do
 
            ```heex
            <Flowbite.Icons.outline_angle_down />
-           <Flowbite.Icons.outline_angle_down class="w-4 h-4" />
+           <Flowbite.Icons.outline_angle_down class="w-4 h-4" sr="Icon of outline_angle_down" />
            ```
 
            ## Attributes
 
+           * `sr` (`:string`) - a description of the icon for screen readers. Defaults to `"Outline Angle Down icon"`.
            * Global attributes are accepted.
            """
   end
