@@ -397,7 +397,7 @@ defmodule Flowbite.Icons do
     <svg {Map.merge(%{ "fill" => "none", "height" => "16", "viewbox" => "0 0 21 16", "width" => "21", "xmlns" => "http://www.w3.org/2000/svg" }, @rest)}>
       <path
         d="m14.364 15 4.847-7-4.847-7h-13.154l4.848 7-4.848 7h13.153z"
-        stroke="#2f2f38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -576,7 +576,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "16", "fill" => "none", "viewbox" => "0 0 16 16" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -612,7 +612,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "16", "fill" => "none", "viewbox" => "0 0 16 16" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -1404,7 +1404,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "14", "fill" => "none", "viewbox" => "0 0 16 14" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -1476,7 +1476,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "16", "fill" => "none", "viewbox" => "0 0 20 16" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -1620,7 +1620,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "14", "fill" => "none", "viewbox" => "0 0 16 14" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -2401,7 +2401,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "16", "fill" => "none", "viewbox" => "0 0 20 16" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -2908,7 +2908,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "20", "fill" => "none", "viewbox" => "0 0 16 20" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -3160,7 +3160,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "20", "fill" => "none", "viewbox" => "0 0 16 20" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -3373,7 +3373,7 @@ defmodule Flowbite.Icons do
     <svg {Map.merge(%{ "fill" => "none", "height" => "18", "viewbox" => "0 0 18 18", "width" => "18", "xmlns" => "http://www.w3.org/2000/svg" }, @rest)}>
       <path
         d="m1 5v11a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-10a1 1 0 0 0 -1-1zm0 0v-3a1 1 0 0 1 1-1h5.443a1 1 0 0 1 .8.4l2.7 3.6zm10 4 2 2-2 2m1.5-2h-7.719"
-        stroke="#2f2f38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -4230,7 +4230,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "18", "height" => "18", "fill" => "none", "viewbox" => "0 0 18 18" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -4407,7 +4407,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "12", "fill" => "none", "viewbox" => "0 0 16 12" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -4479,7 +4479,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "19", "height" => "21", "fill" => "none", "viewbox" => "0 0 19 21" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -4656,7 +4656,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -4728,7 +4728,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -5084,7 +5084,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "16", "fill" => "none", "viewbox" => "0 0 20 16" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -5120,7 +5120,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -5726,7 +5726,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "20", "fill" => "none", "viewbox" => "0 0 16 20" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -6204,7 +6204,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "14", "fill" => "none", "viewbox" => "0 0 20 14" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -6348,7 +6348,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "14", "height" => "20", "fill" => "none", "viewbox" => "0 0 14 20" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -6456,7 +6456,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -7318,7 +7318,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "18", "height" => "20", "fill" => "none", "viewbox" => "0 0 18 20" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -7891,7 +7891,7 @@ defmodule Flowbite.Icons do
     <svg {Map.merge(%{ "width" => "20", "height" => "21", "viewbox" => "0 0 20 21", "fill" => "none", "xmlns" => "http://www.w3.org/2000/svg" }, @rest)}>
       <path
         d="M12.555 5.11696L15.383 7.94496M14 16V20M12 18H16M3 5.99996V9.99996M1 7.99996H5M16.01 1.66113L18.8384 4.48956L3.98915 19.3388L1.16072 16.5104L16.01 1.66113Z"
-        stroke="#111928"
+        stroke="currentColor"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -7969,7 +7969,7 @@ defmodule Flowbite.Icons do
     <svg {Map.merge(%{ "width" => "20", "height" => "18", "viewbox" => "0 0 20 18", "fill" => "none", "xmlns" => "http://www.w3.org/2000/svg" }, @rest)}>
       <path
         d="M1 7H19M2 1H18C18.5523 1 19 1.44772 19 2V16C19 16.5523 18.5523 17 18 17H2C1.44772 17 1 16.5523 1 16V2C1 1.44772 1.44772 1 2 1Z"
-        stroke="#111928"
+        stroke="currentColor"
         stroke-width="2"
         stroke-linejoin="round"
       >
@@ -8231,7 +8231,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -8663,7 +8663,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "14", "height" => "15", "fill" => "none", "viewbox" => "0 0 14 15" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -8878,7 +8878,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "14", "height" => "14", "fill" => "none", "viewbox" => "0 0 14 14" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -8914,7 +8914,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "20", "height" => "20", "fill" => "none", "viewbox" => "0 0 20 20" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -8986,7 +8986,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "18", "height" => "15", "fill" => "none", "viewbox" => "0 0 18 15" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -9022,7 +9022,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "16", "fill" => "none", "viewbox" => "0 0 16 16" }, @rest)}>
       <path
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -9924,7 +9924,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "16", "fill" => "none", "viewbox" => "0 0 16 16" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -11250,7 +11250,7 @@ defmodule Flowbite.Icons do
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "18", "height" => "19", "fill" => "none", "viewbox" => "0 0 18 19" }, @rest)}>
       <path
         fill="currentColor"
-        stroke="#2F3039"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
@@ -14147,7 +14147,7 @@ defmodule Flowbite.Icons do
     ~H"""
     <svg {Map.merge(%{ "xmlns" => "http://www.w3.org/2000/svg", "width" => "16", "height" => "12", "fill" => "none", "viewbox" => "0 0 16 12" }, @rest)}>
       <path
-        stroke="#2F2F38"
+        stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
