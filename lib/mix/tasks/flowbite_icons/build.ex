@@ -42,8 +42,6 @@ defmodule Mix.Tasks.FlowbiteIcons.Build do
        attrs
        |> Enum.filter(fn {k, _} -> k != "width" && k != "height" end)}
     end)
-
-    # |> Floki.attr("[height]", "height", fn _ -> nil end)
   end
 
   defp at(file, index) do
