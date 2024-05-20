@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.1.8
+* updated icons from [main](https://github.com/themesberg/flowbite-icons) to [v1.2.1](https://github.com/themesberg/flowbite-icons/tree/v1.2.1)
+* updated build and update scripts
+
 ## v0.1.5
 * added screen reader span to icons with a sane default
 
