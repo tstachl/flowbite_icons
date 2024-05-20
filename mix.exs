@@ -4,7 +4,7 @@ defmodule FlowbiteIcons.MixProject do
   def project do
     [
       app: :flowbite_icons,
-      version: "0.1.7",
+      version: "0.1.8",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -13,6 +13,7 @@ defmodule FlowbiteIcons.MixProject do
       description: "Phoenix components for Flowbite Icons!",
       docs: docs(),
       package: package(),
+      compilers: [:leex] ++ Mix.compilers(),
       xref: [exclude: [:httpc, :public_key]]
     ]
   end
@@ -20,8 +21,16 @@ defmodule FlowbiteIcons.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger]
+      extra_applications: extra_applications(Mix.env())
     ]
+  end
+
+  defp extra_applications(:test) do
+    extra_applications(:prod) ++ [:inets, :ssl]
+  end
+
+  defp extra_applications(_env) do
+    [:logger]
   end
 
   # Run "mix help deps" to learn about dependencies.

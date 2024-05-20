@@ -6,7 +6,7 @@ This library provides optimized svgs for each Flowbite Icon packaged as a Phoeni
 
 Flowbite Icons are designed by [Evelyne Krall](https://twitter.com/EvelyneKrall) & [Robert Tanislav](https://twitter.com/roberttanislav) and interface coded by [Zoltán Szőgyényi](https://twitter.com/zoltanszogyenyi).
 
-Current Flowbite Icons Version: **main branch**.
+Current Flowbite Icons Version: **v1.2.1**.
 Current Icon repository: [github:themesberg/flowbite-icons](https://github.com/themesberg/flowbite-icons)
 
 ## Installation
@@ -17,7 +17,7 @@ by adding `flowbite_icons` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:flowbite_icons, "~> 0.1.4"}
+    {:flowbite_icons, "~> 0.1.8"}
   ]
 end
 ```

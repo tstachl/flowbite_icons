@@ -8,6 +8,7 @@
 
 # The directory devenv uses.
 /.devenv/
+/.devenv.flake.nix
 
 # The directory Mix will write compiled artifacts to.
 /_build/
